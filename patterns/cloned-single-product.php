@@ -256,7 +256,7 @@ if ( empty( $product_downloads ) ) {
     </div>
 </div><hr class="e_line-26 s_line" /><div class="e_richText-39 s_summary clearfix" style="font-size: 14px; color: #666; line-height: 1.6; margin-top: 15px;">
     <?php if ( has_excerpt() ) : ?>
-        <?php echo esc_html( get_the_excerpt() ); ?>
+        <?php echo wp_kses_post( get_the_excerpt() ); ?>
     <?php else : ?>
         <p>高品质低压电路保护与工业电源解决方案，符合国际 IEC/UL 安规标准，具备过载、短路全方位保护功能。</p>
     <?php endif; ?>
