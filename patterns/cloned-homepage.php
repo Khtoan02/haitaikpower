@@ -185,15 +185,6 @@
             <div class="haitaik-slide-bg">
                 <img src="https://omo-oss-image.thefastimg.com/portal-saas/pg2024041817493912440/cms/image/237797ff-4eff-48bd-90b0-8d0f1cf404e8.jpg" alt="创联电源" />
             </div>
-            <div class="haitaik-slide-overlay"></div>
-            <div class="haitaik-slide-content">
-                <span class="haitaik-slide-subtitle">CHUANGLIAN POWER SUPPLY</span>
-                <h2 class="haitaik-slide-title">创联电源 · 全球高品质电源解决方案</h2>
-                <p class="haitaik-slide-desc">专注LED显示屏电源、工业自动化控制电源研发与制造20余年</p>
-                <div class="haitaik-slide-btn-wrap">
-                    <a href="/about-us/" class="haitaik-slide-btn">了解更多 &rarr;</a>
-                </div>
-            </div>
         </div>
 
         <!-- Slide 2 -->
@@ -201,30 +192,12 @@
             <div class="haitaik-slide-bg">
                 <img src="https://omo-oss-image.thefastimg.com/portal-saas/pg2024041817493912440/cms/image/04a3fa2b-f59c-4234-a9ca-87d1b57c22f1.jpg_1920xaf.jpg" alt="高效低功耗电源" />
             </div>
-            <div class="haitaik-slide-overlay"></div>
-            <div class="haitaik-slide-content">
-                <span class="haitaik-slide-subtitle">ENERGY SAVING & HIGH EFFICIENT</span>
-                <h2 class="haitaik-slide-title">共阴高效低功耗LED显示屏电源</h2>
-                <p class="haitaik-slide-desc">创新共阴节能技术，降低温升，高效稳定，引领绿色电源新标杆</p>
-                <div class="haitaik-slide-btn-wrap">
-                    <a href="/led-display-power/" class="haitaik-slide-btn">产品中心 &rarr;</a>
-                </div>
-            </div>
         </div>
 
         <!-- Slide 3 -->
         <div class="haitaik-slide" data-index="2">
             <div class="haitaik-slide-bg">
                 <img src="https://omo-oss-image.thefastimg.com/portal-saas/pg2024041817493912440/cms/image/a74a667c-14fe-4c41-aa48-07c3c203cbb6.jpg" alt="品质保障" />
-            </div>
-            <div class="haitaik-slide-overlay"></div>
-            <div class="haitaik-slide-content">
-                <span class="haitaik-slide-subtitle">QUALITY GUARANTEE & SERVICE</span>
-                <h2 class="haitaik-slide-title">原厂正品 · 36个月原厂质保</h2>
-                <p class="haitaik-slide-desc">符合国际安规与EMC标准，100%满负载老炼测试，畅销全球50多个国家</p>
-                <div class="haitaik-slide-btn-wrap">
-                    <a href="/contact-us/" class="haitaik-slide-btn">联系我们 &rarr;</a>
-                </div>
             </div>
         </div>
 
