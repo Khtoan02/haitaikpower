@@ -434,6 +434,122 @@ add_action( 'admin_notices', function() {
 	}
 } );
 
+/**
+ * Automatically import scraped news articles from CSV into WordPress database.
+ */
+function haitaik_import_csv_articles() {
+	$csv_file = get_template_directory() . '/inc/haitaik-com-2026-08-04-2.csv';
+	if ( ! file_exists( $csv_file ) ) {
+		return 0;
+	}
+
+	$handle = fopen( $csv_file, 'r' );
+	if ( ! $handle ) {
+		return 0;
+	}
+
+	$header = fgetcsv( $handle );
+	if ( ! $header ) {
+		fclose( $handle );
+		return 0;
+	}
+
+	// Remove UTF-8 BOM if present
+	$header[0] = preg_replace( '/\x{EF}\x{BB}\x{BF}/', '', $header[0] );
+	$header = array_map( 'trim', $header );
+
+	$imported_count = 0;
+	$imported_titles = array();
+
+	while ( ( $row = fgetcsv( $handle ) ) !== false ) {
+		if ( count( $row ) < count( $header ) ) {
+			continue;
+		}
+
+		$item = array_combine( array_slice( $header, 0, count( $row ) ), $row );
+
+		// Extract Title
+		$title = ! empty( $item['item_page_title'] ) ? $item['item_page_title'] : ( ! empty( $item['title_1'] ) ? $item['title_1'] : $item['title'] );
+		$title = trim( $title );
+
+		if ( empty( $title ) || $title === '/' || in_array( $title, $imported_titles, true ) ) {
+			continue;
+		}
+
+		// Check if post already exists in DB
+		$existing = get_page_by_title( $title, OBJECT, 'post' );
+		if ( $existing ) {
+			$imported_titles[] = $title;
+			continue;
+		}
+
+		// Extract Content
+		$content = ! empty( $item['data_2'] ) ? $item['data_2'] : ( ! empty( $item['project_description'] ) ? $item['project_description'] : $item['data'] );
+		$content = trim( $content );
+
+		// Format text into HTML paragraphs if raw text
+		if ( ! empty( $content ) && false === strpos( $content, '<p>' ) ) {
+			$paragraphs = array_filter( array_map( 'trim', explode( "\n", $content ) ) );
+			$content = '<p>' . implode( '</p><p>', $paragraphs ) . '</p>';
+		}
+
+		// Extract Image URL
+		$image_url = ! empty( $item['image'] ) ? $item['image'] : ( ! empty( $item['image_1'] ) ? $item['image_1'] : '' );
+		if ( ! empty( $image_url ) && false === strpos( $content, $image_url ) ) {
+			$content = '<p style="text-align:center;"><img src="' . esc_url( $image_url ) . '" alt="' . esc_attr( $title ) . '" style="max-width:100%; height:auto; border-radius:6px; margin-bottom:20px;" /></p>' . $content;
+		}
+
+		// Parse Date
+		$post_date = current_time( 'mysql' );
+		if ( ! empty( $item['data_1'] ) ) {
+			$timestamp = strtotime( $item['data_1'] );
+			if ( $timestamp ) {
+				$post_date = date( 'Y-m-d H:i:s', $timestamp );
+			}
+		}
+
+		// Insert post
+		$post_data = array(
+			'post_title'   => $title,
+			'post_content' => $content,
+			'post_status'  => 'publish',
+			'post_type'    => 'post',
+			'post_date'    => $post_date,
+		);
+
+		$post_id = wp_insert_post( $post_data );
+
+		if ( $post_id && ! is_wp_error( $post_id ) ) {
+			$imported_count++;
+			$imported_titles[] = $title;
+		}
+	}
+
+	fclose( $handle );
+	return $imported_count;
+}
+
+// Handle 1-click trigger via Admin URL action
+add_action( 'admin_init', function() {
+	if ( isset( $_GET['haitaik_import_articles'] ) && current_user_can( 'manage_options' ) ) {
+		$count = haitaik_import_csv_articles();
+		wp_safe_redirect( admin_url( 'edit.php?articles_imported=' . $count ) );
+		exit;
+	}
+} );
+
+// Display Admin Notice banner with 1-click Fill Articles button
+add_action( 'admin_notices', function() {
+	if ( isset( $_GET['articles_imported'] ) ) {
+		$count = intval( $_GET['articles_imported'] );
+		echo '<div class="notice notice-success is-dismissible"><p><strong>Haitaik Importer:</strong> 成功导入/填充 ' . $count . ' 篇新闻文章！ (Successfully imported ' . $count . ' articles!)</p></div>';
+	} else {
+		$import_url = esc_url( admin_url( 'edit.php?haitaik_import_articles=1' ) );
+		echo '<div class="notice notice-warning is-dismissible"><p><strong>Haitaik Importer:</strong> 包含已抓取新闻文章数据。点击一键将文章填充入数据库: <a href="' . $import_url . '" class="button button-primary" style="margin-left: 10px; background: #e40011; border-color: #c8000f;">📥 一键填充新闻文章 (Fill Articles)</a></p></div>';
+	}
+} );
+
+
 
 
 
