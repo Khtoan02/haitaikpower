@@ -371,5 +371,99 @@ function twentytwentyfive_standalone_modular_template_loader( $template ) {
 }
 add_filter( 'template_include', 'twentytwentyfive_standalone_modular_template_loader', 99 );
 
+/**
+ * Automatic Theme Page Setup Engine.
+ * Creates and configures all core Haitaik theme pages automatically upon theme activation or via admin button.
+ */
+function twentytwentyfive_auto_setup_pages() {
+	$pages_to_create = array(
+		'about-us' => array(
+			'post_title'    => 'About Us',
+			'post_name'     => 'about-us',
+			'page_template' => 'page-about-us.php',
+		),
+		'led-display-power' => array(
+			'post_title'    => 'Products',
+			'post_name'     => 'led-display-power',
+			'page_template' => 'page-product-list.php',
+		),
+		'faq' => array(
+			'post_title'    => 'FAQ',
+			'post_name'     => 'faq',
+			'page_template' => 'page-faq.php',
+		),
+		'news' => array(
+			'post_title'    => 'News',
+			'post_name'     => 'news',
+			'page_template' => '',
+		),
+		'contact-us' => array(
+			'post_title'    => 'Contact Us',
+			'post_name'     => 'contact-us',
+			'page_template' => 'page-contact-us.php',
+		),
+	);
+
+	foreach ( $pages_to_create as $slug => $data ) {
+		$existing_page = get_page_by_path( $slug );
+		if ( ! $existing_page ) {
+			$query = new WP_Query( array(
+				'post_type'      => 'page',
+				'name'           => $slug,
+				'posts_per_page' => 1,
+			) );
+			if ( $query->have_posts() ) {
+				$existing_page = $query->posts[0];
+			}
+		}
+
+		if ( ! $existing_page ) {
+			$page_id = wp_insert_post( array(
+				'post_title'     => $data['post_title'],
+				'post_name'      => $data['post_name'],
+				'post_status'    => 'publish',
+				'post_type'      => 'page',
+				'comment_status' => 'closed',
+			) );
+		} else {
+			$page_id = $existing_page->ID;
+		}
+
+		if ( $page_id && ! empty( $data['page_template'] ) ) {
+			update_post_meta( $page_id, '_wp_page_template', $data['page_template'] );
+		}
+	}
+
+	// Flush rewrite rules for clean permalinks
+	if ( get_option( 'permalink_structure' ) !== '/%postname%/' ) {
+		global $wp_rewrite;
+		$wp_rewrite->set_permalink_structure( '/%postname%/' );
+		flush_rewrite_rules( true );
+	}
+}
+
+// Automatically trigger page setup when theme is activated
+add_action( 'after_switch_theme', 'twentytwentyfive_auto_setup_pages' );
+
+// Handle manual 1-click trigger via admin action URL
+add_action( 'admin_init', function() {
+	if ( isset( $_GET['haitaik_auto_setup_pages'] ) && current_user_can( 'manage_options' ) ) {
+		twentytwentyfive_auto_setup_pages();
+		wp_safe_redirect( admin_url( 'themes.php?page_setup_complete=1' ) );
+		exit;
+	}
+} );
+
+// Display Admin Notice banner with 1-click Auto Setup button
+add_action( 'admin_notices', function() {
+	if ( isset( $_GET['page_setup_complete'] ) ) {
+		echo '<div class="notice notice-success is-dismissible"><p><strong>Haitaik Theme:</strong> All core pages (About Us, Products, FAQ, News, Contact Us) have been automatically created and configured!</p></div>';
+	} else {
+		$setup_url = esc_url( admin_url( 'themes.php?haitaik_auto_setup_pages=1' ) );
+		echo '<div class="notice notice-info is-dismissible"><p><strong>Haitaik Theme:</strong> Need to activate or re-create core theme pages on this site? <a href="' . $setup_url . '" class="button button-primary" style="margin-left: 10px;">Activate Core Pages Automatically</a></p></div>';
+	}
+} );
+
+
 
 
