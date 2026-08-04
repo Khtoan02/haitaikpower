@@ -78,26 +78,25 @@ if ( empty( $product_downloads ) ) {
 
  <input type="hidden" name="propJson" value='{}'/></div><div id="c_static_001_P_24351-17162640648450">
 <div class="e_container-1 s_layout">
-    <div class="cbox-1-0 p_item"><div class="e_breadcrumb-2 s_list" needjs="true">
-    <ul class="p_breadcrumb">
-        <!-- first-child -->
+    <div class="cbox-1-0 p_item"><div class="e_breadcrumb-2 s_list">
+    <ul class="p_breadcrumb" style="display: flex; align-items: center; gap: 8px; font-size: 14px; color: #666; margin: 0; padding: 0; list-style: none;">
         <li class="p_breadcrumbItem">
-            <a href="/">
-                <!-- 图标 -->
-                <span class="text-secondary p_icon">
-                    <svg t="1631185047228" class="icon" viewBox="0 0 1029 1024" version="1.1"
-                         xmlns="http://www.w3.org/2000/svg" p-id="1034" width="200" height="200">
-                        <path d="M44.799492 528.986943a42.836848 42.836848 0 0 1-31.231646-13.567846 42.725916 42.725916 0 0 1 2.133309-60.329983L491.685094 11.446142a42.68325 42.68325 0 0 1 58.538003 0.34133l465.658723 443.642972c17.066473 16.21315 17.749132 43.26351 1.45065 60.329983s-43.26351 17.749132-60.329983 1.45065L520.442102 101.301124 73.897829 517.552406c-8.27724 7.679913-18.687788 11.434537-29.098337 11.434537z"
-                              p-id="1035"></path>
-                        <path d="M752.716803 1024H282.876794c-111.188073 0-201.640381-86.697684-201.640381-193.27781V434.524014c0-23.551733 19.11445-42.666183 42.666183-42.666183s42.666183 19.11445 42.666183 42.666183v396.283509c0 59.476659 52.138076 107.945443 116.308015 107.945443h469.925341c64.084607 0 116.308015-48.383452 116.308015-107.945443V434.524014c0-23.551733 19.11445-42.666183 42.666183-42.666183s42.666183 19.11445 42.666183 42.666183v396.283509c-0.085332 106.494793-90.537641 193.192477-201.725713 193.192477z"
-                              p-id="1036"></path>
-                        <path d="M657.400549 1017.173411H383.142324c-23.551733 0-42.666183-19.11445-42.666183-42.666183V625.839179c0-23.551733 19.11445-42.666183 42.666183-42.666183h274.258225c23.551733 0 42.666183 19.11445 42.666184 42.666183v348.668049c0 23.551733-19.11445 42.666183-42.666184 42.666183z m-231.592041-85.332367h188.925858V668.505362H425.808508v263.335682z"
-                              p-id="1037"></path>
+            <a href="/" style="color: #666; text-decoration: none; display: inline-flex; align-items: center;">
+                <span class="text-secondary p_icon" style="margin-right: 4px;">
+                    <svg class="icon" viewBox="0 0 1029 1024" width="14" height="14" style="fill: #666;">
+                        <path d="M44.799492 528.986943a42.836848 42.836848 0 0 1-31.231646-13.567846 42.725916 42.725916 0 0 1 2.133309-60.329983L491.685094 11.446142a42.68325 42.68325 0 0 1 58.538003 0.34133l465.658723 443.642972c17.066473 16.21315 17.749132 43.26351 1.45065 60.329983s-43.26351 17.749132-60.329983 1.45065L520.442102 101.301124 73.897829 517.552406c-8.27724 7.679913-18.687788 11.434537-29.098337 11.434537z"></path>
                     </svg>
                 </span>
-                <!-- 图标 -->
-                <span class="text-secondary p_title"></span>
+                Home
             </a>
+        </li>
+        <li style="color: #ccc;">/</li>
+        <li class="p_breadcrumbItem">
+            <a href="/led-display-power/" style="color: #666; text-decoration: none;">Products</a>
+        </li>
+        <li style="color: #ccc;">/</li>
+        <li class="p_breadcrumbItem" style="color: #333; font-weight: 500;">
+            <?php the_title(); ?>
         </li>
     </ul>
 </div>
