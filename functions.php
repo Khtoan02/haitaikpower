@@ -165,121 +165,33 @@ endif;
 function twentytwentyfive_enqueue_cloned_assets() {
 	$theme_uri = get_template_directory_uri();
 
-	// Always enqueue global stylesheets on all frontend page views
-	wp_enqueue_style(
-		'haitaik-bootstrap-global',
-		$theme_uri . '/assets/npublic/libs/css/ceccbootstrap-global.css',
-		array(),
-		null
-	);
-	wp_enqueue_style(
-		'haitaik-home-main',
-		$theme_uri . '/assets/css/Home_7b9a32a9a2a77e5f5e09085c43c3ae42.min.css',
-		array(),
-		null
-	);
-	wp_enqueue_style(
-		'haitaik-site',
-		$theme_uri . '/assets/css/site.css',
-		array(),
-		null
+	// Enqueue all theme stylesheets unconditionally for 100% fail-proof styling on any host, slug, or template
+	$stylesheets = array(
+		'haitaik-bootstrap-global' => '/assets/npublic/libs/css/ceccbootstrap-global.css',
+		'haitaik-home-main'        => '/assets/css/Home_7b9a32a9a2a77e5f5e09085c43c3ae42.min.css',
+		'haitaik-site'             => '/assets/css/site.css',
+		'haitaik-about'            => '/assets/css/about.css',
+		'haitaik-faq'              => '/assets/css/faq.css',
+		'haitaik-contact'          => '/assets/css/contactus.css',
+		'haitaik-pro-list'         => '/assets/css/pro_list1.css',
+		'haitaik-singleproduct'    => '/assets/css/singleproduct.css',
 	);
 
-	// Always enqueue global scripts on all frontend page views
-	wp_enqueue_script(
-		'haitaik-core-js',
-		$theme_uri . '/assets/npublic/libs/core/ceccjquery-libs.js',
-		array(),
-		null,
-		true
-	);
-	wp_enqueue_script(
-		'haitaik-common-js',
-		$theme_uri . '/assets/npublic/commonjs/common.min.js',
-		array(),
-		null,
-		true
-	);
-	wp_enqueue_script(
-		'haitaik-c0ac6a6647ce41aca3955968ca1f9a50',
-		$theme_uri . '/assets/upload/js/c0ac6a6647ce41aca3955968ca1f9a50.js',
-		array(),
-		null,
-		true
-	);
-	wp_enqueue_script(
-		'haitaik-3b40c5321d4a424a8951ae1ecddfaac5',
-		$theme_uri . '/assets/upload/js/3b40c5321d4a424a8951ae1ecddfaac5.js',
-		array(),
-		null,
-		true
-	);
-	wp_enqueue_script(
-		'haitaik-d1fd3c1642ba450fb712d2542fad9bca',
-		$theme_uri . '/assets/upload/js/d1fd3c1642ba450fb712d2542fad9bca.js',
-		array(),
-		null,
-		true
+	foreach ( $stylesheets as $handle => $rel_path ) {
+		wp_enqueue_style( $handle, $theme_uri . $rel_path, array(), null );
+	}
+
+	// Enqueue all global JS scripts unconditionally
+	$scripts = array(
+		'haitaik-core-js'                         => '/assets/npublic/libs/core/ceccjquery-libs.js',
+		'haitaik-common-js'                       => '/assets/npublic/commonjs/common.min.js',
+		'haitaik-c0ac6a6647ce41aca3955968ca1f9a50' => '/assets/upload/js/c0ac6a6647ce41aca3955968ca1f9a50.js',
+		'haitaik-3b40c5321d4a424a8951ae1ecddfaac5' => '/assets/upload/js/3b40c5321d4a424a8951ae1ecddfaac5.js',
+		'haitaik-d1fd3c1642ba450fb712d2542fad9bca' => '/assets/upload/js/d1fd3c1642ba450fb712d2542fad9bca.js',
 	);
 
-	// Page-Specific Stylesheets loaded conditionally
-	// Page-Specific Stylesheets loaded conditionally by Slug, Template Name, or Post Type
-	if ( is_front_page() || is_page( array( 'home', 17 ) ) ) {
-		wp_enqueue_style(
-			'haitaik-home-specific',
-			$theme_uri . '/assets/css/Home_7b9a32a9a2a77e5f5e09085c43c3ae42.min.css',
-			array(),
-			null
-		);
-	} elseif ( is_page( array( 'about-us', 'about', 'company-profile', 18, 19, 20, 21 ) ) || is_page_template( 'page-about-us.php' ) ) {
-		wp_enqueue_style(
-			'haitaik-about-specific',
-			$theme_uri . '/assets/css/about.css',
-			array(),
-			null
-		);
-	} elseif ( is_page( array( 'faq', 27 ) ) || is_page_template( 'page-faq.php' ) ) {
-		wp_enqueue_style(
-			'haitaik-faq-specific',
-			$theme_uri . '/assets/css/faq.css',
-			array(),
-			null
-		);
-	} elseif ( is_page( array( 'contact-us', 'contact', 29 ) ) || is_page_template( 'page-contact-us.php' ) ) {
-		wp_enqueue_style(
-			'haitaik-contact-specific',
-			$theme_uri . '/assets/css/contactus.css',
-			array(),
-			null
-		);
-	} elseif ( is_page( array( 'led-display-power', 'product-info', 'industrial-control-power', 'led-lighting-power', 'din-rail-power', 22, 23, 24, 25, 26 ) ) || is_page_template( 'page-product-list.php' ) ) {
-		wp_enqueue_style(
-			'haitaik-product-specific',
-			$theme_uri . '/assets/css/pro_list1.css',
-			array(),
-			null
-		);
-	} elseif ( is_singular( 'product' ) ) {
-		wp_enqueue_style(
-			'haitaik-single-product-specific',
-			$theme_uri . '/assets/css/singleproduct.css',
-			array(),
-			null
-		);
-	} elseif ( is_home() || is_page( array( 'news', 'post', 'posts' ) ) || is_page_template( 'home.php' ) || is_page_template( 'page-news.php' ) ) {
-		wp_enqueue_style(
-			'haitaik-news-specific',
-			$theme_uri . '/assets/css/pro_list1.css',
-			array(),
-			null
-		);
-	} elseif ( is_single() ) {
-		wp_enqueue_style(
-			'haitaik-single-post-specific',
-			$theme_uri . '/assets/css/singleproduct.css',
-			array(),
-			null
-		);
+	foreach ( $scripts as $handle => $rel_path ) {
+		wp_enqueue_script( $handle, $theme_uri . $rel_path, array(), null, true );
 	}
 }
 add_action( 'wp_enqueue_scripts', 'twentytwentyfive_enqueue_cloned_assets', 20 );
