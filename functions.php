@@ -316,4 +316,42 @@ function twentytwentyfive_start_asset_url_buffer() {
 }
 add_action( 'template_redirect', 'twentytwentyfive_start_asset_url_buffer', 1 );
 
+/**
+ * Standalone Modular Template Loader.
+ * Guarantees that frontpage, product list, single product, about us, faq, contact us, and 404 pages
+ * always load their dedicated modular PHP template files (header.php + body + footer.php) on ANY host.
+ */
+function twentytwentyfive_standalone_modular_template_loader( $template ) {
+	if ( is_admin() ) {
+		return $template;
+	}
+
+	if ( is_front_page() || is_page( 17 ) ) {
+		$file = get_template_directory() . '/front-page.php';
+		if ( file_exists( $file ) ) return $file;
+	} elseif ( is_page( array( 'about-us', 'about', 'company-profile', 18, 19, 20, 21 ) ) ) {
+		$file = get_template_directory() . '/page-about-us.php';
+		if ( file_exists( $file ) ) return $file;
+	} elseif ( is_page( array( 'faq', 27 ) ) ) {
+		$file = get_template_directory() . '/page-faq.php';
+		if ( file_exists( $file ) ) return $file;
+	} elseif ( is_page( array( 'contact-us', 'contact', 29 ) ) ) {
+		$file = get_template_directory() . '/page-contact-us.php';
+		if ( file_exists( $file ) ) return $file;
+	} elseif ( is_page( array( 'led-display-power', 'product-info', 'industrial-control-power', 'led-lighting-power', 'din-rail-power', 22, 23, 24, 25, 26 ) ) ) {
+		$file = get_template_directory() . '/page-product-list.php';
+		if ( file_exists( $file ) ) return $file;
+	} elseif ( is_singular( 'product' ) ) {
+		$file = get_template_directory() . '/single-product.php';
+		if ( file_exists( $file ) ) return $file;
+	} elseif ( is_404() ) {
+		$file = get_template_directory() . '/404.php';
+		if ( file_exists( $file ) ) return $file;
+	}
+
+	return $template;
+}
+add_filter( 'template_include', 'twentytwentyfive_standalone_modular_template_loader', 99 );
+
+
 
