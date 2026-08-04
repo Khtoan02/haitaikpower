@@ -77,8 +77,37 @@ if ( ! empty( $terms ) && ! is_wp_error( $terms ) ) {
     }
 }
 ?>
-<!-- wp:html -->
 <style>
+/* Fix header visibility on single product page (both un-scrolled and scrolled states) */
+#site-header,
+.site-header,
+.e_container-21,
+.e_container-21.fIxBox,
+#c_grid-116273709439191 {
+    background-color: #ffffff !important;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05) !important;
+}
+
+.p_navBox1 .p_navItem1 a span,
+.top_f h2 a,
+.e_navigationF-24 a span,
+.e_container-21 a {
+    color: #222429 !important;
+}
+
+.p_navBox1 .p_navItem1 a:hover span,
+.top_f h2 a:hover {
+    color: #e40011 !important;
+}
+
+/* Ensure dark text logo is displayed on white background */
+.e_image-16 img:first-child {
+    display: none !important;
+}
+.e_image-16 img:last-child {
+    display: inline-block !important;
+}
+
 /* Clean single product page container offset so it never gets overlapped by fixed header */
 .single-product-page-container {
     max-width: 1200px;
