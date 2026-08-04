@@ -3,7 +3,7 @@
  * Title: Cloned Single Product
  * Slug: twentytwentyfive/cloned-single-product
  * Categories: twentytwentyfive_page, featured
- * Description: Dynamic single product detail layout integrated with WooCommerce database images and download files.
+ * Description: Dynamic single product detail layout integrated 100% with WordPress and WooCommerce database.
  */
 
 global $product;
@@ -11,7 +11,7 @@ if ( ! is_a( $product, 'WC_Product' ) ) {
     $product = wc_get_product( get_the_ID() );
 }
 
-// 1. Fetch WooCommerce Product Images dynamically
+// 1. Fetch WooCommerce Product Images dynamically from database
 $product_images = array();
 if ( $product ) {
     $featured_img_id = $product->get_image_id();
@@ -32,17 +32,17 @@ if ( $product ) {
     }
 }
 
-// Fallback gallery images if no custom WooCommerce product images are uploaded yet
-if ( empty( $product_images ) ) {
-    $product_images = array(
-        'https://omo-oss-image.thefastimg.com/portal-saas/pg2024041817493912440/cms/image/ff0a2487-4a70-4f2c-b435-fe25ef47debd.png',
-        'https://omo-oss-image.thefastimg.com/portal-saas/pg2024041817493912440/cms/image/741b2444-2297-40a9-a469-0ca0785637a2.png',
-        'https://omo-oss-image.thefastimg.com/portal-saas/pg2024041817493912440/cms/image/0b5b889f-4af9-4a24-aede-544a68e9b31a.png',
-        'https://omo-oss-image.thefastimg.com/portal-saas/pg2024041817493912440/cms/image/69a20c9d-023e-4da7-9cf3-61cd116fefd1.png'
-    );
+// Fallback to featured post thumbnail if WooCommerce product object is not used
+if ( empty( $product_images ) && has_post_thumbnail() ) {
+    $product_images[] = get_the_post_thumbnail_url( get_the_ID(), 'full' );
 }
 
-// 2. Fetch WooCommerce Product Downloadable Files dynamically
+// Default placeholder image only if no image exists in DB
+if ( empty( $product_images ) ) {
+    $product_images[] = 'https://omo-oss-image.thefastimg.com/portal-saas/pg2024041817493912440/cms/image/ff0a2487-4a70-4f2c-b435-fe25ef47debd.png';
+}
+
+// 2. Fetch WooCommerce Product Downloadable Files dynamically from database
 $product_downloads = array();
 if ( $product ) {
     $wc_downloads = $product->get_downloads();
@@ -65,12 +65,16 @@ if ( $product ) {
     }
 }
 
-// Fallback spec PDF file
-if ( empty( $product_downloads ) ) {
-    $product_downloads[] = array(
-        'name' => get_the_title() . ' 规格书.pdf',
-        'url'  => get_template_directory_uri() . '/assets/upload/specification.pdf',
-    );
+// 3. Fetch Product Category dynamically from database
+$terms = get_the_terms( get_the_ID(), 'product_cat' );
+if ( empty( $terms ) || is_wp_error( $terms ) ) {
+    $terms = get_the_terms( get_the_ID(), 'category' );
+}
+$cat_links = array();
+if ( ! empty( $terms ) && ! is_wp_error( $terms ) ) {
+    foreach ( $terms as $term ) {
+        $cat_links[] = '<a href="' . esc_url( get_term_link( $term ) ) . '" style="color: #e40011; text-decoration: none; font-weight: 500;">' . esc_html( $term->name ) . '</a>';
+    }
 }
 ?>
 <!-- wp:html -->
@@ -168,10 +172,6 @@ if ( empty( $product_downloads ) ) {
     font-size: 14px;
     color: #64748b;
     margin-bottom: 20px;
-}
-.single-product-category-tag span {
-    color: #e40011;
-    font-weight: 500;
 }
 .single-product-action-btns {
     display: flex;
@@ -332,7 +332,7 @@ if ( empty( $product_downloads ) ) {
         <div class="single-product-info-box">
             <h1><?php the_title(); ?></h1>
             <div class="single-product-category-tag">
-                所属分类：<span>均流备份系列</span>
+                所属分类：<span><?php echo ! empty( $cat_links ) ? implode( ', ', $cat_links ) : '全部分类'; ?></span>
             </div>
 
             <div class="single-product-action-btns">
@@ -350,17 +350,15 @@ if ( empty( $product_downloads ) ) {
                 <?php endif; ?>
             </div>
 
-            <div class="single-product-summary-box">
-                <?php if ( has_excerpt() ) : ?>
+            <?php if ( has_excerpt() ) : ?>
+                <div class="single-product-summary-box">
                     <?php echo wp_kses_post( get_the_excerpt() ); ?>
-                <?php else : ?>
-                    <p>高品质低压电路保护与工业电源解决方案，符合国际 IEC/UL 安规标准，具备过载、短路全方位保护功能。</p>
-                <?php endif; ?>
-            </div>
+                </div>
+            <?php endif; ?>
         </div>
     </div>
 
-    <!-- Product Details Section (100% Full Width) -->
+    <!-- Product Details Section (100% Dynamic Database Content) -->
     <div class="single-product-details-section">
         <h2 class="single-product-details-title">产品详情</h2>
 
@@ -368,58 +366,29 @@ if ( empty( $product_downloads ) ) {
         $post_content = get_the_content();
         if ( ! empty( trim( $post_content ) ) ) : 
         ?>
-            <div class="product-description-body" style="font-size: 15px; line-height: 1.8; color: #444; margin-bottom: 30px;">
+            <div class="product-description-body" style="font-size: 15px; line-height: 1.8; color: #334155;">
                 <?php echo apply_filters( 'the_content', $post_content ); ?>
             </div>
         <?php endif; ?>
 
-        <div class="product-spec-container" style="font-family: inherit; color: #333; margin-top: 10px;">
-            <h3 style="font-size: 17px; font-weight: 600; color: #1e293b; margin-bottom: 15px; padding-left: 10px; border-left: 4px solid #e40011;">
-                产品特点 (Product Features)
-            </h3>
-            <ul style="list-style: disc; margin-left: 25px; font-size: 14px; line-height: 1.8; color: #475569; margin-bottom: 25px;">
-                <li>工业级高品质设计，符合国际安规与 EMC 电磁兼容标准。</li>
-                <li>全范围交流输入（90~264VAC / 180~264VAC），具备强适应能力。</li>
-                <li>内置完善的保护电路：短路保护、过载保护、过电压保护、过温度保护。</li>
-                <li>100% 满负载高温老化测试，确保长期稳定运行与超长使用寿命。</li>
-                <li>高效节能，低功耗、低温升，适用于各种苛刻工业环境。</li>
-            </ul>
+        <?php 
+        // Render dynamic WooCommerce attributes from database if configured
+        if ( $product && $product->has_attributes() ) : 
+        ?>
+            <div class="product-wc-attributes" style="margin-top: 25px;">
+                <h3 style="font-size: 17px; font-weight: 600; color: #1e293b; margin-bottom: 15px; padding-left: 10px; border-left: 4px solid #e40011;">
+                    规格参数 (Attributes)
+                </h3>
+                <?php do_action( 'woocommerce_product_additional_information', $product ); ?>
+            </div>
+        <?php endif; ?>
 
-            <h3 style="font-size: 17px; font-weight: 600; color: #1e293b; margin-bottom: 15px; padding-left: 10px; border-left: 4px solid #e40011;">
-                技术参数 (Technical Specifications)
-            </h3>
-            <table style="width: 100%; border-collapse: collapse; margin-bottom: 20px; font-size: 14px; text-align: left; border: 1px solid #e2e8f0;">
-                <tbody>
-                    <tr style="background: #f8fafc; border-bottom: 1px solid #e2e8f0;">
-                        <th style="padding: 12px 15px; font-weight: 600; color: #334155; width: 25%;">产品型号 (Model)</th>
-                        <td style="padding: 12px 15px; color: #0f172a; font-weight: 600;"><?php the_title(); ?></td>
-                    </tr>
-                    <tr style="border-bottom: 1px solid #e2e8f0;">
-                        <th style="padding: 12px 15px; font-weight: 600; color: #334155;">输入电压 (Input Voltage)</th>
-                        <td style="padding: 12px 15px; color: #475569;">100~240VAC / 180~264VAC 50/60Hz</td>
-                    </tr>
-                    <tr style="background: #f8fafc; border-bottom: 1px solid #e2e8f0;">
-                        <th style="padding: 12px 15px; font-weight: 600; color: #334155;">工作温度 (Working Temp.)</th>
-                        <td style="padding: 12px 15px; color: #475569;">-30℃ ~ +70℃ (自然风冷 / 智能风冷)</td>
-                    </tr>
-                    <tr style="border-bottom: 1px solid #e2e8f0;">
-                        <th style="padding: 12px 15px; font-weight: 600; color: #334155;">防护与绝缘 (Protection Class)</th>
-                        <td style="padding: 12px 15px; color: #475569;">Class I，符合 GB4943 / IEC62368 / UL60950 / IEC 60947-2 标准</td>
-                    </tr>
-                    <tr style="background: #f8fafc; border-bottom: 1px solid #e2e8f0;">
-                        <th style="padding: 12px 15px; font-weight: 600; color: #334155;">主要应用 (Applications)</th>
-                        <td style="padding: 12px 15px; color: #475569;">LED显示屏、工业自动化控制、通讯设备、商业建筑、电力系统保护</td>
-                    </tr>
-                    <tr style="border-bottom: 1px solid #e2e8f0;">
-                        <th style="padding: 12px 15px; font-weight: 600; color: #334155;">品质保障 (Warranty)</th>
-                        <td style="padding: 12px 15px; color: #475569;">原装正品，符合 CE / UL / ROHS 认证，提供 36 个月原厂质保</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
+        <?php if ( empty( trim( $post_content ) ) && ( ! $product || ! $product->has_attributes() ) ) : ?>
+            <p style="color: #94a3b8; font-size: 14px; margin: 10px 0;">暂无详细描述信息。</p>
+        <?php endif; ?>
     </div>
 
-    <!-- Sample Application Form (100% Clean Form Layout) -->
+    <!-- Sample Application Form (Clean Form Layout) -->
     <div class="single-product-form-section" id="sampleForm">
         <h2 class="single-product-form-title">样品申请</h2>
         <form name="sample_application_form" action="" method="post" onsubmit="alert('提交成功！我们将尽快与您联系。'); return false;">
