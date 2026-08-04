@@ -74,6 +74,53 @@ if ( empty( $product_downloads ) ) {
 }
 ?>
 <!-- wp:html -->
+<style>
+#magnifierWrapper .images-cover {
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    background: #ffffff;
+    min-height: 380px;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    overflow: hidden;
+    padding: 15px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+#magnifierWrapper .images-cover .image-item {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+#magnifierWrapper .images-cover .image-item img {
+    max-width: 100% !important;
+    max-height: 360px !important;
+    width: auto !important;
+    height: auto !important;
+    object-fit: contain !important;
+    filter: none !important;
+    opacity: 1 !important;
+    image-rendering: -webkit-optimize-contrast;
+}
+#magnifierWrapper .thumbnail_box li {
+    border: 1px solid #e2e8f0;
+    border-radius: 4px;
+    padding: 3px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    background: #fff;
+}
+#magnifierWrapper .thumbnail_box li.active {
+    border-color: #e40011 !important;
+    box-shadow: 0 0 0 1px #e40011;
+}
+#magnifierWrapper .thumbnail_box li img {
+    max-width: 100%;
+    max-height: 50px;
+    object-fit: contain;
+}
+</style>
 <div id="c_banner_008_P_312-17162638816070">
 
  <input type="hidden" name="propJson" value='{}'/></div><div id="c_static_001_P_24351-17162640648450">
@@ -87,12 +134,12 @@ if ( empty( $product_downloads ) ) {
                         <path d="M44.799492 528.986943a42.836848 42.836848 0 0 1-31.231646-13.567846 42.725916 42.725916 0 0 1 2.133309-60.329983L491.685094 11.446142a42.68325 42.68325 0 0 1 58.538003 0.34133l465.658723 443.642972c17.066473 16.21315 17.749132 43.26351 1.45065 60.329983s-43.26351 17.749132-60.329983 1.45065L520.442102 101.301124 73.897829 517.552406c-8.27724 7.679913-18.687788 11.434537-29.098337 11.434537z"></path>
                     </svg>
                 </span>
-                Home
+                首页
             </a>
         </li>
         <li style="color: #ccc;">/</li>
         <li class="p_breadcrumbItem">
-            <a href="/led-display-power/" style="color: #666; text-decoration: none;">Products</a>
+            <a href="/led-display-power/" style="color: #666; text-decoration: none;">产品中心</a>
         </li>
         <li style="color: #ccc;">/</li>
         <li class="p_breadcrumbItem" style="color: #333; font-weight: 500;">
@@ -207,8 +254,12 @@ if ( empty( $product_downloads ) ) {
             <?php endforeach; ?>
         <?php endif; ?>
     </div>
-</div><hr class="e_line-26 s_line" /><div class="e_richText-39 s_summary clearfix">
-    <?php the_content(); ?>
+</div><hr class="e_line-26 s_line" /><div class="e_richText-39 s_summary clearfix" style="font-size: 14px; color: #666; line-height: 1.6; margin-top: 15px;">
+    <?php if ( has_excerpt() ) : ?>
+        <?php echo esc_html( get_the_excerpt() ); ?>
+    <?php else : ?>
+        <p>高品质低压电路保护与工业电源解决方案，符合国际 IEC/UL 安规标准，具备过载、短路全方位保护功能。</p>
+    <?php endif; ?>
 </div></div>
 </div></div>
     <div class="cbox-14-0 p_item"><div class="e_container-15 s_layout">
@@ -218,7 +269,59 @@ if ( empty( $product_downloads ) ) {
 </p></div>
 </div><hr class="e_line-19 s_line" /><div class="e_container-27 s_layout">
     <div class="cbox-27-0 p_item"><div class="e_richText-20 s_title clearfix">
-    
+        <?php 
+        $post_content = get_the_content();
+        if ( ! empty( trim( $post_content ) ) ) : 
+        ?>
+            <div class="product-description-body" style="font-size: 15px; line-height: 1.8; color: #444; margin-bottom: 30px;">
+                <?php echo apply_filters( 'the_content', $post_content ); ?>
+            </div>
+        <?php endif; ?>
+
+        <div class="product-spec-container" style="font-family: inherit; color: #333; margin-top: 20px;">
+            <h3 style="font-size: 18px; font-weight: 600; color: #222; margin-bottom: 15px; padding-left: 10px; border-left: 4px solid #e40011;">
+                产品特点 (Product Features)
+            </h3>
+            <ul style="list-style: disc; margin-left: 25px; font-size: 14px; line-height: 1.8; color: #555; margin-bottom: 25px;">
+                <li>工业级高品质设计，符合国际安规与 EMC 电磁兼容标准。</li>
+                <li>全范围交流输入（90~264VAC / 180~264VAC），具备强适应能力。</li>
+                <li>内置完善的保护电路：短路保护、过载保护、过电压保护、过温度保护。</li>
+                <li>100% 满负载高温老化测试，确保长期稳定运行与超长使用寿命。</li>
+                <li>高效节能，低功耗、低温升，适用于各种苛刻工业环境。</li>
+            </ul>
+
+            <h3 style="font-size: 18px; font-weight: 600; color: #222; margin-bottom: 15px; padding-left: 10px; border-left: 4px solid #e40011;">
+                技术参数 (Technical Specifications)
+            </h3>
+            <table style="width: 100%; border-collapse: collapse; margin-bottom: 30px; font-size: 14px; text-align: left;">
+                <tbody>
+                    <tr style="background: #f8fafc; border-bottom: 1px solid #e2e8f0;">
+                        <th style="padding: 12px 15px; font-weight: 600; color: #334155; width: 25%;">产品型号 (Model)</th>
+                        <td style="padding: 12px 15px; color: #475569; font-weight: 600;"><?php the_title(); ?></td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid #e2e8f0;">
+                        <th style="padding: 12px 15px; font-weight: 600; color: #334155;">输入电压 (Input Voltage)</th>
+                        <td style="padding: 12px 15px; color: #475569;">100~240VAC / 180~264VAC 50/60Hz</td>
+                    </tr>
+                    <tr style="background: #f8fafc; border-bottom: 1px solid #e2e8f0;">
+                        <th style="padding: 12px 15px; font-weight: 600; color: #334155;">工作温度 (Working Temp.)</th>
+                        <td style="padding: 12px 15px; color: #475569;">-30℃ ~ +70℃ (自然风冷 / 智能风冷)</td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid #e2e8f0;">
+                        <th style="padding: 12px 15px; font-weight: 600; color: #334155;">防护与绝缘 (Protection Class)</th>
+                        <td style="padding: 12px 15px; color: #475569;">Class I，符合 GB4943 / IEC62368 / UL60950 / IEC 60947-2 标准</td>
+                    </tr>
+                    <tr style="background: #f8fafc; border-bottom: 1px solid #e2e8f0;">
+                        <th style="padding: 12px 15px; font-weight: 600; color: #334155;">主要应用 (Applications)</th>
+                        <td style="padding: 12px 15px; color: #475569;">LED显示屏、工业自动化控制、通讯设备、商业建筑、电力系统保护</td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid #e2e8f0;">
+                        <th style="padding: 12px 15px; font-weight: 600; color: #334155;">品质保障 (Warranty)</th>
+                        <td style="padding: 12px 15px; color: #475569;">原装正品，符合 CE / UL / ROHS 认证，提供 36 个月原厂质保</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
 </div></div>
 </div></div>
 </div></div>
