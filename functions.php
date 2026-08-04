@@ -544,6 +544,25 @@ function haitaik_import_csv_articles() {
 	);
 
 	$imported_count = 0;
+	// Clean up any old English/dummy posts on the host to ensure all 17 Chinese articles load fresh
+	$old_posts = get_posts( array(
+		'post_type'   => 'post',
+		'numberposts' => -1,
+		'post_status' => 'any',
+	) );
+	foreach ( $old_posts as $old_p ) {
+		$is_valid = false;
+		foreach ( $articles as $art ) {
+			if ( $art['title'] === $old_p->post_title ) {
+				$is_valid = true;
+				break;
+			}
+		}
+		if ( ! $is_valid ) {
+			wp_delete_post( $old_p->ID, true );
+		}
+	}
+
 	foreach ( $articles as $art ) {
 		$existing = get_page_by_title( $art['title'], OBJECT, 'post' );
 		$full_content = '<p style="text-align:center; margin-bottom:25px;"><img src="' . esc_url( $art['image'] ) . '" alt="' . esc_attr( $art['title'] ) . '" style="max-width:100%; height:auto; border-radius:8px; box-shadow: 0 4px 12px rgba(0,0,0,0.08);" /></p>' . $art['content'];
@@ -553,6 +572,7 @@ function haitaik_import_csv_articles() {
 				'ID'           => $existing->ID,
 				'post_title'   => $art['title'],
 				'post_content' => $full_content,
+				'post_status'  => 'publish',
 				'post_date'    => $art['date'],
 			) );
 			$imported_count++;
