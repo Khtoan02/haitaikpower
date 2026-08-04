@@ -7,31 +7,63 @@
  */
 ?>
 <!-- wp:html -->
-<div id="c_banner_008_P_312-17181045197820">
-<div class="e_bannerA-2 s_banner" needjs="true">
-    <div class="swiper-container" >
-        <div class="swiper-wrapper p_swiperContainer">
-            <div class="swiper-slide p_slide">
-                    <div class="p_img">
-                        <a href="javascript:;" >
-                            <img src="https://omo-oss-image.thefastimg.com/portal-saas/pg2024041817493912440/cms/image/e595d156-beac-40d0-8552-7712b5958a9e.jpg" alt="联系我们" title="联系我们" la="la"/>
-                        </a>
-                    </div>
-                <div class="p_info ">
-                    <div>
-                        <h3 class="text-white p_btitle">
-                            <a href="javascript:;" >
-                            联系我们
-                            </a>
-                        </h3>
-                        <h6 class="text-white p_subtitle">联系我们</h6>
-                    </div>
-                </div>
-            </div>
-        </div>
+<!-- Full-Bleed Contact Hero Banner -->
+<style>
+.contact-hero-banner {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    height: 380px;
+    overflow: hidden;
+    background-color: #0f172a;
+    margin-top: 100px;
+}
+.contact-hero-banner img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    display: block !important;
+}
+.contact-hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(15, 23, 42, 0.7) 0%, rgba(15, 23, 42, 0.3) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    color: #ffffff;
+    padding: 0 20px;
+}
+.contact-hero-title {
+    font-size: 38px;
+    font-weight: 800;
+    margin-bottom: 8px;
+    color: #ffffff;
+    letter-spacing: 1px;
+}
+.contact-hero-subtitle {
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.85);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+</style>
+
+<div class="contact-hero-banner">
+    <img src="https://omo-oss-image.thefastimg.com/portal-saas/pg2024041817493912440/cms/image/e595d156-beac-40d0-8552-7712b5958a9e.jpg" alt="联系我们 - 创联电源" />
+    <div class="contact-hero-overlay">
+        <h1 class="contact-hero-title">联系我们</h1>
+        <span class="contact-hero-subtitle">CONTACT US · CHUANGLIAN POWER SUPPLY</span>
     </div>
-</div>
- <input type="hidden" name="propJson" value='{&quot;settings_2&quot;:{&quot;videoLoop&quot;:false,&quot;videoControlor&quot;:false,&quot;navigation&quot;:false,&quot;pagination&quot;:false,&quot;effect&quot;:&quot;fade&quot;,&quot;showText&quot;:false,&quot;videoAutoplay&quot;:false,&quot;videoMouted&quot;:true,&quot;deplay&quot;:4,&quot;autoplay&quot;:true,&quot;speed&quot;:0,&quot;direction&quot;:&quot;horizontal&quot;}}'/></div><div id="c_grid-1672044068106">    <div class="p_gridbox e_comp signal ">
+</div><div id="c_grid-1672044068106">    <div class="p_gridbox e_comp signal ">
             <div id="content_box-1672044068106-0" class="d_gridCell_0 p_gridCell"><div id="c_grid-1672045919880">    <div class="p_gridbox e_comp signal ">
             <div id="content_box-1672045919880-0" class="d_gridCell_0 p_gridCell"><div id="c_static_001_P_24351-17093596786650">
 <div class="e_container-1 s_layout">
@@ -102,7 +134,11 @@
     <div class="cbox-24-0 p_item"><p class="e_text-26 s_title">
         联系方式
 </p></div>
-</div><hr class="e_line-19 s_line" /><p class="e_text-2 s_title">
+</div><hr class="e_line-19 s_line" />
+<div class="contact-company-visual" style="margin: 20px 0 30px 0; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 16px rgba(0,0,0,0.08);">
+    <img src="https://omo-oss-image.thefastimg.com/portal-saas/pg2024041817493912440/cms/image/62ee9a04-a4d9-4426-ae59-02ceea83d2f3.png" alt="常州创联电源科技股份有限公司总部" style="width: 100%; height: auto; max-height: 400px; object-fit: cover; display: block; border-radius: 8px;" />
+</div>
+<p class="e_text-2 s_title">
         常州创联电源科技股份有限公司
 </p><div class="e_richText-21 s_title clearfix">
 <svg t="1718105143315" class="icon" viewBox="0 0 1025 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="4029" width="200" height="200"><path d="M1.984 145.488s-44.976 228.992 293.6 567.568c2.464 2.448 4.832 4.672 7.264 7.088 2.432 2.432 4.656 4.816 7.104 7.28 338.576 338.576 567.568 293.6 567.568 293.6 14.016-1.872 43.472-10.272 53.44-20.272 0 0 52.096-42.816 84.016-95.568 31.936-52.736-28.416-132.304-63.136-167.008-70.048-70.048-134.464-83.712-162.832-64.24-12.752 8.752-63.424 63.36-63.424 63.36-9.984 10-29.744 18.304-43.872 18.48 0 0-88.544 0.896-253.248-161.248C266.32 429.84 267.2 341.296 267.2 341.296c0.192-14.112 8.48-33.888 18.48-43.872 0 0 62.816-62.768 63.36-63.424 23.824-29.824-15.632-103.968-64.24-162.832-31.248-37.84-56.56-59.984-103.904-69.008C117.712-9.872 4.24 74.288 1.984 145.488z" p-id="4030"></path></svg>  <p><a href="tel:400-111-2099" rel="nofollow">服务热线：400-111-2099</a></p>
