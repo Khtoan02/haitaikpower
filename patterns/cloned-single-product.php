@@ -112,7 +112,7 @@ if ( empty( $product_downloads ) ) {
             <div class="images-cover">
                 <?php foreach ( $product_images as $img_url ) : ?>
                     <div class="image-item static-item">
-                        <img src="/npublic/img/s.png" lazy="<?php echo esc_url( $img_url ); ?>" alt="<?php the_title_attribute(); ?>" title="<?php the_title_attribute(); ?>" la="la"/>
+                        <img src="<?php echo esc_url( $img_url ); ?>" lazy="<?php echo esc_url( $img_url ); ?>" alt="<?php the_title_attribute(); ?>" title="<?php the_title_attribute(); ?>" la="la"/>
                     </div>
                 <?php endforeach; ?>
             </div>
@@ -135,7 +135,7 @@ if ( empty( $product_downloads ) ) {
                     <?php foreach ( $product_images as $img_url ) : ?>
                         <li class="static-img">
                             <div class="small-img" data-url="<?php echo esc_attr( $img_url ); ?>">
-                                <img src="/npublic/img/s.png" lazy="<?php echo esc_url( $img_url ); ?>" alt="<?php the_title_attribute(); ?>" title="<?php the_title_attribute(); ?>" la="la"/>
+                                <img src="<?php echo esc_url( $img_url ); ?>" lazy="<?php echo esc_url( $img_url ); ?>" alt="<?php the_title_attribute(); ?>" title="<?php the_title_attribute(); ?>" la="la"/>
                             </div>
                         </li>
                     <?php endforeach; ?>

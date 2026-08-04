@@ -280,6 +280,21 @@ function twentytwentyfive_rewrite_asset_urls( $content ) {
 	}
 	$theme_asset_url = get_template_directory_uri() . '/assets/';
 
+	// 1. Automatically resolve s.png 1x1 transparent placeholders to their real lazy image URLs
+	$content = preg_replace_callback(
+		'/<img\s+([^>]*?)>/i',
+		function( $matches ) {
+			$img_tag = $matches[0];
+			if ( preg_match( '/lazy=["\']([^"\']+)["\']/i', $img_tag, $lazy_match ) && preg_match( '/src=["\'][^"\']*s\.png["\']/i', $img_tag ) ) {
+				$real_url = $lazy_match[1];
+				$img_tag  = preg_replace( '/src=["\'][^"\']*s\.png["\']/i', 'src="' . esc_url( $real_url ) . '"', $img_tag );
+			}
+			return $img_tag;
+		},
+		$content
+	);
+
+	// 2. Rewrite root asset URLs to theme assets directory
 	$patterns = array(
 		'/(src|href|lazy|data-src|poster)=(["\'])\/(npublic|upload|css|thirdcode|_external|nportal|ndesigner)\//i',
 		'/url\((["\']?)\/(npublic|upload|css|thirdcode|_external|nportal|ndesigner)\//i',
