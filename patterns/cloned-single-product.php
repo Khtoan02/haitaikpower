@@ -110,8 +110,8 @@ if ( empty( $product_downloads ) ) {
         <div class="magnifier-container">
             <!--图片容器-->
             <div class="images-cover">
-                <?php foreach ( $product_images as $img_url ) : ?>
-                    <div class="image-item static-item">
+                <?php foreach ( $product_images as $index => $img_url ) : ?>
+                    <div class="image-item static-item<?php echo $index === 0 ? ' active' : ''; ?>" style="<?php echo $index === 0 ? 'display: flex;' : ''; ?>">
                         <img src="<?php echo esc_url( $img_url ); ?>" lazy="<?php echo esc_url( $img_url ); ?>" alt="<?php the_title_attribute(); ?>" title="<?php the_title_attribute(); ?>" la="la"/>
                     </div>
                 <?php endforeach; ?>
@@ -132,8 +132,8 @@ if ( empty( $product_downloads ) ) {
             <!--缩略图-->
             <div class="magnifier-line js-magnifier-line">
                 <ul class="clearfix animation03 thumbnail_box">
-                    <?php foreach ( $product_images as $img_url ) : ?>
-                        <li class="static-img">
+                    <?php foreach ( $product_images as $index => $img_url ) : ?>
+                        <li class="static-img<?php echo $index === 0 ? ' active' : ''; ?>">
                             <div class="small-img" data-url="<?php echo esc_attr( $img_url ); ?>">
                                 <img src="<?php echo esc_url( $img_url ); ?>" lazy="<?php echo esc_url( $img_url ); ?>" alt="<?php the_title_attribute(); ?>" title="<?php the_title_attribute(); ?>" la="la"/>
                             </div>
@@ -145,6 +145,36 @@ if ( empty( $product_downloads ) ) {
         <!--经过放大的图片显示容器-->
         <div class="magnifier-view"></div>
     </div>
+    <script>
+    (function() {
+        var initGallery = function() {
+            var wrapper = document.getElementById('magnifierWrapper');
+            if (!wrapper) return;
+            var thumbnails = wrapper.querySelectorAll('.thumbnail_box li');
+            var items = wrapper.querySelectorAll('.images-cover .image-item');
+            
+            thumbnails.forEach(function(thumb, idx) {
+                thumb.addEventListener('click', function() {
+                    thumbnails.forEach(function(t) { t.classList.remove('active'); });
+                    items.forEach(function(item) { 
+                        item.classList.remove('active');
+                        item.style.display = 'none';
+                    });
+                    thumb.classList.add('active');
+                    if (items[idx]) {
+                        items[idx].classList.add('active');
+                        items[idx].style.display = 'flex';
+                    }
+                });
+            });
+        };
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', initGallery);
+        } else {
+            initGallery();
+        }
+    })();
+    </script>
 </div></div>
     <div class="cbox-1-1 p_item"><div class="e_container-3 s_layout">
     <div class="cbox-3-0 p_item"><div class="e_container-51 s_layout">
