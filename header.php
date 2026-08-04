@@ -8,7 +8,40 @@
 <head>
     <meta charset="<?php bloginfo( 'charset' ); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <?php wp_head(); ?>
+    <?php if ( ! is_front_page() ) : ?>
+    <style>
+    /* Universal Header Styles for non-homepage white background pages */
+    #site-header,
+    .site-header,
+    .e_container-21,
+    .e_container-21.fIxBox,
+    #c_grid-116273709439191 {
+        background-color: #ffffff !important;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05) !important;
+    }
+    .p_navBox1 .p_navItem1 a span,
+    .p_navBox1 .p_navItem1 a,
+    .top_f h2 a,
+    .e_navigationF-24 a span,
+    .e_navigationF-24 a,
+    .e_container-21 a,
+    .e_container-21 span {
+        color: #222429 !important;
+    }
+    .p_navBox1 .p_navItem1 a:hover span,
+    .top_f h2 a:hover {
+        color: #e40011 !important;
+    }
+    .e_image-16 img:first-child {
+        display: none !important;
+    }
+    .e_image-16 img:last-child {
+        display: inline-block !important;
+        max-height: 48px !important;
+        width: auto !important;
+    }
+    </style>
+    <?php endif; ?>
 </head>
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>

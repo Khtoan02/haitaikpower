@@ -7,31 +7,63 @@
  */
 ?>
 <!-- wp:html -->
-<div id="c_banner_008_P_312-17181079878790">
-<div class="e_bannerA-2 s_banner" needjs="true">
-    <div class="swiper-container" >
-        <div class="swiper-wrapper p_swiperContainer">
-            <div class="swiper-slide p_slide">
-                    <div class="p_img">
-                        <a href="javascript:;" >
-                            <img src="https://omo-oss-image.thefastimg.com/portal-saas/pg2024041817493912440/cms/image/a74a667c-14fe-4c41-aa48-07c3c203cbb6.jpg" alt="关于我们" title="关于我们" la="la"/>
-                        </a>
-                    </div>
-                <div class="p_info ">
-                    <div>
-                        <h3 class="text-white p_btitle">
-                            <a href="javascript:;" >
-                            关于我们
-                            </a>
-                        </h3>
-                        <h6 class="text-white p_subtitle">关于我们</h6>
-                    </div>
-                </div>
-            </div>
-        </div>
+<!-- Full-Bleed About Hero Banner -->
+<style>
+.about-hero-banner {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    height: 380px;
+    overflow: hidden;
+    background-color: #0f172a;
+    margin-top: 100px;
+}
+.about-hero-banner img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    display: block !important;
+}
+.about-hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(15, 23, 42, 0.7) 0%, rgba(15, 23, 42, 0.3) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    color: #ffffff;
+    padding: 0 20px;
+}
+.about-hero-title {
+    font-size: 38px;
+    font-weight: 800;
+    margin-bottom: 8px;
+    color: #ffffff;
+    letter-spacing: 1px;
+}
+.about-hero-subtitle {
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.85);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+</style>
+
+<div class="about-hero-banner">
+    <img src="https://omo-oss-image.thefastimg.com/portal-saas/pg2024041817493912440/cms/image/a74a667c-14fe-4c41-aa48-07c3c203cbb6.jpg" alt="关于我们 - 创联电源" />
+    <div class="about-hero-overlay">
+        <h1 class="about-hero-title">关于我们</h1>
+        <span class="about-hero-subtitle">ABOUT US · CHUANGLIAN POWER SUPPLY</span>
     </div>
-</div>
- <input type="hidden" name="propJson" value='{&quot;settings_2&quot;:{&quot;videoLoop&quot;:false,&quot;videoControlor&quot;:false,&quot;navigation&quot;:false,&quot;pagination&quot;:false,&quot;effect&quot;:&quot;fade&quot;,&quot;showText&quot;:false,&quot;videoAutoplay&quot;:false,&quot;videoMouted&quot;:true,&quot;deplay&quot;:4,&quot;autoplay&quot;:true,&quot;speed&quot;:0,&quot;direction&quot;:&quot;horizontal&quot;}}'/></div><div id="c_static_001_P_24351-17201469113780">
+</div><div id="c_static_001_P_24351-17201469113780">
 <div class="e_container-1 s_layout">
     <div class="cbox-1-0 p_item"><div class="e_loop-3 s_list" needjs="true">
     <div class="p_list">
