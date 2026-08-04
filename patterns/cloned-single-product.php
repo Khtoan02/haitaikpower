@@ -75,31 +75,11 @@ if ( empty( $product_downloads ) ) {
 ?>
 <!-- wp:html -->
 <style>
-/* Fix header background and overlap on Single Product page */
-#site-header,
-.site-header,
-.e_container-21.s_layout,
-.e_container-21.fIxBox,
-#c_grid-116273709439191 {
-    background-color: #192028 !important;
-}
-
-.site-header a,
-.site-header span,
-.site-header h2 a,
-.p_navBox1 .p_navItem1 a span,
-.e_navigationF-24 a span {
-    color: #ffffff !important;
-}
-
-.site-header svg path {
-    fill: #ffffff !important;
-}
-
+/* Clean single product page container offset so it never gets overlapped by fixed header */
 .single-product-page-container {
     max-width: 1200px;
-    margin: 140px auto 40px auto !important;
-    padding: 20px;
+    margin: 0 auto 40px auto;
+    padding: 130px 20px 20px 20px;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     color: #333;
 }
