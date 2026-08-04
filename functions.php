@@ -341,25 +341,61 @@ function twentytwentyfive_standalone_modular_template_loader( $template ) {
 		return $template;
 	}
 
-	if ( is_front_page() || is_page( 17 ) ) {
+	global $post;
+
+	// 1. Force strict template routing by Page Slug
+	if ( is_page() && ! empty( $post->post_name ) ) {
+		$slug = strtolower( trim( $post->post_name ) );
+
+		if ( in_array( $slug, array( 'about-us', 'about', 'company-profile', 'gioi-thieu' ), true ) ) {
+			$file = get_template_directory() . '/page-about-us.php';
+			if ( file_exists( $file ) ) return $file;
+		}
+
+		if ( in_array( $slug, array( 'led-display-power', 'products', 'product', 'product-info', 'industrial-control-power', 'led-lighting-power', 'din-rail-power', 'san-pham' ), true ) ) {
+			$file = get_template_directory() . '/page-product-list.php';
+			if ( file_exists( $file ) ) return $file;
+		}
+
+		if ( in_array( $slug, array( 'faq', 'f-a-q', 'hoi-dap' ), true ) ) {
+			$file = get_template_directory() . '/page-faq.php';
+			if ( file_exists( $file ) ) return $file;
+		}
+
+		if ( in_array( $slug, array( 'contact-us', 'contact', 'contacts', 'lien-he' ), true ) ) {
+			$file = get_template_directory() . '/page-contact-us.php';
+			if ( file_exists( $file ) ) return $file;
+		}
+
+		if ( in_array( $slug, array( 'news', 'post', 'posts', 'tin-tuc' ), true ) ) {
+			$file = get_template_directory() . '/home.php';
+			if ( file_exists( $file ) ) return $file;
+		}
+	}
+
+	// 2. Standard WordPress Conditional Tag fallbacks
+	if ( is_front_page() ) {
 		$file = get_template_directory() . '/front-page.php';
 		if ( file_exists( $file ) ) return $file;
-	} elseif ( is_page( array( 'about-us', 'about', 'company-profile', 18, 19, 20, 21 ) ) ) {
+	} elseif ( is_page( array( 'about-us', 'about', 'company-profile' ) ) ) {
 		$file = get_template_directory() . '/page-about-us.php';
 		if ( file_exists( $file ) ) return $file;
-	} elseif ( is_page( array( 'faq', 27 ) ) ) {
+	} elseif ( is_page( array( 'led-display-power', 'products', 'product', 'product-info', 'industrial-control-power', 'led-lighting-power', 'din-rail-power' ) ) ) {
+		$file = get_template_directory() . '/page-product-list.php';
+		if ( file_exists( $file ) ) return $file;
+	} elseif ( is_page( array( 'faq' ) ) ) {
 		$file = get_template_directory() . '/page-faq.php';
 		if ( file_exists( $file ) ) return $file;
-	} elseif ( is_page( array( 'contact-us', 'contact', 29 ) ) ) {
+	} elseif ( is_page( array( 'contact-us', 'contact', 'contacts' ) ) ) {
 		$file = get_template_directory() . '/page-contact-us.php';
-		if ( file_exists( $file ) ) return $file;
-	} elseif ( is_page( array( 'led-display-power', 'product-info', 'industrial-control-power', 'led-lighting-power', 'din-rail-power', 22, 23, 24, 25, 26 ) ) ) {
-		$file = get_template_directory() . '/page-product-list.php';
 		if ( file_exists( $file ) ) return $file;
 	} elseif ( is_home() || is_page( array( 'news', 'post', 'posts' ) ) ) {
 		$file = get_template_directory() . '/home.php';
 		if ( file_exists( $file ) ) return $file;
-	} elseif ( is_single() && ! is_singular( 'product' ) ) {
+	} elseif ( is_singular( 'product' ) ) {
+		$file = get_template_directory() . '/single-product.php';
+		if ( file_exists( $file ) ) return $file;
+	} elseif ( is_single() ) {
 		$file = get_template_directory() . '/single.php';
 		if ( file_exists( $file ) ) return $file;
 	} elseif ( is_404() ) {
@@ -431,6 +467,21 @@ function twentytwentyfive_auto_setup_pages() {
 
 		if ( $page_id && ! empty( $data['page_template'] ) ) {
 			update_post_meta( $page_id, '_wp_page_template', $data['page_template'] );
+		}
+	}
+
+	// Auto-correct template metadata for any existing pages matching core slugs
+	$all_pages = get_posts( array( 'post_type' => 'page', 'posts_per_page' => -1 ) );
+	foreach ( $all_pages as $p ) {
+		$s = strtolower( trim( $p->post_name ) );
+		if ( in_array( $s, array( 'about-us', 'about', 'company-profile', 'gioi-thieu' ), true ) ) {
+			update_post_meta( $p->ID, '_wp_page_template', 'page-about-us.php' );
+		} elseif ( in_array( $s, array( 'led-display-power', 'products', 'product', 'product-info', 'industrial-control-power', 'led-lighting-power', 'din-rail-power', 'san-pham' ), true ) ) {
+			update_post_meta( $p->ID, '_wp_page_template', 'page-product-list.php' );
+		} elseif ( in_array( $s, array( 'faq', 'f-a-q', 'hoi-dap' ), true ) ) {
+			update_post_meta( $p->ID, '_wp_page_template', 'page-faq.php' );
+		} elseif ( in_array( $s, array( 'contact-us', 'contact', 'contacts', 'lien-he' ), true ) ) {
+			update_post_meta( $p->ID, '_wp_page_template', 'page-contact-us.php' );
 		}
 	}
 
