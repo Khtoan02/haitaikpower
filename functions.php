@@ -173,6 +173,12 @@ function twentytwentyfive_enqueue_cloned_assets() {
 		null
 	);
 	wp_enqueue_style(
+		'haitaik-home-main',
+		$theme_uri . '/assets/css/Home_7b9a32a9a2a77e5f5e09085c43c3ae42.min.css',
+		array(),
+		null
+	);
+	wp_enqueue_style(
 		'haitaik-site',
 		$theme_uri . '/assets/css/site.css',
 		array(),
