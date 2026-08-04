@@ -1,0 +1,3335 @@
+:root{
+    --smt-color:#0ed6b2;
+    --smt-success:#42CA6F;
+    --smt-warning:#FF7428;
+    --snt-error:#E84444;
+}
+.smartIcon{
+    display: inline-block;
+    position: fixed;
+    left: auto;
+    top: auto;
+    right: 25px;
+    bottom: 25px;
+    z-index: 999;
+    width: 70px;
+    height: 70px;
+    padding: 3px;
+    border: 5px solid #fff;
+    border-radius: 50%;
+    background: #fff;
+    color: var(--smt-color);
+    box-shadow: 0 0 15px 8px rgba(0,0,0,0.1);
+}
+.smartIcon.leftIcon{
+    left:25px;
+    right: auto;
+}
+.smartIcon .icon{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+.smartIcon:hover{
+    background-color: var(--smt-color);
+    color: #fff;
+}
+.smtIconPrompt{
+    display: inline-block;
+    position: fixed;
+    left: auto;
+    top: auto;
+    right: 110px;
+    bottom: 15px;
+    z-index: 99999;
+    max-width: 300px;
+    transform: translateY(calc((100% - 80px) / 2));
+    background: #fff;
+    color: #333;
+    padding: 16px;
+    border-radius: 4px;
+    box-shadow: 0 0 15px 8px rgba(0, 0, 0, 0.1);
+}
+.smtIconPrompt::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 100%;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent transparent #fff;
+}
+.smtIconPrompt.leftPrompt{
+    left: 110px;
+    right:auto;
+}
+.smtIconPrompt.leftPrompt::after {
+    left: auto;
+    right: 100%;
+    border-color: transparent #fff transparent transparent ;
+}
+
+.smartService{
+    position: fixed;
+    left: auto;
+    right: 48px;
+    bottom: -100%;
+    z-index: 999999;
+    width: 360px;
+    overflow: hidden;
+    background: var(--smt-color);
+    border-radius: 30px 30px 0 0;
+    box-shadow: 0 0 8px 4px rgba(0,0,0,0.1);
+    transition: bottom 0.2s;
+}
+.smartService.near{
+    left: auto;
+    right: 48px;
+}
+.smartService.leftWindow{
+    left:48px;
+    right: auto;
+}
+.smartService.leftWindow.near{
+    left: 48px;
+    right: auto;
+}
+.smartService.show{
+    bottom:0;
+}
+.smartService .icon{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+.sm_title{
+    padding-top: 15px;
+    position: relative;
+    overflow: hidden;
+}
+.sm_close{
+    position: absolute;
+    right: 15px;
+    top: 18px;
+    /* width: 14px; */
+    height: 14px;
+    color: #fff;
+    z-index: 99;
+}
+
+.sm_mark{
+    width: 360px;
+    height: 360px;
+    position: absolute;
+    left: -100px;
+    top: -140px;
+    opacity: 0.2;
+    color: #fff;
+}
+.sm_admin{
+    text-align: center;
+}
+.sm_admin img{
+    width: 68px;
+    height: 68px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+.sm_admin p{
+    padding: 10px;
+    color: #fff;
+    line-height: 20px;
+    height: 40px;
+    overflow:hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 18px;
+    font-weight: bold;
+}
+.sm_dialog{
+    background: #f1f1f6;
+    border-radius: 30px 30px 0 0;
+    overflow: hidden;
+    position: relative;
+}
+.sm_dialog .errorCon{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 20%;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+}
+.sm_dialog .errorToast{
+    max-width: 80%;
+    width: fit-content;
+    padding: 5px 12px;
+    line-height: 26px;
+    border:1px solid #ccc;
+    border-radius: 6px;
+    background: #fff;
+    color: #333;
+    font-size: 12px;
+    word-break: break-word;
+}
+.sm_dialog .errorToast .icon{
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    margin-top: -3px;
+}
+.sm_dialog .errorToast.success{
+    border-color: var(--smt-success);
+    background: #F2FBF5;
+}
+.sm_dialog .errorToast.success .icon{
+    color: var(--smt-success);
+}
+.sm_dialog .errorToast.error{
+    border-color: var(--snt-error);
+    background: #FBF2F2;
+}
+.sm_dialog .errorToast.error .icon{
+    color: var(--snt-error);
+}
+.sm_dialog .errorToast.warning{
+    border-color: var(--smt-warning);
+    background: #FFEEE5;
+}
+.sm_dialog .errorToast.warning .icon{
+    color: var(--smt-warning);
+}
+.sm_output{
+    padding: 30px;
+    border-radius: 30px;
+    background: #fff;
+    height: 354px;
+    overflow: auto;
+    max-height: calc(100vh - 295px);
+    scrollbar-width: none;
+    font-size: 12px;
+    overscroll-behavior: contain; 
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+.sm_output .prompt{
+    text-align: center;
+    color: #aaa;
+    margin:20px 0;
+    width: 100%;
+    float: left;
+}
+
+.sm_msg{
+    width: 100%;
+    overflow: hidden;
+}
+.sm_msg+.sm_msg{
+    margin-top: 20px;
+}
+.sm_msg .msgtitle{
+    color: #999;
+    margin-bottom: 5px;
+}
+.sm_msg .msgtitle .name{
+    margin-right: 5px;
+}
+.sm_msg .msgcon{
+    max-width: calc(100% - 10px);
+    background: #F5F5F7;
+    padding: 16px 12px;
+    color: #333;
+    border-radius: 0 20px 20px 20px;
+    overflow: hidden;
+}
+.sm_msg .msgcon + .msgcon,
+.sm_msg .msgcon + .cardInfo{
+    margin-top: 10px;
+}
+.sm_msg .msgcon .cItem{
+    padding: 0 4px;
+}
+.sm_msg .msgcon .cItem + .cItem{
+    margin-top: 10px;
+}
+.sm_msg .msgcon .cItem a{
+    color: #3989FF;
+}
+
+/*图片*/
+.sm_msg .msgcon img{
+    max-width: 100%;
+    border-radius: 6px;
+}
+
+/*按钮*/
+.sm_msg .msgcon .msgbtn{
+    padding: 0;
+}
+.sm_msg .cItem.msgbtn a{
+    display: inline-block;
+    padding: 0 15px;
+    line-height: 24px;
+    color: var(--smt-color);
+    background-color: #fff;
+    border:1px solid var(--smt-color);
+    border-radius: 12px;
+    margin:0 4px;
+    margin-bottom: 8px;
+    font-size: 12px;
+}
+.sm_msg .cItem.msgbtn a:hover{
+    color: #fff;
+    background-color: var(--smt-color);
+}
+
+/*问题引导*/
+.sm_msg .msgcon .msgquestion{
+    padding: 0;
+}
+.sm_msg .msgquestion .quea{
+    line-height: 20px;
+    padding: 4px;
+    border-bottom:1px solid #DCDEE0;
+    font-size: 12px;
+    font-weight: 500;
+}
+.sm_msg .msgquestion .quea:first-child{
+    padding-top: 0;
+}
+.sm_msg .msgquestion .quea:last-child{
+    border-bottom:none;
+    padding-bottom: 0;
+}
+.sm_msg .cItem.msgquestion .quea a{
+    color: #333;
+}
+.sm_msg .cItem.msgquestion .quea a:hover{
+    color: #3989FF;
+}
+
+/*知识*/
+.sm_msg .msgcon.w100{
+    width: calc(100% - 10px);
+}
+.sm_msg .msgknowledge{
+    width: calc(100% - 10px);
+}
+.sm_msg .msgknowledge .knoa{
+    display: none;
+    line-height: 20px;
+    padding: 14px 4px;
+    border-bottom:1px solid #DCDEE0;
+    font-size: 12px;
+    font-weight: 500;
+    text-align: justify;
+}
+.sm_msg .msgknowledge .knoa:nth-child(3n),
+.sm_msg .msgknowledge .knoa:last-child{
+    padding-bottom: 0;
+    border-bottom: none;
+}
+.sm_msg .cItem.msgknowledge .knoa a{
+    color: #333;
+}
+.sm_msg .cItem.msgknowledge .knoa a:hover{
+    color: #3989FF;
+}
+.sm_msg .msgknowledge .knoa[group='0']{
+    display: block;
+}
+.sm_msg .msgknowledge .ktitle{
+    padding: 0 4px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.sm_msg .reply,
+.sm_msg .replys{
+    float: left;
+    width: calc(100% - 10px);
+    font-size: 12px;
+    text-align: right;
+    padding-top: 12px;
+}
+.sm_msg .reply .replyBtn,
+.sm_msg .replys .replyBtn{
+    display: inline-block;
+    line-height: 22px;
+    background-color: #fff;
+    border: 1px solid #DCDFE6;
+    border-radius: 12px;
+    color: #606266;
+    padding: 0 16px;
+}
+.sm_msg .ktitle a .icon,
+.sm_msg .reply .replyBtn .icon,
+.sm_msg .replys .replyBtn .icon{
+    width: 12px;
+    height: 12px;
+    margin-right: 4px;
+    margin-top: -2px;
+}
+.sm_msg .reply .replyBtn.disabled,
+.sm_msg .replys .replyBtn.disabled{
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+.sm_msg .reply .replyBtn.disabled:hover,
+.sm_msg .replys .replyBtn.disabled:hover{
+    background-color: #fff;
+    border: 1px solid #DCDFE6;
+    color: #606266;
+}
+.sm_msg .reply .replyBtn:hover,
+.sm_msg .reply .replyBtn.clicked,
+.sm_msg .reply .replyBtn.clicked:hover,
+.sm_msg .replys .replyBtn:hover,
+.sm_msg .replys .replyBtn.clicked,
+.sm_msg .replys .replyBtn.clicked:hover{
+    color: #fff;
+    background: var(--smt-color);
+    border-color: var(--smt-color);
+}
+
+.sm_msg .reply .replyN,
+.sm_msg .replys .replyN{
+    margin-left: 10px;
+}
+.sm_msg .reply .replyN .icon,
+.sm_msg .reply .replyN .icon{
+    transform: scaleY(-1);
+}
+.sm_msg .msgknowledge .markCon{
+    padding: 0 4px;
+}
+.sm_msg .msgknowledge .source{
+    padding: 16px 4px 0;
+    margin-top: 16px;
+    border-top: 1px solid #DCDEE0;
+}
+.sm_msg .msgknowledge .sourceItem{
+    list-style: decimal;
+    line-height: 20px;
+}
+.sm_msg .msgknowledge .sourceItem a{
+    color: #3989FF;
+}
+.sm_msg .msgknowledge .sourceItem a:hover{
+    text-decoration: underline;
+}
+/*名片*/
+.sm_msg .cardInfo{
+    float: left;
+    border-radius: 16px;
+    background-image: linear-gradient(180deg, #FAECD6 0%, #FDFBF7 100%);
+    width: calc(100% - 10px);
+    cursor: pointer;
+}
+.sm_msg .cardmark{
+    height: 24px;
+    line-height: 24px;
+    position: relative;
+}
+.sm_msg .cardmark span{
+    display: inline-block;
+    background-image: linear-gradient(90deg, #626265 0%, #17171D 100%);
+    padding: 0 12px 0 34px;
+    color: #FAEEDA;
+    overflow: hidden;
+    border-radius: 18px 0 18px 0;
+    font-size: 12px;
+    font-weight: bold;
+}
+.sm_msg .cardmark img{
+    position: absolute;
+    left: 12px;
+    top: 4px;
+    z-index: 9;
+}
+.sm_msg .cinfo{
+    display: flex;
+    padding: 16px;
+}
+.sm_msg .cardImg{
+    flex: 0 0 60px;
+    height: 60px;
+    margin-right: 10px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.sm_msg .cardImg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.sm_msg .cardName{
+    padding: 5px 0;
+}
+.sm_msg .cardName .name{
+    color: #1E1F24;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 25px;
+}
+.sm_msg .cardName .label{
+    color: #D2984B;
+    font-size: 12px;
+    line-height: 25px;
+}
+
+
+/*表单*/
+.sm_msg .msgform{
+    width: calc(100% - 10px);
+}
+.sm_msg .msgform .formIt{
+    position: relative;
+}
+.sm_msg .msgform .formIt + .formIt{
+    margin-top: 16px;
+}
+.sm_msg .msgform .formIt label{
+    color: #333;
+    font-size: 12px;
+    font-weight: bold;
+}
+.sm_msg .msgform .formIt input::placeholder {
+    color: #A8ABB2;
+}
+.sm_msg .msgform .formIt label span{
+    color: #FF4A4A;
+}
+.sm_msg .msgform .formIt .p_inp{
+    line-height: 24px;
+    padding: 0 12px;
+    border:1px solid #fff;
+    background-color: #fff;
+    width: 100%;
+    border-radius: 4px;
+    font-size: 12px;
+}
+.sm_msg .msgform .formIt a{
+    display: block;
+    line-height: 32px;
+    text-align: center;
+    color: #fff;
+    background: var(--smt-color);
+    border-radius: 16px;
+}
+.sm_msg .msgform .formIt .errorMsg{
+    position: absolute;
+    left: 0;
+    top: 100%;
+    line-height: 20px;
+    width: 100%;
+    color: #FF4A4A;
+    font-size: 12px;
+    display: none;
+}
+.sm_msg .msgform .formIt.invalid input{
+    border-color:#FF4A4A;
+}
+.sm_msg .msgform .formIt.invalid .errorMsg{
+    display: block;
+}
+
+
+.sm_msg.ad .msgcon{
+    float: left;
+}
+.sm_msg.cus{
+    float: right;
+    text-align: right;
+}
+.sm_msg.ad{
+    float: left;
+    text-align: left;
+}
+.sm_msg.cus .msgcon{
+    float: right;
+    background: var(--smt-color);
+    color: #fff;
+    border-radius: 20px 0 20px 20px;
+    text-align: left;
+}
+
+
+
+
+.sm_msg.ad .sms_read{
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    padding: 8px;
+    border-radius: 8px;
+    color: #979797;
+}
+.sm_msg.ad .sms_read.active{
+    color: var(--smt-color);
+}
+.sm_input{
+    padding: 10px 30px;
+    position: relative;
+}
+
+
+.sm_send{
+    text-align: right;
+    color: var(--smt-color);
+    position: absolute;
+    right: 30px;
+    bottom: 10px;
+    z-index: 2;
+}
+.sm_sendBtn{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+}
+.sm_sendBtn.disabled{
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+.sm_send .erroMsg{
+    color: #666;
+    width: fit-content;
+    max-width: calc(100% - 40px);
+    position: absolute;
+    right: 20px;
+    bottom: calc(100% + 10px);
+    background-color: #fff;
+    border-radius: 3px;
+    padding: 10px 20px;
+    border: 1px solid #eee;
+    box-shadow:  0 0 3px 3px #eee;
+    display: none;
+}
+.sm_send .erroMsg::before{
+    content: " ";
+    width: 0;
+    height: 0;
+    position: absolute;
+    right: 20px;
+    bottom: -10px;
+    z-index: 2;
+    border-top: 8px solid #fff;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom: 5px solid transparent;
+}
+.sm_send .erroMsg::after{
+    content: " ";
+    width: 0;
+    height: 0;
+    position: absolute;
+    right: 20px;
+    bottom: -11px;
+    border-top: 7px solid #ccc;
+    border-left: 8px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom: 4px solid transparent;
+}
+
+
+.smallWindow .sm_output{
+    height: 200px;
+}
+.smallWindow .serViceEditor{
+    position: absolute;
+    left: 20px;
+    width: calc(100% - 100px);
+    top: 10px;
+    margin-bottom: 0;
+    z-index: 8;
+}
+.smallWindow  .cEditor-content .cEditor-area{
+    height: 50px;
+    line-height: 50px;
+    background: none;
+}
+.smallWindow .sm_editor{
+    float: left;
+    width: calc(100% - 50px);
+}
+.smallWindow .sm_send{
+    float: right;
+}
+.smallWindow .sm_sendBtn{
+    width:30px;
+    height: 30px;
+    margin-top: 10px;
+}
+
+@media screen and (max-width:768px) {
+    .smartService{
+        left: 0 !important;
+        right: 0 !important;
+        width: 100% !important;
+    }
+    .smtIconPrompt{
+        right: 25px;
+        bottom: 130px;
+        max-width: calc(100vw - 50px);
+        display: none;
+    }
+    .smtIconPrompt::after {
+        top: 100%;
+        transform: translateY(0);
+        left: auto;
+        right: 30px;
+        border-color: #fff transparent transparent transparent;
+    }
+    .smtIconPrompt.leftPrompt{
+        left: 25px;
+        right:auto;
+    }
+    .smtIconPrompt.leftPrompt::after {
+        left: 30px;
+        right: auto;
+    }
+}
+
+
+.smsForm{
+    background-image: linear-gradient(179deg, #BCE6F9 0%, #E3EEF7 12%, #FFFFFF 40%);
+    overflow: hidden;
+}
+.smsForm .sm_close{
+    color: #939BA5;
+}
+.smsForm .sm_close:hover{
+    color: #333333;
+}
+.smsForm .sm_title{
+    min-height: 140px;
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+}
+.smsForm .sm_title img{
+    position: absolute;
+    right: -8px;
+    bottom: -14px;
+    z-index: 8;
+}
+.smsForm .sm_formTitle{
+    padding-left: 20px;
+    padding-right: 140px;
+    font-size: 21px;
+    color: #555;
+    line-height: 26px;
+    word-break: break-word;
+    font-weight: bold;
+    max-height: 78px;
+    overflow: hidden;
+}
+.smsForm .msgform{
+    background: #fff;
+    padding:20px 20px 60px;
+    border-radius: 20px 20px 0 0;
+    max-height: 50vh;
+    overflow-y: auto;
+}
+.smsForm .formIt{
+    margin-bottom: 20px;
+    position: relative;
+}
+.smsForm .formIt input::placeholder {
+    color: #A8ABB2;
+}
+.smsForm .formIt .formItLabel{
+    font-weight: bold;
+}
+.smsForm .formIt[required] .formItLabel::after{
+    content: "*";
+    color: #FF4A4A;
+    font-size: 20px;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+.sm_msg .formIt[required] .formItLabel::before{
+    content: "*";
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+    margin-top: 4px;
+    color: red;
+}
+.smsForm .formIt .p_inp{
+    line-height: 38px;
+    width: 100%;
+    border: 1px solid #EFF0F4;
+    padding: 0 20px;
+    background: #EFF0F4;
+    border-radius: 5px;
+}
+
+.smsForm .formIt .errorMsg{
+    position: absolute;
+    left: 0;
+    top: 100%;
+    line-height: 20px;
+    width: 100%;
+    color: #FF4A4A;
+    font-size: 12px;
+    display: none;
+}
+.smsForm .formIt.invalid .p_inp,
+.smsForm .formIt.invalid .multSelect{
+    border-color:#FF4A4A;
+}
+.smsForm .formIt.invalid .errorMsg{
+    display: block;
+}
+.smsForm .aggree{
+    position: relative;
+    padding-left: 20px;
+}
+.smsForm .aggree label{
+    color: #999999;
+    font-weight: normal;
+}
+.smsForm .aggree input{
+    position: absolute;
+    left: 0;
+    top: 5px;
+}
+.smsForm .noAggree label{
+    color: #FF4A4A;
+}
+
+.smsForm .formIt .p_sub{
+    line-height: 40px;
+    display: block;
+    color: #fff;
+    background: var(--smt-color);
+    text-align: center;
+    border-radius: 6px;
+}
+.smsForm .formIt .p_sub .icon{
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    margin-top: -5px;
+}
+.smsForm .formIt .p_radio,
+.smsForm .formIt .p_checkbox{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 10px;
+}
+
+.smsForm .formIt .p_radioItem{
+    margin-right: 20px;
+}
+.smsForm .formIt .p_radioItem label{
+    margin: 0;
+}
+
+
+
+
+
+
+.sm_msg .msgcon *{
+    margin: 0;
+    max-width: 100%;
+}
+.sm_msg .msgcon h1,
+.sm_msg .msgcon h2{
+    font-size:16px; 
+    font-weight:bold;
+}
+.sm_msg .msgcon ul,
+.sm_msg .msgcon ol{
+    margin-left: 15px!important;
+}
+.sm_msg .msgcon ol{
+    list-style:decimal;
+}
+.sm_msg .msgcon ul{
+    list-style:disc;
+}
+.sm_msg .msgcon ul li,
+.sm_msg .msgcon ol li{
+    list-style: inherit;
+}
+.sm_msg .msgknowledge .markCon > *{
+    padding: 0;
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+.sm_msg .msgknowledge .markCon a{
+    color:#3989FF
+}
+
+
+
+
+/*手机号*/
+.smartService .msgform .p_mobilegroup{
+    display: flex;
+}
+.smartService .msgform .p_mobilePre{
+    flex: 0 0 30%;
+}
+.smartService .msgform .p_mobilegroup > .p_inp{
+    flex: 0 0 70%;
+}
+.smartService .msgform .p_phoneCode{
+    position: relative;
+    height:100%;
+    width: 100%;
+    padding-right: 10px;
+}
+.smartService .msgform .p_currentCode{
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5px 0 10px;
+    height: 100%;
+    align-items: center;
+    border: 1px solid #EFF0F4;
+    background: #EFF0F4;
+    border-radius: 5px;
+}
+.smartService .sm_msg .p_currentCode{
+    background: #fff;
+    border: 0;
+    border-radius: 4px;
+}
+.smartService .msgform .p_currentCode .p_arrow{
+    width: 20px;
+    height:20px;
+}
+.smartService .sm_msg .p_currentCode .p_arrow{
+    width: 14px;
+    height:14px;
+    margin-top: -7px;
+}
+.smartService .msgform .p_codeList{
+    display: none;
+    position: absolute;
+    width: 120px;
+    left: 0;
+    top: calc(100% + 5px);
+    background-color: #fff;
+    color: #495057;
+    box-shadow: 0 2px 15px 0 #0000001f;
+    border-radius: 4px;
+    max-height: 192px;
+    overflow: auto;
+    z-index: 9;
+    margin: 0;
+    padding: 0;
+    margin-left: 0 !important;
+    max-width: none;
+}
+.smartService .msgform .p_codeItem{
+    line-height: 32px;
+    padding: 0 10px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.smartService .msgform .p_codeItem:hover,
+.smartService .msgform .p_codeItem.p_active{
+    background-color: #f1f5f8;
+}
+.smartService .msgform .p_enCode{
+    float: right;
+    color: #ccc;
+}
+.smartService .msgform .p_imagecodeCon{
+    position: relative;
+}
+.smartService .msgform .p_code_img {
+    position: absolute;
+    right: 5px;
+    top: 1px;
+    z-index: 12;
+    width: 80px;
+    height: 33px;
+    cursor: pointer;
+    vertical-align: top;
+    display: none;
+}
+
+
+
+
+@keyframes dot-loader {
+    0% {
+        transform: scale(0.6);
+        opacity: 0.7;
+    }
+    50% {
+        transform: scale(1.1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(0.6);
+        opacity: 0.7;
+    }
+}
+.sm_msg.sm_reply .dot-loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+}
+.sm_msg.sm_reply .dot-loader .dot {
+    width: 6px;
+    height: 6px;
+    background-color: var(--smt-color);
+    border-radius: 50%;
+    margin: 0 5px;
+    animation: dot-loader 1.2s infinite;
+    overflow: hidden;
+}
+.sm_msg.sm_reply .dot-loader .dot:nth-child(2) {
+    animation-delay: 0.2s;
+}
+.sm_msg.sm_reply .dot-loader .dot:nth-child(3) {
+    animation-delay: 0.4s;
+}
+.sm_msg.sm_reply .dot-loader .dot:nth-child(4) {
+    animation-delay: 0.6s;
+}
+.sm_msg.sm_reply .dot-loader .dot:nth-child(5) {
+    animation-delay: 0.8s;
+}
+.sm_msg.sm_reply .dot-loader .dot:nth-child(6) {
+    animation-delay: 1s;
+}
+
+
+
+
+
+
+.smsForm .formIt .multSelect{
+    font-size:12px;
+    position: relative;
+    border: 1px solid #EFF0F4;
+    background: #EFF0F4;
+    border-radius: 5px;
+}
+.smsForm .formIt .multSelect .inputWrap{
+    width:100%;
+    min-height: 40px;
+    position: relative;
+    cursor: pointer;
+    padding: 0 20px 0 10px;
+}
+.smsForm .formIt .multSelect.is-invalid .inputWrap{
+    border-color:#dc3545
+}
+.smsForm .formIt .multSelect ul{
+    margin: 0;
+}
+.smsForm .formIt .multSelect ul,li{
+    list-style: none;
+}
+.smsForm .formIt .multSelect li{
+    display: inline-block;
+    background: #fff;
+    padding:3px 5px;
+    margin: 5px 5px 5px 0;
+    border-radius: 5px;
+}
+.smsForm .formIt .selSigle .multSelect li{
+    background: none;
+}
+.smsForm .formIt .multSelect .multSelect-option{
+    width: 100%;
+    border-top:0;
+    max-height: 200px;
+    overflow-y: scroll;
+    position: absolute;
+    height: 0;
+    opacity: 0;
+    z-index: 9;
+    background: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+.smsForm .formIt .multSelect .multSelect-option>div{
+    line-height:40px;
+    cursor: pointer;
+    padding: 0 10px;
+}
+.smsForm .formIt .multSelect .multSelect-option>div.selected{
+    color: #409eff;
+}
+.smsForm .formIt .multSelect .multSelect-option>div:hover{
+    color: #409eff;
+    background:#f3f6f9
+}
+.smsForm .formIt .multSelect .fa-close{
+    font-style:normal;
+    font-size:12px;
+    padding:0 5px 0 7px;
+}
+.smsForm .formIt .multSelect .inputWrap>.fa svg{
+    fill:#666;
+    width:16px;
+    height:16px;
+    position: absolute;
+    right: 5px;
+    top: calc(50% - 8px);
+}
+.smsForm .formIt .multSelect .inputWrap>.fa-down svg{
+    transform:rotate(-90deg)
+}
+.smsForm .formIt .multSelect .inputWrap>.fa-up svg{
+    transform:rotate(90deg)
+}
+.smsForm .formIt .multSelect .placeholder{
+    line-height: 40px;
+    padding-left: 10px;
+    color: #aaa;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.smsForm .formIt .multSelect .disabled{
+    background-color: #e9ecef;
+    opacity: 1;
+    cursor: not-allowed;
+}
+
+
+
+
+
+/* 兜底 */
+:root{
+    --smt-color:#0ed6b2;
+    --smt-success:#42CA6F;
+    --smt-warning:#FF7428;
+    --snt-error:#E84444;
+}
+.smartIcon{
+    display: inline-block;
+    position: fixed;
+    left: auto;
+    top: auto;
+    right: 25px;
+    bottom: 25px;
+    z-index: 99999;
+    width: 70px;
+    height: 70px;
+    padding: 3px;
+    border: 5px solid #fff;
+    border-radius: 50%;
+    background: #fff;
+    color: var(--smt-color);
+    box-shadow: 0 0 15px 8px rgba(0,0,0,0.1);
+}
+.smartIcon.leftIcon{
+    left:25px;
+    right: auto;
+}
+.smartIcon .icon{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+.smartIcon:hover{
+    background-color: var(--smt-color);
+    color: #fff;
+}
+.smartIcon img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin: -8px 0 0 -8px;
+    border: 3px solid var(--smt-color);
+}
+.aiAgentImg:hover {
+    box-shadow: 0px 0px 12px var(--smt-color);
+    animation: aiAgentImg-opacity 3s infinite ease-in-out;
+}
+@keyframes aiAgentImg-opacity {
+    0% {
+        scale: (1);
+        box-shadow: 0 0 5px var(--smt-color);
+    }
+    50% {
+        scale: (2);
+        box-shadow: 0 0 15px var(--smt-color);
+    }
+    100% {
+        scale: (3);
+        box-shadow: 0 0 5px var(--smt-color);
+    }
+}
+.smtIconPrompt{
+    display: inline-block;
+    position: fixed;
+    left: auto;
+    top: auto;
+    right: 110px;
+    bottom: 15px;
+    z-index: 99999;
+    max-width: 300px;
+    transform: translateY(calc((100% - 80px) / 2));
+    background: #fff;
+    color: #333;
+    padding: 16px;
+    border-radius: 4px;
+    box-shadow: 0 0 15px 8px rgba(0, 0, 0, 0.1);
+}
+.smtIconPrompt::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 100%;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent transparent #fff;
+}
+.smtIconPrompt.leftPrompt{
+    left: 110px;
+    right:auto;
+}
+.smtIconPrompt.leftPrompt::after {
+    left: auto;
+    right: 100%;
+    border-color: transparent #fff transparent transparent ;
+}
+
+.smartService{
+    position: fixed;
+    left: auto;
+    right: 20px;
+    bottom: -100%;
+    z-index: 99999999;
+    width: 360px;
+    overflow: hidden;
+    background: var(--smt-color);
+    border-radius: 10px 10px 0 0;
+    box-shadow: 0 0 8px 4px rgba(0,0,0,0.1);
+    transition: bottom 0.2s;
+}
+.smartService.near{
+    left: auto;
+    right: 48px;
+}
+.smartService.leftWindow{
+    left:48px;
+    left:24px;
+    right: auto;
+}
+.smartService.leftWindow.near{
+    left: 48px;
+    right: auto;
+}
+.smartService.show{
+    bottom:0;
+}
+.smartService .icon{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+.sm_title{
+    padding: 12px 20px;
+    position: relative;
+    overflow: hidden;
+}
+.sm_close{
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    width: 14px;
+    height: 14px;
+    color: #fff;
+    z-index: 99;
+}
+.sm_close svg.icon {
+    width: 20px;
+    height: 20px;
+}
+
+/* .sm_mark{
+    width: 360px;
+    height: 360px;
+    position: absolute;
+    left: -100px;
+    top: -140px;
+    opacity: 0.2;
+    color: #fff;
+    display: none;
+}
+.sm_admin{
+    text-align: left;
+    display:flex;
+    align-items:center;
+}
+.sm_admin img{
+    width: 36px;
+    height: 36px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    margin-right:12px;
+}
+.sm_admin p{
+    display:inline;
+    color: #fff;
+    line-height: 36px;
+    overflow:hidden;
+    display: inline;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 16px;
+    font-weight: bold;
+    vertical-align:middle;
+    padding: 0;
+}
+.sm_dialog{
+    background: #fff;
+    border-radius: 0;
+    overflow: hidden;
+    position: relative;
+} */
+.sm_dialog .errorCon{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 20%;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+}
+.sm_dialog .errorToast{
+    max-width: 80%;
+    width: fit-content;
+    padding: 5px 12px;
+    line-height: 26px;
+    border:1px solid #ccc;
+    border-radius: 6px;
+    background: #fff;
+    color: #333;
+    font-size: 12px;
+    word-break: break-word;
+}
+.sm_dialog .errorToast .icon{
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    margin-top: -3px;
+}
+.sm_dialog .errorToast.success{
+    border-color: var(--smt-success);
+    background: #F2FBF5;
+}
+.sm_dialog .errorToast.success .icon{
+    color: var(--smt-success);
+}
+.sm_dialog .errorToast.error{
+    border-color: var(--snt-error);
+    background: #FBF2F2;
+}
+.sm_dialog .errorToast.error .icon{
+    color: var(--snt-error);
+}
+.sm_dialog .errorToast.warning{
+    border-color: var(--smt-warning);
+    background: #FFEEE5;
+}
+.sm_dialog .errorToast.warning .icon{
+    color: var(--smt-warning);
+}
+.sm_output{
+    padding: 10px 30px 30px 30px;
+    /* border-radius: 0; */
+    background: #fff;
+    height: 354px;
+    /* height: calc(100vh - 295px); */
+    overflow: auto;
+    max-height: calc(100vh - 295px);
+    scrollbar-width: none;
+    font-size: 12px;
+    overscroll-behavior: contain; 
+}
+.sm_output .prompt{
+    text-align: center;
+    color: #aaa;
+    margin:20px 0;
+    width: 100%;
+    float: left;
+}
+
+.sm_msg{
+    width: 100%;
+    overflow: hidden;
+}
+.sm_msg+.sm_msg{
+    margin-top: 20px;
+}
+.sm_msg .msgtitle{
+    color: #999;
+    margin-bottom: 5px;
+}
+.sm_msg .msgtitle .name{
+    margin-right: 5px;
+}
+.sm_msg .msgcon{
+    max-width: calc(100% - 10px);
+    background: #F5F5F7;
+    padding: 16px 12px;
+    color: #333;
+    border-radius: 0 20px 20px 20px;
+    overflow: hidden;
+}
+.sm_msg .msgcon + .msgcon,
+.sm_msg .msgcon + .cardInfo{
+    margin-top: 10px;
+}
+.sm_msg .msgcon .cItem{
+    padding: 0 4px;
+}
+.sm_msg .msgcon .cItem + .cItem{
+    margin-top: 10px;
+}
+.sm_msg .msgcon .cItem a{
+    color: #3989FF;
+}
+
+/*图片*/
+.sm_msg .msgcon img{
+    max-width: 100%;
+    border-radius: 6px;
+}
+
+/*按钮*/
+.sm_msg .msgcon .msgbtn{
+    padding: 0;
+}
+.sm_msg .cItem.msgbtn a{
+    display: inline-block;
+    padding: 0 15px;
+    line-height: 24px;
+    color: var(--smt-color);
+    background-color: #fff;
+    border:1px solid var(--smt-color);
+    border-radius: 12px;
+    margin:0 4px;
+    margin-bottom: 8px;
+    font-size: 12px;
+}
+.sm_msg .cItem.msgbtn a:hover{
+    color: #fff;
+    background-color: var(--smt-color);
+}
+
+/*问题引导*/
+.sm_msg .msgcon .msgquestion{
+    padding: 0;
+}
+.sm_msg .msgquestion .quea{
+    line-height: 20px;
+    padding: 4px;
+    border-bottom:1px solid #DCDEE0;
+    font-size: 12px;
+    font-weight: 500;
+}
+.sm_msg .msgquestion .quea:first-child{
+    padding-top: 0;
+}
+.sm_msg .msgquestion .quea:last-child{
+    border-bottom:none;
+    padding-bottom: 0;
+}
+.sm_msg .cItem.msgquestion .quea a{
+    color: #333;
+}
+.sm_msg .cItem.msgquestion .quea a:hover{
+    color: #3989FF;
+}
+
+/*知识*/
+.sm_msg .msgcon.w100{
+    width: calc(100% - 10px);
+}
+.sm_msg .msgknowledge{
+    width: calc(100% - 10px);
+}
+.sm_msg .msgknowledge .knoa{
+    display: none;
+    line-height: 20px;
+    padding: 14px 4px;
+    border-bottom:1px solid #DCDEE0;
+    font-size: 12px;
+    font-weight: 500;
+    text-align: justify;
+}
+.sm_msg .msgknowledge .knoa:nth-child(3n),
+.sm_msg .msgknowledge .knoa:last-child{
+    padding-bottom: 0;
+    border-bottom: none;
+}
+.sm_msg .cItem.msgknowledge .knoa a{
+    color: #333;
+}
+.sm_msg .cItem.msgknowledge .knoa a:hover{
+    color: #3989FF;
+}
+.sm_msg .msgknowledge .knoa[group='0']{
+    display: block;
+}
+.sm_msg .msgknowledge .ktitle{
+    padding: 0 4px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.sm_msg .reply{
+    float: left;
+    width: calc(100% - 10px);
+    font-size: 12px;
+    text-align: right;
+    padding-top: 12px;
+}
+.sm_msg .reply .replyBtn{
+    display: inline-block;
+    line-height: 22px;
+    background-color: #fff;
+    border: 1px solid #DCDFE6;
+    border-radius: 12px;
+    color: #606266;
+    padding: 0 16px;
+}
+.sm_msg .ktitle a .icon,
+.sm_msg .reply .replyBtn .icon{
+    width: 12px;
+    height: 12px;
+    margin-right: 4px;
+    margin-top: -2px;
+}
+.sm_msg .reply .replyBtn.disabled{
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+.sm_msg .reply .replyBtn.disabled:hover{
+    background-color: #fff;
+    border: 1px solid #DCDFE6;
+    color: #606266;
+}
+.sm_msg .reply .replyBtn:hover,
+.sm_msg .reply .replyBtn.clicked,
+.sm_msg .reply .replyBtn.clicked:hover{
+    color: #fff;
+    background: var(--smt-color);
+    border-color: var(--smt-color);
+}
+
+.sm_msg .reply .replyN{
+    margin-left: 10px;
+}
+.sm_msg .reply .replyN .icon{
+    transform: scaleY(-1);
+}
+.sm_msg .msgknowledge .markCon{
+    padding: 0 4px;
+}
+.sm_msg .msgknowledge .markCon > *{
+    padding: 0;
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+.sm_msg .msgknowledge .source{
+    padding: 16px 4px 0;
+    margin-top: 16px;
+    border-top: 1px solid #DCDEE0;
+}
+.sm_msg .msgknowledge .sourceItem{
+    list-style: decimal;
+    line-height: 20px;
+}
+.sm_msg .msgcon .sourceItem a {
+    color: #3989FF;
+}
+.sm_msg .msgknowledge .sourceItem a:hover{
+    text-decoration: underline;
+}
+/*名片*/
+.sm_msg .cardInfo{
+    float: left;
+    border-radius: 16px;
+    background-image: linear-gradient(180deg, #FAECD6 0%, #FDFBF7 100%);
+    width: calc(100% - 10px);
+    cursor: pointer;
+}
+.sm_msg .cardmark{
+    height: 24px;
+    line-height: 24px;
+    position: relative;
+}
+.sm_msg .cardmark span{
+    display: inline-block;
+    background-image: linear-gradient(90deg, #626265 0%, #17171D 100%);
+    padding: 0 12px 0 34px;
+    color: #FAEEDA;
+    overflow: hidden;
+    border-radius: 18px 0 18px 0;
+    font-size: 12px;
+    font-weight: bold;
+}
+.sm_msg .cardmark img{
+    position: absolute;
+    left: 12px;
+    top: 4px;
+    z-index: 9;
+}
+.sm_msg .cinfo{
+    display: flex;
+    padding: 16px;
+}
+.sm_msg .cardImg{
+    flex: 0 0 60px;
+    height: 60px;
+    margin-right: 10px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.sm_msg .cardImg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.sm_msg .cardName{
+    padding: 5px 0;
+}
+.sm_msg .cardName .name{
+    color: #1E1F24;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 25px;
+}
+.sm_msg .cardName .label{
+    color: #D2984B;
+    font-size: 12px;
+    line-height: 25px;
+}
+
+
+/*表单*/
+.sm_msg .msgform{
+    width: calc(100% - 10px);
+    font-size: 12px;
+}
+.sm_msg .msgform .formIt{
+    position: relative;
+}
+.sm_msg .msgform .formIt + .formIt{
+    margin-top: 16px;
+}
+.sm_msg .msgform .formIt label{
+    color: #333;
+    font-size: 12px;
+    font-weight: bold;
+}
+.sm_msg .msgform .formIt input::placeholder {
+    color: #A8ABB2;
+}
+.sm_msg .msgform .formIt label span{
+    color: #FF4A4A;
+}
+.sm_msg .msgform .formIt .p_inp{
+    line-height: 24px;
+    padding: 0 12px;
+    border:1px solid #fff;
+    background-color: #fff;
+    width: 100%;
+    border-radius: 4px;
+    font-size: 12px;
+}
+.sm_msg .msgform .formIt a{
+    display: block;
+    line-height: 32px;
+    text-align: center;
+    color: #fff;
+    background: var(--smt-color);
+    border-radius: 16px;
+}
+.sm_msg .msgform .formIt .errorMsg{
+    position: absolute;
+    left: 0;
+    top: 100%;
+    line-height: 20px;
+    width: 100%;
+    color: #FF4A4A;
+    font-size: 12px;
+    display: none;
+}
+.sm_msg .msgform .formIt.invalid input{
+    border-color:#FF4A4A;
+}
+.sm_msg .msgform .formIt.invalid .errorMsg{
+    display: block;
+}
+
+
+.sm_msg.ad .msgcon{
+    width: fit-content;
+}
+
+.sm_msg.ad .sms_read{
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    padding: 8px;
+    border-radius: 8px;
+    color: #979797;
+}
+.sm_msg.ad .sms_read.active{
+    color: var(--smt-color);
+}
+.sm_msg.cus{
+    float: right;
+    text-align: right;
+}
+.sm_msg.ad{
+    float: left;
+    text-align: left;
+}
+.sm_msg.cus .msgcon{
+    float: right;
+    background: var(--smt-color);
+    color: #fff;
+    border-radius: 20px 0 20px 20px;
+    text-align: left;
+}
+
+
+
+
+
+.sm_input{
+    padding: 8px 30px;
+    position: relative;
+    border-top: 1px solid #DCDFE6;    
+}
+
+/* .sm_send{
+    text-align: right;
+    color: #fff;
+    position: absolute;
+    right: 30px;
+    bottom: 14px;
+    z-index: 2;
+}
+.sm_sendBtn{
+    display: inline-block;
+    line-height: 28px;
+    height: 28px;
+    background: var(--smt-color);
+    border-radius: 2px;
+    padding: 0 16px;
+    font-size: 12px;
+}
+.sm_sendBtn.disabled{
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+.sm_send .erroMsg{
+    color: #666;
+    width: fit-content;
+    max-width: calc(100% - 40px);
+    position: absolute;
+    right: 20px;
+    bottom: calc(100% + 10px);
+    background-color: #fff;
+    border-radius: 3px;
+    padding: 10px 20px;
+    border: 1px solid #eee;
+    box-shadow:  0 0 3px 3px #eee;
+    display: none;
+}
+.sm_send .erroMsg::before{
+    content: " ";
+    width: 0;
+    height: 0;
+    position: absolute;
+    right: 20px;
+    bottom: -10px;
+    z-index: 2;
+    border-top: 8px solid #fff;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom: 5px solid transparent;
+}
+.sm_send .erroMsg::after{
+    content: " ";
+    width: 0;
+    height: 0;
+    position: absolute;
+    right: 20px;
+    bottom: -11px;
+    border-top: 7px solid #ccc;
+    border-left: 8px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom: 4px solid transparent;
+} */
+
+
+.smallWindow .sm_output{
+    height: 200px;
+}
+.smallWindow .serViceEditor{
+    position: absolute;
+    left: 20px;
+    width: calc(100% - 100px);
+    top: 10px;
+    margin-bottom: 0;
+    z-index: 8;
+}
+.smallWindow  .cEditor-content .cEditor-area{
+    height: 50px;
+    line-height: 50px;
+    background: none;
+}
+.smallWindow .sm_editor{
+    float: left;
+    width: calc(100% - 50px);
+}
+.smallWindow .sm_send{
+    float: right;
+    position: static;
+}
+.smallWindow .sm_sendBtn{
+    width:50px;
+    height: 30px;
+    line-height: 30px;
+    margin-top: 10px;
+    padding: 0;
+    text-align: center;
+}
+
+@media screen and (max-width:768px) {
+    .smartService{
+        left: 0 !important;
+        right: 0 !important;
+        width: 100% !important;
+    }
+    .smtIconPrompt{
+        right: 25px;
+        bottom: 130px;
+        max-width: calc(100vw - 50px);
+        display: none;
+    }
+    .smtIconPrompt::after {
+        top: 100%;
+        transform: translateY(0);
+        left: auto;
+        right: 30px;
+        border-color: #fff transparent transparent transparent;
+    }
+    .smtIconPrompt.leftPrompt{
+        left: 25px;
+        right:auto;
+    }
+    .smtIconPrompt.leftPrompt::after {
+        left: 30px;
+        right: auto;
+    }
+}
+
+
+.smsForm{
+    overflow: hidden;
+}
+.smsForm .sm_close{
+    color: #fff;
+    width: 20px;
+    height: 20px;
+    top: 20px;
+}
+.smsForm .sm_close svg{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.smsForm .sm_title{
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+}
+.smsForm .sm_title img{
+    display: none;
+}
+.smsForm .sm_formTitle{
+    padding-left: 20px;
+    padding-right: 40px;
+    font-size: 16px;
+    color: #fff;
+    line-height: 20px;
+    word-break: break-word;
+    font-weight: 600;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.smsForm .msgform{
+    background: #F7F7F9;
+    padding:24px;
+    max-height: 50vh;
+    overflow-y: auto;
+    font-size: 14px;
+    overscroll-behavior: contain;
+}
+.smsForm .formIt{
+    margin-bottom: 20px;
+    position: relative;
+}
+.smsForm .formIt input::placeholder {
+    color: #A8ABB2;
+}
+.smsForm .formIt .formItLabel{
+    line-height: 20px;
+    height: 20px;
+    margin-bottom: 5px;
+    overflow: hidden;
+    display: block;
+}
+.smsForm .formIt[required] .formItLabel::before{
+    content: "*";
+    display: inline-block;
+    font-size: 20px;
+    vertical-align: middle;
+    margin-right: 5px;
+    margin-top: 4px;
+}
+.sm_msg .formIt[required] .formItLabel::before{
+    content: "*";
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+    margin-top: 4px;
+    color: red;
+}
+
+.smsForm .formIt .p_inp{
+    line-height: 38px;
+    width: 100%;
+    border: 1px solid #DCDFE6;
+    padding: 0 20px;
+    background: #fff;
+    border-radius: 5px;
+}
+
+.smsForm .formIt .errorMsg{
+    position: absolute;
+    left: 0;
+    top: 100%;
+    line-height: 20px;
+    width: 100%;
+    color: #FF4A4A;
+    font-size: 12px;
+    display: none;
+}
+.smsForm .formIt.invalid .p_inp,
+.smsForm .formIt.invalid .multSelect{
+    border-color:#FF4A4A;
+}
+
+.smsForm .formIt.invalid .errorMsg{
+    display: block;
+}
+.smsForm .aggree{
+    position: relative;
+    padding-left: 20px;
+}
+.smsForm .aggree label{
+    color: #999999;
+    font-weight: normal;
+}
+.smsForm .aggree input{
+    position: absolute;
+    left: 0;
+    top: 5px;
+}
+.smsForm .noAggree label{
+    color: #FF4A4A;
+}
+
+.smsForm .formIt .p_sub{
+    line-height: 40px;
+    display: block;
+    color: #fff;
+    background: var(--smt-color);
+    text-align: center;
+    border-radius: 6px;
+}
+.smsForm .formIt .p_sub .icon{
+    display: none;
+}
+.smsForm .formIt .p_radio,
+.smsForm .formIt .p_checkbox{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 10px;
+}
+
+.smsForm .formIt .p_radioItem{
+    margin-right: 20px;
+}
+.smsForm .formIt .p_radioItem label{
+    margin: 0;
+}
+
+
+
+
+.sm_msg .msgcon *{
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+}
+.sm_msg .msgcon h1,
+.sm_msg .msgcon h2,
+.sm_msg .msgcon h3,
+.sm_msg .msgcon h4,
+.sm_msg .msgcon h5{
+    font-size:14px; 
+    font-weight:bold;
+}
+.sm_msg .msgcon ul,
+.sm_msg .msgcon ol{
+    margin-left: 15px!important;
+}
+.sm_msg .msgcon ol{
+    list-style:decimal;
+}
+.sm_msg .msgcon ul{
+    list-style:disc;
+}
+.sm_msg .msgcon ul li,
+.sm_msg .msgcon ol li{
+    list-style: inherit;
+}
+.sm_msg .msgknowledge .markCon > *{
+    padding: 0;
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+.sm_msg .msgknowledge .markCon a{
+    color:#3989FF
+}
+
+
+
+
+/*手机号*/
+.smartService .msgform .p_mobilegroup{
+    display: flex;
+}
+.smartService .msgform .p_mobilePre{
+    flex: 0 0 30%;
+}
+.smartService .msgform .p_mobilegroup > .p_inp{
+    flex: 0 0 70%;
+}
+.smartService .msgform .p_phoneCode{
+    position: relative;
+    height:100%;
+    width: 100%;
+    padding-right: 10px;
+}
+.smartService .msgform .p_currentCode{
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5px 0 10px;
+    height: 100%;
+    align-items: center;
+    border: 1px solid #DCDFE6;
+    background: #fff;
+    border-radius: 5px;
+}
+.smartService .sm_msg .p_currentCode{
+    background: #fff;
+    border: 0;
+    border-radius: 4px;
+}
+.smartService .msgform .p_currentCode .p_arrow{
+    width: 20px;
+    height:20px;
+}
+.smartService .sm_msg .p_currentCode .p_arrow{
+    width: 14px;
+    height:14px;
+    margin-top: -7px;
+}
+.smartService .msgform .p_codeList{
+    display: none;
+    position: absolute;
+    width: 120px;
+    left: 0;
+    top: calc(100% + 5px);
+    background-color: #fff;
+    color: #495057;
+    box-shadow: 0 2px 15px 0 #0000001f;
+    border-radius: 4px;
+    max-height: 192px;
+    overflow: auto;
+    z-index: 9;
+    margin: 0;
+    padding: 0;
+    margin-left: 0 !important;
+    max-width: none;
+}
+.smartService .msgform .p_codeItem{
+    line-height: 32px;
+    padding: 0 10px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.smartService .msgform .p_codeItem:hover,
+.smartService .msgform .p_codeItem.p_active{
+    background-color: #f1f5f8;
+}
+.smartService .msgform .p_enCode{
+    float: right;
+    color: #ccc;
+}
+.smartService .msgform .p_imagecodeCon{
+    position: relative;
+}
+.smartService .msgform .p_code_img {
+    position: absolute;
+    right: 5px;
+    top: 1px;
+    z-index: 12;
+    width: 80px;
+    height: 33px;
+    cursor: pointer;
+    vertical-align: top;
+    display: none;
+}
+
+@keyframes dot-loader {
+    0% {
+        transform: scale(0.6);
+        opacity: 0.7;
+    }
+    50% {
+        transform: scale(1.1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(0.6);
+        opacity: 0.7;
+    }
+}
+.sm_msg.sm_reply .dot-loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+}
+.sm_msg.sm_reply .dot-loader .dot {
+    width: 6px;
+    height: 6px;
+    background-color: var(--smt-color);
+    border-radius: 50%;
+    margin: 0 5px;
+    animation: dot-loader 1.2s infinite;
+    overflow: hidden;
+}
+.sm_msg.sm_reply .dot-loader .dot:nth-child(2) {
+    animation-delay: 0.2s;
+}
+.sm_msg.sm_reply .dot-loader .dot:nth-child(3) {
+    animation-delay: 0.4s;
+}
+.sm_msg.sm_reply .dot-loader .dot:nth-child(4) {
+    animation-delay: 0.6s;
+}
+.sm_msg.sm_reply .dot-loader .dot:nth-child(5) {
+    animation-delay: 0.8s;
+}
+.sm_msg.sm_reply .dot-loader .dot:nth-child(6) {
+    animation-delay: 1s;
+}
+
+
+
+
+
+
+.smsForm .formIt .multSelect{
+    font-size:12px;
+    position: relative;
+    border: 1px solid #DCDFE6;
+    background: #fff;
+    border-radius: 5px;
+}
+.smsForm .formIt .multSelect .inputWrap{
+    width:100%;
+    min-height: 40px;
+    position: relative;
+    cursor: pointer;
+    padding: 0 20px 0 10px;
+}
+.smsForm .formIt .multSelect.is-invalid .inputWrap{
+    border-color:#dc3545
+}
+.smsForm .formIt .multSelect ul{
+    margin: 0;
+}
+.smsForm .formIt .multSelect ul,li{
+    list-style: none;
+}
+.smsForm .formIt .multSelect li{
+    display: inline-block;
+    background: #F7F7F9;
+    padding:3px 5px;
+    margin: 5px 5px 5px 0;
+    border-radius: 5px;
+}
+.smsForm .formIt .selSigle .multSelect li{
+    background: none;
+}
+.smsForm .formIt .multSelect .multSelect-option{
+    width: 100%;
+    border-top:0;
+    max-height: 200px;
+    overflow-y: scroll;
+    position: absolute;
+    height: 0;
+    opacity: 0;
+    z-index: 9;
+    background: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+.smsForm .formIt .multSelect .multSelect-option>div{
+    line-height:40px;
+    cursor: pointer;
+    padding: 0 10px;
+}
+.smsForm .formIt .multSelect .multSelect-option>div.selected{
+    color: #409eff;
+}
+.smsForm .formIt .multSelect .multSelect-option>div:hover{
+    color: #409eff;
+    background:#f3f6f9
+}
+.smsForm .formIt .multSelect .fa-close{
+    font-style:normal;
+    font-size:12px;
+    padding:0 5px 0 7px;
+}
+.smsForm .formIt .multSelect .inputWrap>.fa svg{
+    fill:#666;
+    width:16px;
+    height:16px;
+    position: absolute;
+    right: 5px;
+    top: calc(50% - 8px);
+}
+.smsForm .formIt .multSelect .inputWrap>.fa-down svg{
+    transform:rotate(-90deg)
+}
+.smsForm .formIt .multSelect .inputWrap>.fa-up svg{
+    transform:rotate(90deg)
+}
+.smsForm .formIt .multSelect .placeholder{
+    line-height: 40px;
+    padding-left: 10px;
+    color: #aaa;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.smsForm .formIt .multSelect .disabled{
+    background-color: #e9ecef;
+    opacity: 1;
+    cursor: not-allowed;
+}
+
+.sm_tabs_nav {
+    /* flex-wrap: wrap; */
+    height: 40px;
+    background: #FFFFFF;
+    text-align: center;
+    border-bottom: 1px solid #E4E7ED;
+}
+
+.sm_tabs_nav a {
+    display: inline-block;
+    line-height: 40px;
+    align-items: center;
+    white-space: nowrap;
+    max-width: 50%;
+    overflow: auto;
+    scrollbar-width: none;
+    color: #606266;
+    height: 40px;
+    margin: 0 50px;
+}
+
+.sm_tabs_nav a:hover {
+    color: var(--smt-color);
+}
+
+.sm_tabs_nav a svg {
+    width: 20px !important;
+    height: 20px !important;
+    vertical-align: middle;
+    color: #979797;
+    display: none;
+}
+
+.sm_tabs_nav a.active svg {
+    color: #fff;
+}
+
+.sm_tabs_nav a.active {
+    /* height: 28px; */
+    /* background: var(--smt-color); */
+    /* border-radius: 8px; */
+    /* color: #fff; */
+    color: var(--smt-color);
+    border-bottom: 1px solid var(--smt-color);
+}
+
+#member-tab.sm_tab_content {
+    min-height: 462.5px;
+    /* min-height: 306.65px; */
+    min-height: 502.38px;
+}
+
+.memberBox {
+    min-height: inherit;
+    padding: 0 30px;
+    border-radius: 0;
+    background: #fff;
+    overflow: auto;
+    scrollbar-width: none;
+    font-size: 12px;
+    overscroll-behavior: contain; 
+    max-height: calc(100vh - 186.5px);
+    color: #303133;
+}
+
+.notLogin {
+    text-align: center;
+}
+
+/* 会员中心 */
+.m_cards {
+    position: relative;
+    display: flex;
+    width: 288px;
+    /* height: 100px; */
+    background: var(--smt-color);
+    /* border: 1px solid #D79F00; */
+    border-radius: 10px 10px 0 0;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    color: #fff;
+    padding: 20px;
+    justify-content: space-between;
+    gap: 20px;
+    overflow: hidden;
+}
+
+.m_cards::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  background: #898989;
+  clip-path: polygon(0 0, 100% 0, 0 100%);
+}
+
+.m_icons {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 25px;
+    height: 25px;
+    z-index: 9;
+}
+.m_icons svg { 
+    color: var(--smt-color);
+    color: #fff;
+}
+.member_img {
+    flex: 0 0 46px;
+    width: 46px;
+    height: 46px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.member_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.member_info {
+    min-height: inherit;
+}
+
+.m_tags_title svg,
+.member_info svg {
+    display: inline-block;
+    width: 16px !important;
+    height: 16px !important;
+    vertical-align: middle;
+    margin-right: 5px !important;
+}
+
+.member_title {
+    font-weight: 600;
+    font-size: 16px;
+    word-break: break-word;
+}
+.toLogin {
+    display: flex;
+    flex-direction: column;
+    min-height: inherit;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.toLogin svg.member_svg {
+    display: inline-block;
+    width: 64px !important;
+    height: 64px !important;
+    background: rgba(59, 130, 246, 0.1);
+    padding: 10px;
+    border-radius: 50%;
+    color: var(--smt-color);
+}
+.toLogin p {
+    font-weight: normal;
+    margin: 20px 0;
+    color: #303133;
+    font-size: 16px;
+}
+
+.toLogin a {
+    display: block;
+    width: 100%;
+    height: 36px;
+    line-height: 36px;
+    background: var(--smt-color);
+    border-radius: 8px;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+}
+
+.m_mark {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 14px;
+    background-image: linear-gradient(180deg, var(--smt-color) 0%, var(--smt-color) 100%);
+}
+
+.hideDom {
+    display: none;
+}
+
+.m_tags_title {
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 14px;
+    color: #303133;
+}
+
+.m_tags_info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+    border-radius: 6px;
+}
+
+.m_tags_info_item {
+    text-align: center;
+    cursor: pointer;
+    width: 140px;
+    height: 44px;
+    line-height: 40px;
+    background: #FFFFFF;
+    border: 1px solid #D6DDE6;
+    border-radius: 6px;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.m_tags_info_item[data-tag="我的资料"] .tag-icon {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: url('../imgs/wdzl.png') no-repeat left top;
+    background-size: 100% 100%;
+    vertical-align: middle;
+    margin-top: -2px;
+    margin-right: 5px;
+}
+
+.m_tags_info_item[data-tag="我的订单"] .tag-icon {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: url('../imgs/wddd.png') no-repeat left top;
+    background-size: 100% 100%;
+    vertical-align: middle;
+    margin-top: -2px;
+    margin-right: 5px;
+}
+
+.m_tags_info_item[data-tag="我的收藏"] .tag-icon {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: url('../imgs/wdsc.png') no-repeat left top;
+    background-size: 100% 100%;
+    vertical-align: middle;
+    margin-top: -2px;
+    margin-right: 5px;
+}
+
+.m_tags_info_item[data-tag="我的服务"] .tag-icon {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: url('../imgs/wdfw.png') no-repeat left top;
+    background-size: 100% 100%;
+    vertical-align: middle;
+    margin-top: -2px;
+    margin-right: 5px;
+}
+
+.quick_labels {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    max-height: 100px;
+    flex: 1;
+    width: 100%;
+    overflow-x: auto;
+}
+
+.quick_label_item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 6px;
+    color: #303133;
+    font-size: 12px;
+    cursor: pointer;
+    transition: all 0.3s;
+    height: 30px;
+    line-height: 30px;
+    position: relative;
+    background: linear-gradient(to left bottom, #C97AFA, #2966FA);
+    z-index: 1;
+    gap: 5px;
+    min-width: 100px;
+    justify-content: center;
+}
+
+.quick_label_item::before {
+    content: '';
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    right: 1px;
+    bottom: 1px;
+    background: #fff;
+    border-radius: 5px;
+    z-index: -1;
+}
+
+.quick_label_item:hover,
+.quick_label_item.active {
+    color: #fff;
+}
+
+.quick_label_item:hover::before {
+    transition: all 1s;
+    background: linear-gradient(to left bottom, #C97AFA, #2966FA);
+}
+
+.quick_label_item.active::before {
+    background: linear-gradient(to left bottom, #C97AFA, #2966FA);
+}
+
+.quick_label_item svg {
+    flex: 0 0 20px;
+    width: 20px !important;
+}
+
+.quick_label_item svg{
+    width: 18px;
+    height: 18px;
+    margin-right: 5px;
+}
+
+/* 打招呼弹窗 */
+
+.greeting-popup {
+    position: fixed;
+    bottom: 100px;
+    right: 0px;
+    z-index: 99999999;
+    display: none;
+    padding: 20px;
+}
+
+.greeting-popup-left {
+    left: 0;
+    right: auto;
+}
+
+.greeting-content {
+    background: #fafbfc;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08), 0 1px 6px rgba(0,0,0,0.05);
+    padding: 24px;
+    position: relative;
+    min-width: 250px;
+    max-width: 320px;
+    border: 1px solid #f0f0f0;
+}
+
+.greeting-close {
+    position: absolute;
+    top: -11px;
+    right: 6px;
+    font-size: 30px;
+    cursor: pointer;
+    color: #000;
+}
+
+.greeting-img{
+    flex: 0 0 46px;
+    width: 46px;
+}
+
+.greeting-img img{
+    width: 46px;
+    height: 46px;
+    box-shadow: 0 0 6px 0 #3989ff59;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.greeting-infoBox {
+    flex: 1;
+    min-width: 0;
+    width: auto;
+    margin-left: 0;
+}
+
+#marqueePopup .greeting-infoBox {
+    width: auto;
+    margin-left: 0;
+}
+
+.greeting-info {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    overflow: hidden;
+}
+
+.greeting-header {
+    margin-bottom: 15px;
+}
+
+.greeting-title {
+    font-weight: 700;
+    font-size: 17px;
+    color: #1a1a1a;
+    letter-spacing: 0.3px;
+    line-height: 1.4;
+}
+
+.greeting-body {
+    /* margin-bottom: 10px; */
+}
+
+.greeting-text {
+    font-weight: 500;
+    font-size: 14px;
+    color: #606266;
+    margin-bottom: 15px;
+    word-break: break-word;
+}
+
+.greeting-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.greeting-tag {
+    background: #f0f0f0;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+    color: #666;
+}
+
+.greeting-tag.colors1 {
+    color: #165DFC;
+    background-color: #DBEAFF;
+}
+
+.greeting-tag.colors2 {
+    color: #00A63D;
+    background-color: #DCFCE6;
+}
+
+.greeting-tag.colors3 {
+    color: #E0511E;
+    background-color: #FFEACD;
+}
+
+.greeting-tag.colors4 {
+    color: #9812FA;
+    background-color: #F3E8FF;
+}
+
+.greeting-btn-box {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    margin-top: 16px;
+}
+
+.greeting-btn {
+    background: #1677ff;
+    color: #fff;
+    border: none;
+    padding: 9px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1.4;
+    gap: 1px;
+    transition: background-color 0.2s;
+}
+
+.greeting-btn:hover {
+    background: #0958d9;
+    opacity: 1;
+    box-shadow: none;
+}
+.greeting-btn:focus {
+    outline: none;
+}
+.greeting-btn small {
+    font-size: 11px;
+    opacity: 0.88;
+    font-weight: 400;
+}
+
+.greeting-btn-close {
+    border: 1px solid #d9d9d9;
+    background: #fff;
+    color: #606266;
+    padding: 9px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: border-color 0.2s, color 0.2s;
+}
+.greeting-btn-close:hover {
+    border-color: #909399;
+    color: #303133;
+}
+
+/* 弹出动画 */
+@keyframes popIn {
+    0% { transform: scale(0.8); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+.greeting-popup.show {
+    display: block;
+    animation: popIn 0.3s ease-out;
+}
+
+#marqueePopup.greeting-popup.show {
+    animation: none;
+}
+
+/* 跳动动画定义 */
+@keyframes bounce {
+  0%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-6px);
+  }
+}
+
+/* 跳动文本样式 */
+.bounce-text {
+    display: flex;
+    justify-content: center;
+    min-height: 300px;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.bounce-text span {
+    display: inline-block;
+    animation: bounce 1.2s infinite ease-in-out;
+}
+
+.bounce-text span:nth-child(2) {
+    animation-delay: 0.1s;
+}
+
+.bounce-text span:nth-child(3) {
+    animation-delay: 0.2s;
+}
+
+.bounce-text span:nth-child(4) {
+    animation-delay: 0.3s;
+}
+
+.bounce-text span:nth-child(5) {
+    animation-delay: 0.4s;
+}
+
+.bounce-text span:nth-child(6) {
+    animation-delay: 0.5s;
+}
+
+.bounce-text span:nth-child(7) {
+    animation-delay: 0.6s;
+}
+
+.bounce-text span:nth-child(8) {
+    animation-delay: 0.7s;
+}
+
+.bounce-text span:nth-child(9) {
+    animation-delay: 0.8s;
+}
+
+.bounce-text span:nth-child(10) {
+    animation-delay: 0.9s;
+}
+
+.load-more-messages {
+    text-align: center;
+    clear: both;
+    margin-bottom: -4px;
+    /* padding-top: 16px; */
+}
+
+.load-more-messages a {
+    text-decoration: none;
+    font-size: 14px;
+}
+.load-more-messages a:hover {
+    color: #007bff;
+}
+
+/* aiAngent */
+.sm_msg .msgcon .sourceItem {
+    border-bottom: 1px solid #DCDEE0;
+    font-weight: 500;
+    font-size: 12px;
+    color: #333;
+    padding: 8px 0;
+}
+
+.aiAgent_msg * {
+    word-break: break-word;
+}
+
+.sourceItem:last-child {
+    border-bottom: none;
+}
+
+.sourceItem a {
+    word-break: break-word;
+}
+
+.sm_msg .msgcon .sourceItem a:hover {
+    background: linear-gradient(to left, #C97AFA, #2966FA);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.thirdTool a:hover {
+    color: #3989FF;
+}
+
+.successBox {
+    display: none;
+}
+
+.sm_msg .msgcon .linksBtn img {
+    margin-top: 10px;
+}
+
+.sm_msg .msgcon .linksBtn a {
+    display: flex;
+    height: 36px;
+    line-height: 36px;
+    background: #FFFFFF;
+    border-radius: 4px;
+    margin: 6px 0;
+    padding: 0 12px;
+}
+.sm_msg .msgcon .linksBtn .cards {
+    height: auto;
+    background: #FFFFFF;
+    border-radius: 4px;
+    margin: 6px 0;
+    padding: 12px;
+}
+.sm_msg .msgcon .linksBtn .cards.wx {
+    height: 36px;
+    overflow: hidden;
+}
+.sm_msg .msgcon .linksBtn .cards span {
+    display: block;
+    margin-top: -5px;
+}
+
+.sm_msg .msgcon .linksBtn .cards .card-imgs {
+    padding: 15px 40px;
+    background: #F5F5F7;
+    margin-top: 15px;
+    border-radius: 4px;
+}
+
+.sm_msg .msgcon .linksBtn .cards .card-imgs img {
+    margin: 0;
+}
+
+.sm_msg .msgcon .addWechat {
+    float: right;
+    width: 88px;
+    height: 24px;
+    line-height: 24px;
+    background: #03C376;
+    border-radius: 4px;
+    font-style: normal;
+    color: #FFFFFF;
+    text-align: center;
+    cursor: pointer;
+}
+
+.sm_msg .msgcon .linksBtn a svg,
+.sm_msg .msgcon .linksBtn span svg {
+    width: 20px;
+    margin-right: 5px;
+}
+
+/* 未读数 */
+.smartIcon {
+    position: -relative;
+}
+
+.unread-badge {
+    position: absolute;
+    top: -18px;
+    right: -8px;
+    background-color: #ff4757;
+    color: white;
+    border-radius: 50%;
+    min-width: 18px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    z-index: 9999;
+    width: 26px;
+    height: 26px;
+    border: 2px solid #fff;
+    animation: breathe-opacity 3s infinite ease-in-out;
+}
+
+@keyframes breathe-opacity {
+    0% {
+        /* opacity: 1;
+        box-shadow: 0 0 5px rgba(255, 71, 87, 0.5); */
+        scale: (1);
+        box-shadow: 0 0 5px rgba(255, 71, 87, 1);
+    }
+    50% {
+        /* opacity: 0.6;
+        box-shadow: 0 0 15px rgba(255, 71, 87, 0.8); */
+        scale: (2);
+        box-shadow: 0 0 5px rgba(255, 71, 87, 1);
+    }
+    100% {
+        /* opacity: 1;
+        box-shadow: 0 0 5px rgba(255, 71, 87, 0.5); */
+        scale: (1);
+        box-shadow: 0 0 5px rgba(255, 71, 87, 1);
+    }
+}
+
+.greeting-popup#loginPopup {
+    left: 50%;
+    top: 50%;
+    right: auto;
+    bottom: auto;
+    transform: translate(-50%, -50%);
+}
+
+.greeting-popup#loginPopup .greeting-content {
+    min-width: 650px;
+    max-width: 800px;
+}
+
+@media (max-width: 768px) { 
+    .greeting-popup#loginPopup .greeting-content {
+        min-width: auto;
+        max-width: none;
+        width: 375px;
+        padding: 0;
+    }
+}
+
+.sm_msg .msgcon ul.aiAgent_relatedIssues {
+    font-weight: 500;
+    list-style: none;
+    margin-left: 0 !important;
+}
+.sm_msg .msgcon ul.aiAgent_relatedIssues li {
+    display: flex;
+    line-height: 24px;
+    word-break: break-word;
+    align-items: baseline;
+}
+.sm_msg .msgcon ul.aiAgent_relatedIssues li p:hover {
+    background: linear-gradient(to left, #C97AFA, #2966FA);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.relatedIssuesItem {
+    color: #3989FF;
+    cursor: pointer;
+}
+.sm_msg .msgcon ul.aiAgent_relatedIssues.hidden {
+    display: none;
+}
+.sm_msg .msgcon .related_title {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.sm_msg .msgcon ul.aiAgent_relatedIssues li svg {
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+    padding-top: 5px;
+}
+
+.confirmDialogCard {
+    margin-top: 4px !important;
+}
+.confirmDialogTitle {
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+    line-height: 20px;
+    margin-bottom: 10px !important;
+}
+.confirmDialogTags {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+}
+.confirmDialogTag {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 10px !important;
+    line-height: 18px;
+    font-size: 12px;
+    text-align: center;
+    color: var(--smt-color);
+    background-color: #fff;
+    border: 1px solid var(--smt-color);
+    border-radius: 4px;
+    cursor: pointer;
+}
+.confirmDialogTag:hover {
+    color: #fff;
+    background-color: var(--smt-color);
+}
+.confirmDialogInputRow {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 10px !important;
+}
+.confirmDialogInput {
+    flex: 1;
+    min-width: 0;
+    line-height: 22px;
+    padding: 5px 12px !important;
+    border: 1px solid #fff;
+    background-color: #fff;
+    border-radius: 4px;
+    font-size: 12px;
+    color: #333;
+}
+.confirmDialogInput::placeholder {
+    color: #A8ABB2;
+}
+.confirmDialogConfirmBtn {
+    flex-shrink: 0;
+    display: inline-block;
+    line-height: 22px;
+    padding: 5px 16px !important;
+    text-align: center;
+    color: #fff;
+    background: var(--smt-color);
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.custom_close {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    cursor: pointer;
+}
+
+.wechat-prompt {
+    position: absolute; /* 强制使用固定定位 */
+    z-index: 999999999;
+    max-width: 152px;
+    max-height: 152px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.wechat-prompt::after {
+  content: '';
+  position: absolute;
+  top: 100%; /* 将三角形放在容器底部 */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 8px solid #fff; /* 颜色可以根据需要调整 */
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 4px 12px;
+}
+
+.windowRight::after{
+  left: auto;
+  right: 0;
+  transform: translateX(-50%);
+}
+
+/* 窗口右 */
+.msgcon.mb20 {
+    overflow: visible;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.aiAgent_reply {
+    position: absolute;
+    z-index: 9999;
+    bottom: -30px;
+}
+
+/* 跑马灯：复用 greeting-popup 结构，仅补充滚动文字专属样式 */
+.marquee-text-wrap {
+    overflow: hidden;
+    /* white-space: nowrap; */
+}
+.marquee-text {
+    display: inline-block;
+    min-height: 10px;
+    max-height: 200px;
+    overflow: auto;
+    /* animation: marqueeScroll 10s linear infinite; */
+}
+@keyframes marqueeScroll {
+    0%   { transform: translateX(0%); }
+    100% { transform: translateX(-100%); }
+}
+
+.greeting-popup.greeting-popup-corner {
+    bottom: 0px;
+    right: 0px;
+}
+/* 弹窗放大/还原 */
+.sm_expand{
+    position: absolute;
+    right: 45px;
+    top: 18px;
+    height: 14px;
+    color: #fff;
+    z-index: 99;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    white-space: nowrap;
+    font-size: 12px;
+}
+.sm_expand svg{
+    margin-top: 10px !important;
+    width: 20px !important;
+    height: 20px !important;
+}
+.sm_expand .sm_expand_txt{
+    display: none;
+    margin-right: 6px;
+}
+.sm_expand .sm_expand_txt svg{
+    margin: -2px 6px 0 0 !important;
+}
+.sm_expand .sm_shrink_icon{
+    display: none;
+}
+@media screen and (max-width:768px) {
+    .sm_expand{
+        display: none !important;
+    }
+}
+.smartService-mask{
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.5);
+    z-index: 999998;
+}
+.smartService.expanded{
+    left: 50% !important;
+    right: auto !important;
+    top: 50% !important;
+    bottom: auto !important;
+    transform: translate(-50%,-50%);
+    width: min(960px, 92vw) !important;
+    height: min(760px, 88vh);
+    max-height: 88vh;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+}
+.smartService.expanded .sm_expand .sm_expand_icon{
+    display: none;
+}
+.smartService.expanded .sm_expand .sm_shrink_icon{
+    display: inline-block;
+}
+.smartService.expanded .sm_expand .sm_expand_txt{
+    display: inline-block;
+}
+.smartService.expanded .sm_title{
+    padding: 0 20px;
+    height: 64px;
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+}
+.smartService.expanded .sm_mark{
+    display: none;
+}
+.smartService.expanded .sm_expand{
+    position: static;
+    order: 2;
+    margin-left: auto;
+    margin-right: 16px;
+    margin-top: 12px;
+}
+.smartService.expanded .sm_close{
+    position: static;
+    order: 3;
+}
+.smartService.expanded .sm_admin{
+    order: 1;
+    flex: 1;
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+.smartService.expanded .sm_admin img{
+    width: 36px;
+    height: 36px;
+    margin: 0 10px 0 0;
+}
+.smartService.expanded .sm_admin p{
+    height: auto;
+    padding: 0;
+    font-size: 16px;
+    text-align: left;
+}
+.smartService.expanded .sm_dialog{
+    flex: 1;
+    min-height: 0;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0;
+}
+.smartService.expanded .sm_tabs_nav{
+    flex: 0 0 auto;
+}
+.smartService.expanded .sm_tab_content{
+    display: none;
+}
+.smartService.expanded .sm_tab_content.active{
+    display: flex !important;
+    flex-direction: column;
+    flex: 1;
+    min-height: 0;
+}
+.smartService.expanded .sm_output{
+    flex: 1;
+    min-height: 0;
+    height: auto;
+    max-height: none;
+}
+.smartService.expanded .sm_quickLabel{
+    flex: 0 0 auto;
+}
+.smartService.expanded .sm_input{
+    flex: 0 0 auto;
+}

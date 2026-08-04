@@ -1,0 +1,257 @@
+.zxbox{
+    display: flex;
+    flex-direction: column;
+    background:#e40011;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    transition: all ease .3s;
+    position: relative;
+    right: 0;
+}
+.zx_btm_o{
+    background: #e40011;
+    width: 45px;
+    height: 45px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    cursor: pointer;
+    background-image:url(https://omo-oss-image1.thefastimg.com//portal-saas/demo_d83bc9af8bb342749ecf5b9c474b30c5/cms/image/217194ce-62fc-4dae-a1e1-dc253453b229.png);
+    background-repeat:no-repeat;
+    background-position:center;
+    position: absolute;
+    bottom: -50px;
+    right: 0;
+    transition: all ease .3s;
+}
+.zx_right{
+    right: -45px;
+}
+.zx_right + .zx_btm_o{
+    width: 30px;
+    height: 30px;
+    bottom: -35px;
+}
+.zx_xjie{
+    position: absolute;
+    right: 55px;
+    top: 0;
+    background: #fff;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    z-index: 2;
+    opacity: 0;
+    pointer-events: none;
+    transition: all ease .3s;
+    padding: 5px;
+    -webkit-box-shadow: 0 1px 3px rgb(18 18 18 / 10%);
+    box-shadow: 0 1px 3px rgb(18 18 18 / 10%);
+    min-width: 200px;
+    min-height: 110px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.zx_xjie img{
+	min-width:150px;
+}
+.zxbox > div:hover .zx_xjie{
+    z-index: 3;
+    opacity: 1;
+    pointer-events: visible;
+    right: 45px;
+}
+.zxbox > div > p a{
+    font-size: 0;
+    display: block;
+    width: 45px;
+    height: 45px;
+    margin: 0 auto;
+    transition: all ease .3s;
+}
+.zxbox a:hover{
+    opacity: .6;
+}
+.zx_1 > p a{
+    background-image:url(https://omo-oss-image1.thefastimg.com//portal-saas/demo_d83bc9af8bb342749ecf5b9c474b30c5/cms/image/bf49c288-d0cd-44ed-a4a7-805d20aea5b8.png);
+    background-repeat:no-repeat;
+    background-position:center;
+}
+.zx_2 > p a{
+    background-image:url(https://omo-oss-image1.thefastimg.com//portal-saas/demo_d83bc9af8bb342749ecf5b9c474b30c5/cms/image/288fad94-0e7f-43ff-bbcc-d02ff6c26794.png);
+    background-repeat:no-repeat;
+    background-position:center;
+}
+.zx_3 > p a{
+    background-image:url(https://omo-oss-image1.thefastimg.com//portal-saas/demo_d83bc9af8bb342749ecf5b9c474b30c5/cms/image/89a8ff12-4c02-48f6-b1d2-d78ce284e8ed.png);
+    background-repeat:no-repeat;
+    background-position:center;
+}
+.zx_4 > p a{
+    background-image:url(https://omo-oss-image1.thefastimg.com//portal-saas/demo_d83bc9af8bb342749ecf5b9c474b30c5/cms/image/de9f937f-fe9e-4ffa-bb93-d9f944a70d98.png);
+    background-repeat:no-repeat;
+    background-position:center;
+}
+.zx_5 > p a{
+    background-image:url(https://omo-oss-image1.thefastimg.com//portal-saas/demo_d83bc9af8bb342749ecf5b9c474b30c5/cms/image/fadbdafe-62f5-4c0e-9b34-fb3074db7436.png);
+    background-repeat:no-repeat;
+    background-position:center;
+}
+.zx_6 > p a{
+    background-image:url(https://omo-oss-image1.thefastimg.com//portal-saas/demo_d83bc9af8bb342749ecf5b9c474b30c5/cms/image/b2de35bb-1aa2-4b0e-a333-f6425c2b4126.png);
+    background-repeat:no-repeat;
+    background-position:center;
+    pointer-events: none;
+}
+.zx_7 > p a{
+    background-image:url(https://omo-oss-image.thefastimg.com/portal-saas/demo_d83bc9af8bb342749ecf5b9c474b30c5/cms/image/cb20fd0d-c1d3-4de5-8c98-cc11a01ee7ed.png);
+    background-repeat:no-repeat;
+    background-position:center;
+    pointer-events: none;
+}
+.zx_8 > p a{
+    background-image:url(https://omo-oss-image1.thefastimg.com//portal-saas/demo_d83bc9af8bb342749ecf5b9c474b30c5/cms/image/1a023d5c-f37f-47f0-8a96-ab50fa26c8ea.png);
+    background-repeat:no-repeat;
+    background-position:center;
+}
+.zx_9 > p a{
+    background-image:url(https://omo-oss-image1.thefastimg.com//portal-saas/demo_d83bc9af8bb342749ecf5b9c474b30c5/cms/image/8a031af5-b095-4052-9f8b-476489012406.png);
+    background-repeat:no-repeat;
+    background-position:center;
+}
+.zx_10 > p a{
+    background-image:url(https://omo-oss-image.thefastimg.com/portal-saas/demo_d83bc9af8bb342749ecf5b9c474b30c5/cms/image/067691a1-cb3d-4f5f-82e7-25d3482abdb5.png);
+    background-repeat:no-repeat;
+    background-position:center;
+}
+.zx_type{
+    line-height: normal;
+}
+.zx_type.vpHide:not([nd_deleted]){
+    display: none !important;
+}
+.zx_zh{
+    text-align: left;
+    color: #e40011;
+    font-size: 20px;
+    white-space: nowrap;
+    min-height: 30px;
+    line-height: 30px;
+    padding: 0 15px;
+    font-family: arial;
+    text-align: center;
+}
+.zx_type{
+    display: none;
+}
+.zx_ts{
+    font-size: 14px;
+    color: #a7aeb5;
+    line-height: 1;
+    margin-bottom: 10px;
+}
+.zx_6 .zx_xjie{
+    min-height: 200px;
+}
+.zx_6 .zx_zh a{
+	display:none;
+}
+.zx_6 .zx_bts{
+    font-size: 15px;
+    color: #737373;
+    line-height: 1;
+    margin-bottom: 10px;
+    text-align: center;
+    margin-top: 20px;
+}
+.zx_6 .zx_ts{
+    font-size: 14px;
+    line-height: 1.4;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+.zx_6 .zx_ts:nth-child(2){
+    display:none;
+}
+.p_backtop{
+    background-image:url(https://omo-oss-image1.thefastimg.com//portal-saas/demo_d83bc9af8bb342749ecf5b9c474b30c5/cms/image/7437b631-6f97-4d21-aa8c-181f56d9d970.png);
+    background-repeat:no-repeat;
+    background-position:center;
+    width: 45px;
+    height: 0px;
+    cursor: pointer;
+    transition: all ease .3s;
+    opacity: 0;
+}
+.p_backtop.zx_hi{
+    height: 45px;
+    opacity: 1;
+}
+.p_backbottom{
+    background-image:url(https://omo-oss-image1.thefastimg.com//portal-saas/demo_d83bc9af8bb342749ecf5b9c474b30c5/cms/image/7437b631-6f97-4d21-aa8c-181f56d9d970.png);
+    background-repeat:no-repeat;
+    background-position:center;
+    transform: rotate(180deg);
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+    transition: all ease .3s;
+}
+.zx_btm_o:hover,
+.p_backbottom:hover,
+.zxbox > div > p a:hover,
+.p_backtop:hover{
+    background-color: #e40011;
+}
+
+@media screen and (max-width:768px){
+  .p_backbottom {
+      width: 35px;
+      height: 35px;
+  }
+  .zxbox > div > p a{
+      width: 35px;
+      height: 35px;
+      pointer-events: none;
+  }
+  .p_backtop{
+      width: 35px;
+  }
+  .p_backtop.zx_hi {
+      height: 35px;
+      opacity: 1;
+  }
+  .zx_btm_o{
+      width: 35px;
+      height: 35px;
+      bottom: -40px;
+  }
+  .zx_xjie {
+      min-width: 160px;
+      min-height: 70px;
+  }
+  .zx_zh {
+      font-size: 16px;
+  }
+  .zx_ts {
+      font-size: 12px;
+      margin-bottom: 4px;
+  }
+  .zx_6 .zx_bts {
+      font-size: 12px;
+      margin-bottom: 4px;
+      margin-top: 0px;
+  }
+  .zx_6 .zx_ts {
+      font-size: 12px;
+      margin-bottom: 0px;
+      margin-top: 0px;
+  }
+  .zx_xjie img {
+      min-width: 90px;
+      max-width: 100px;
+  }
+  .zx_6 .zx_xjie {
+      min-height: 190px;
+      min-width: 130px;
+  }
+}

@@ -160,112 +160,145 @@ endif;
 
 /**
  * Enqueue cloned haitaik.com assets on the front page and product pages.
+ * Uses get_template_directory_uri() so the theme is 100% standalone on any host.
  */
 function twentytwentyfive_enqueue_cloned_assets() {
-	$is_product_page = is_page( array( 22, 23, 24, 25, 26 ) );
-	$is_about_page   = is_page( array( 18, 19, 20, 21 ) );
-	$is_faq_page     = is_page( 27 );
-	$is_contact_page = is_page( 29 );
+	$theme_uri = get_template_directory_uri();
+
+	// Always enqueue global stylesheets on all frontend page views
+	wp_enqueue_style(
+		'haitaik-bootstrap-global',
+		$theme_uri . '/assets/npublic/libs/css/ceccbootstrap-global.css',
+		array(),
+		null
+	);
+	wp_enqueue_style(
+		'haitaik-site',
+		$theme_uri . '/assets/css/site.css',
+		array(),
+		null
+	);
+
+	// Always enqueue global scripts on all frontend page views
+	wp_enqueue_script(
+		'haitaik-core-js',
+		$theme_uri . '/assets/npublic/libs/core/ceccjquery-libs.js',
+		array(),
+		null,
+		true
+	);
+	wp_enqueue_script(
+		'haitaik-common-js',
+		$theme_uri . '/assets/npublic/commonjs/common.min.js',
+		array(),
+		null,
+		true
+	);
+	wp_enqueue_script(
+		'haitaik-c0ac6a6647ce41aca3955968ca1f9a50',
+		$theme_uri . '/assets/upload/js/c0ac6a6647ce41aca3955968ca1f9a50.js',
+		array(),
+		null,
+		true
+	);
+	wp_enqueue_script(
+		'haitaik-3b40c5321d4a424a8951ae1ecddfaac5',
+		$theme_uri . '/assets/upload/js/3b40c5321d4a424a8951ae1ecddfaac5.js',
+		array(),
+		null,
+		true
+	);
+	wp_enqueue_script(
+		'haitaik-d1fd3c1642ba450fb712d2542fad9bca',
+		$theme_uri . '/assets/upload/js/d1fd3c1642ba450fb712d2542fad9bca.js',
+		array(),
+		null,
+		true
+	);
+
+	// Page-Specific Stylesheets loaded conditionally
+	$is_product_page   = is_page( array( 22, 23, 24, 25, 26 ) );
+	$is_about_page     = is_page( array( 18, 19, 20, 21 ) );
+	$is_faq_page       = is_page( 27 );
+	$is_contact_page   = is_page( 29 );
 	$is_single_product = is_singular( 'product' );
 
-	if ( is_front_page() || $is_product_page || $is_about_page || $is_faq_page || $is_contact_page || $is_single_product || is_404() ) {
-		// Global Stylesheets
+	if ( is_front_page() || is_page( 17 ) ) {
 		wp_enqueue_style(
-			'haitaik-bootstrap-global',
-			home_url( '/npublic/libs/css/ceccbootstrap-global.css' ),
+			'haitaik-home-specific',
+			$theme_uri . '/assets/css/Home_7b9a32a9a2a77e5f5e09085c43c3ae42.min.css',
 			array(),
 			null
 		);
+	} elseif ( $is_product_page ) {
 		wp_enqueue_style(
-			'haitaik-site',
-			home_url( '/css/site.css' ),
+			'haitaik-product-specific',
+			$theme_uri . '/assets/css/pro_list1.css',
 			array(),
 			null
 		);
-
-		// Page-Specific Stylesheets
-		if ( is_front_page() ) {
-			wp_enqueue_style(
-				'haitaik-home-specific',
-				home_url( '/css/Home_7b9a32a9a2a77e5f5e09085c43c3ae42.min.css' ),
-				array(),
-				null
-			);
-		} elseif ( $is_product_page ) {
-			wp_enqueue_style(
-				'haitaik-product-specific',
-				home_url( '/css/pro_list1.css' ),
-				array(),
-				null
-			);
-		} elseif ( $is_about_page ) {
-			wp_enqueue_style(
-				'haitaik-about-specific',
-				home_url( '/css/about.css' ),
-				array(),
-				null
-			);
-		} elseif ( $is_faq_page ) {
-			wp_enqueue_style(
-				'haitaik-faq-specific',
-				home_url( '/css/faq.css' ),
-				array(),
-				null
-			);
-		} elseif ( $is_contact_page ) {
-			wp_enqueue_style(
-				'haitaik-contact-specific',
-				home_url( '/css/contactus.css' ),
-				array(),
-				null
-			);
-		} elseif ( $is_single_product ) {
-			wp_enqueue_style(
-				'haitaik-single-product-specific',
-				home_url( '/css/singleproduct.css' ),
-				array(),
-				null
-			);
-		}
-
-
-		// Scripts
-		wp_enqueue_script(
-			'haitaik-core-js',
-			home_url( '/npublic/libs/core/ceccjquery-libs.js' ),
+	} elseif ( $is_about_page ) {
+		wp_enqueue_style(
+			'haitaik-about-specific',
+			$theme_uri . '/assets/css/about.css',
 			array(),
-			null,
-			true
+			null
 		);
-		wp_enqueue_script(
-			'haitaik-common-js',
-			home_url( '/npublic/commonjs/common.min.js' ),
+	} elseif ( $is_faq_page ) {
+		wp_enqueue_style(
+			'haitaik-faq-specific',
+			$theme_uri . '/assets/css/faq.css',
 			array(),
-			null,
-			true
+			null
 		);
-		wp_enqueue_script(
-			'haitaik-c0ac6a6647ce41aca3955968ca1f9a50',
-			home_url( '/upload/js/c0ac6a6647ce41aca3955968ca1f9a50.js' ),
+	} elseif ( $is_contact_page ) {
+		wp_enqueue_style(
+			'haitaik-contact-specific',
+			$theme_uri . '/assets/css/contactus.css',
 			array(),
-			null,
-			true
+			null
 		);
-		wp_enqueue_script(
-			'haitaik-3b40c5321d4a424a8951ae1ecddfaac5',
-			home_url( '/upload/js/3b40c5321d4a424a8951ae1ecddfaac5.js' ),
+	} elseif ( $is_single_product ) {
+		wp_enqueue_style(
+			'haitaik-single-product-specific',
+			$theme_uri . '/assets/css/singleproduct.css',
 			array(),
-			null,
-			true
-		);
-		wp_enqueue_script(
-			'haitaik-d1fd3c1642ba450fb712d2542fad9bca',
-			home_url( '/upload/js/d1fd3c1642ba450fb712d2542fad9bca.js' ),
-			array(),
-			null,
-			true
+			null
 		);
 	}
 }
 add_action( 'wp_enqueue_scripts', 'twentytwentyfive_enqueue_cloned_assets', 20 );
+
+/**
+ * Filter block output and HTML output to dynamically rewrite root asset URLs (/npublic/, /upload/, /css/)
+ * to theme asset URLs (get_template_directory_uri() . '/assets/...').
+ * This guarantees that when the user uploads ONLY the theme folder to any host, all images and assets load 100%.
+ */
+function twentytwentyfive_rewrite_asset_urls( $content ) {
+	if ( empty( $content ) || is_admin() ) {
+		return $content;
+	}
+	$theme_asset_url = get_template_directory_uri() . '/assets/';
+
+	$patterns = array(
+		'/(src|href|lazy|data-src|poster)=(["\'])\/(npublic|upload|css|thirdcode|_external|nportal|ndesigner)\//i',
+		'/url\((["\']?)\/(npublic|upload|css|thirdcode|_external|nportal|ndesigner)\//i',
+	);
+	$replacements = array(
+		'$1=$2' . $theme_asset_url . '$3/',
+		'url($1' . $theme_asset_url . '$2/',
+	);
+
+	return preg_replace( $patterns, $replacements, $content );
+}
+add_filter( 'render_block', 'twentytwentyfive_rewrite_asset_urls', 10, 1 );
+add_filter( 'the_content', 'twentytwentyfive_rewrite_asset_urls', 10, 1 );
+
+function twentytwentyfive_start_asset_url_buffer() {
+	if ( ! is_admin() ) {
+		ob_start( 'twentytwentyfive_rewrite_asset_urls' );
+	}
+}
+add_action( 'template_redirect', 'twentytwentyfive_start_asset_url_buffer', 1 );
+
 
