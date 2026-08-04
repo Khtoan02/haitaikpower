@@ -217,50 +217,59 @@ function twentytwentyfive_enqueue_cloned_assets() {
 	);
 
 	// Page-Specific Stylesheets loaded conditionally
-	$is_product_page   = is_page( array( 22, 23, 24, 25, 26 ) );
-	$is_about_page     = is_page( array( 18, 19, 20, 21 ) );
-	$is_faq_page       = is_page( 27 );
-	$is_contact_page   = is_page( 29 );
-	$is_single_product = is_singular( 'product' );
-
-	if ( is_front_page() || is_page( 17 ) ) {
+	// Page-Specific Stylesheets loaded conditionally by Slug, Template Name, or Post Type
+	if ( is_front_page() || is_page( array( 'home', 17 ) ) ) {
 		wp_enqueue_style(
 			'haitaik-home-specific',
 			$theme_uri . '/assets/css/Home_7b9a32a9a2a77e5f5e09085c43c3ae42.min.css',
 			array(),
 			null
 		);
-	} elseif ( $is_product_page ) {
-		wp_enqueue_style(
-			'haitaik-product-specific',
-			$theme_uri . '/assets/css/pro_list1.css',
-			array(),
-			null
-		);
-	} elseif ( $is_about_page ) {
+	} elseif ( is_page( array( 'about-us', 'about', 'company-profile', 18, 19, 20, 21 ) ) || is_page_template( 'page-about-us.php' ) ) {
 		wp_enqueue_style(
 			'haitaik-about-specific',
 			$theme_uri . '/assets/css/about.css',
 			array(),
 			null
 		);
-	} elseif ( $is_faq_page ) {
+	} elseif ( is_page( array( 'faq', 27 ) ) || is_page_template( 'page-faq.php' ) ) {
 		wp_enqueue_style(
 			'haitaik-faq-specific',
 			$theme_uri . '/assets/css/faq.css',
 			array(),
 			null
 		);
-	} elseif ( $is_contact_page ) {
+	} elseif ( is_page( array( 'contact-us', 'contact', 29 ) ) || is_page_template( 'page-contact-us.php' ) ) {
 		wp_enqueue_style(
 			'haitaik-contact-specific',
 			$theme_uri . '/assets/css/contactus.css',
 			array(),
 			null
 		);
-	} elseif ( $is_single_product ) {
+	} elseif ( is_page( array( 'led-display-power', 'product-info', 'industrial-control-power', 'led-lighting-power', 'din-rail-power', 22, 23, 24, 25, 26 ) ) || is_page_template( 'page-product-list.php' ) ) {
+		wp_enqueue_style(
+			'haitaik-product-specific',
+			$theme_uri . '/assets/css/pro_list1.css',
+			array(),
+			null
+		);
+	} elseif ( is_singular( 'product' ) ) {
 		wp_enqueue_style(
 			'haitaik-single-product-specific',
+			$theme_uri . '/assets/css/singleproduct.css',
+			array(),
+			null
+		);
+	} elseif ( is_home() || is_page( array( 'news', 'post', 'posts' ) ) || is_page_template( 'home.php' ) || is_page_template( 'page-news.php' ) ) {
+		wp_enqueue_style(
+			'haitaik-news-specific',
+			$theme_uri . '/assets/css/pro_list1.css',
+			array(),
+			null
+		);
+	} elseif ( is_single() ) {
+		wp_enqueue_style(
+			'haitaik-single-post-specific',
 			$theme_uri . '/assets/css/singleproduct.css',
 			array(),
 			null
@@ -341,8 +350,11 @@ function twentytwentyfive_standalone_modular_template_loader( $template ) {
 	} elseif ( is_page( array( 'led-display-power', 'product-info', 'industrial-control-power', 'led-lighting-power', 'din-rail-power', 22, 23, 24, 25, 26 ) ) ) {
 		$file = get_template_directory() . '/page-product-list.php';
 		if ( file_exists( $file ) ) return $file;
-	} elseif ( is_singular( 'product' ) ) {
-		$file = get_template_directory() . '/single-product.php';
+	} elseif ( is_home() || is_page( array( 'news', 'post', 'posts' ) ) ) {
+		$file = get_template_directory() . '/home.php';
+		if ( file_exists( $file ) ) return $file;
+	} elseif ( is_single() && ! is_singular( 'product' ) ) {
+		$file = get_template_directory() . '/single.php';
 		if ( file_exists( $file ) ) return $file;
 	} elseif ( is_404() ) {
 		$file = get_template_directory() . '/404.php';
