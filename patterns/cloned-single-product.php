@@ -59,7 +59,7 @@ if ( $product ) {
     $custom_meta_file = get_post_meta( get_the_ID(), '_spec_file', true );
     if ( $custom_meta_file ) {
         $product_downloads[] = array(
-            'name' => get_the_title() . ' Specification',
+            'name' => get_the_title() . ' 规格书',
             'url'  => $custom_meta_file,
         );
     }
@@ -68,207 +68,301 @@ if ( $product ) {
 // Fallback spec PDF file
 if ( empty( $product_downloads ) ) {
     $product_downloads[] = array(
-        'name' => get_the_title() . ' Specification.pdf',
+        'name' => get_the_title() . ' 规格书.pdf',
         'url'  => get_template_directory_uri() . '/assets/upload/specification.pdf',
     );
 }
 ?>
 <!-- wp:html -->
 <style>
-#magnifierWrapper .images-cover {
+.single-product-page-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: #333;
+}
+.single-product-breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 30px;
+    list-style: none;
+    padding: 0;
+}
+.single-product-top-grid {
+    display: grid;
+    grid-template-columns: minmax(320px, 450px) 1fr;
+    gap: 40px;
+    margin-bottom: 50px;
+    align-items: start;
+}
+@media (max-width: 768px) {
+    .single-product-top-grid {
+        grid-template-columns: 1fr;
+    }
+}
+.single-product-gallery-box {
     border: 1px solid #e2e8f0;
     border-radius: 8px;
     background: #ffffff;
-    min-height: 380px;
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    overflow: hidden;
     padding: 15px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.04);
 }
-#magnifierWrapper .images-cover .image-item {
-    width: 100%;
-    height: 100%;
+.single-product-main-img-wrap {
+    height: 380px;
+    display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 }
-#magnifierWrapper .images-cover .image-item img {
+.single-product-main-img-wrap img {
     max-width: 100% !important;
     max-height: 360px !important;
     width: auto !important;
     height: auto !important;
     object-fit: contain !important;
     filter: none !important;
-    opacity: 1 !important;
     image-rendering: -webkit-optimize-contrast;
 }
-#magnifierWrapper .thumbnail_box li {
+.single-product-thumbs {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+    list-style: none;
+    padding: 0;
+    justify-content: center;
+}
+.single-product-thumbs li {
+    width: 60px;
+    height: 60px;
     border: 1px solid #e2e8f0;
     border-radius: 4px;
     padding: 3px;
     cursor: pointer;
-    transition: all 0.2s ease;
     background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-#magnifierWrapper .thumbnail_box li.active {
+.single-product-thumbs li.active {
     border-color: #e40011 !important;
     box-shadow: 0 0 0 1px #e40011;
 }
-#magnifierWrapper .thumbnail_box li img {
+.single-product-thumbs li img {
     max-width: 100%;
-    max-height: 50px;
+    max-height: 100%;
     object-fit: contain;
 }
-</style>
-<div id="c_banner_008_P_312-17162638816070">
+.single-product-info-box h1 {
+    font-size: 26px;
+    font-weight: 700;
+    color: #1a202c;
+    margin: 0 0 15px 0;
+    line-height: 1.3;
+}
+.single-product-category-tag {
+    font-size: 14px;
+    color: #64748b;
+    margin-bottom: 20px;
+}
+.single-product-category-tag span {
+    color: #e40011;
+    font-weight: 500;
+}
+.single-product-action-btns {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+}
+.single-product-action-btns .btn-apply {
+    background-color: #e40011;
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+.single-product-action-btns .btn-spec {
+    background-color: #0094de;
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+.single-product-summary-box {
+    border-top: 1px solid #e2e8f0;
+    padding-top: 20px;
+    font-size: 14px;
+    color: #475569;
+    line-height: 1.7;
+}
 
- <input type="hidden" name="propJson" value='{}'/></div><div id="c_static_001_P_24351-17162640648450">
-<div class="e_container-1 s_layout">
-    <div class="cbox-1-0 p_item"><div class="e_breadcrumb-2 s_list">
-    <ul class="p_breadcrumb" style="display: flex; align-items: center; gap: 8px; font-size: 14px; color: #666; margin: 0; padding: 0; list-style: none;">
-        <li class="p_breadcrumbItem">
-            <a href="/" style="color: #666; text-decoration: none; display: inline-flex; align-items: center;">
-                <span class="text-secondary p_icon" style="margin-right: 4px;">
-                    <svg class="icon" viewBox="0 0 1029 1024" width="14" height="14" style="fill: #666;">
-                        <path d="M44.799492 528.986943a42.836848 42.836848 0 0 1-31.231646-13.567846 42.725916 42.725916 0 0 1 2.133309-60.329983L491.685094 11.446142a42.68325 42.68325 0 0 1 58.538003 0.34133l465.658723 443.642972c17.066473 16.21315 17.749132 43.26351 1.45065 60.329983s-43.26351 17.749132-60.329983 1.45065L520.442102 101.301124 73.897829 517.552406c-8.27724 7.679913-18.687788 11.434537-29.098337 11.434537z"></path>
-                    </svg>
-                </span>
-                首页
-            </a>
-        </li>
-        <li style="color: #ccc;">/</li>
-        <li class="p_breadcrumbItem">
-            <a href="/led-display-power/" style="color: #666; text-decoration: none;">产品中心</a>
-        </li>
-        <li style="color: #ccc;">/</li>
-        <li class="p_breadcrumbItem" style="color: #333; font-weight: 500;">
-            <?php the_title(); ?>
-        </li>
+/* Product Details Full Width Section */
+.single-product-details-section {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 30px;
+    margin-bottom: 40px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+}
+.single-product-details-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #1e293b;
+    margin: 0 0 20px 0;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #e40011;
+    display: inline-block;
+}
+
+/* Form Section Clean Styling */
+.single-product-form-section {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 35px;
+    margin-bottom: 40px;
+}
+.single-product-form-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #1e293b;
+    margin-bottom: 20px;
+    padding-left: 12px;
+    border-left: 4px solid #e40011;
+}
+.single-product-form-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+.single-product-form-field {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+.single-product-form-field.full-width {
+    grid-column: 1 / -1;
+}
+.single-product-form-field label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #334155;
+}
+.single-product-form-field label span {
+    color: #e40011;
+}
+.single-product-form-field input,
+.single-product-form-field textarea {
+    width: 100%;
+    padding: 10px 14px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 14px;
+    background: #ffffff;
+    box-sizing: border-box;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+.single-product-form-field input:focus,
+.single-product-form-field textarea:focus {
+    border-color: #e40011;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(228, 0, 17, 0.1);
+}
+.single-product-form-submit-btn {
+    background: #e40011;
+    color: #ffffff;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.single-product-form-submit-btn:hover {
+    background: #c8000f;
+}
+</style>
+
+<div class="single-product-page-container">
+    <!-- Breadcrumb -->
+    <ul class="single-product-breadcrumb">
+        <li><a href="/" style="color: #666; text-decoration: none;">首页</a></li>
+        <li>/</li>
+        <li><a href="/led-display-power/" style="color: #666; text-decoration: none;">产品中心</a></li>
+        <li>/</li>
+        <li style="color: #1a202c; font-weight: 600;"><?php the_title(); ?></li>
     </ul>
-</div>
-</div>
-</div>
- <input type="hidden" name="propJson" value='{}'/></div><div id="c_product_detail_007_P_002-17186726622280">
-<div class="e_container-1 s_layout">
-    <div class="cbox-1-0 p_item"><div class="e_magnifier-59 s_list" needjs="true">
-    <div class="magnifier thumb_bottom" id="magnifierWrapper">
-        <div class="magnifier-container">
-            <!--图片容器-->
-            <div class="images-cover">
+
+    <!-- Top Product Header Grid -->
+    <div class="single-product-top-grid">
+        <!-- Gallery -->
+        <div class="single-product-gallery-box">
+            <div class="single-product-main-img-wrap" id="mainImgWrap">
                 <?php foreach ( $product_images as $index => $img_url ) : ?>
-                    <div class="image-item static-item<?php echo $index === 0 ? ' active' : ''; ?>" style="<?php echo $index === 0 ? 'display: flex;' : ''; ?>">
-                        <img src="<?php echo esc_url( $img_url ); ?>" lazy="<?php echo esc_url( $img_url ); ?>" alt="<?php the_title_attribute(); ?>" title="<?php the_title_attribute(); ?>" la="la"/>
-                    </div>
+                    <img src="<?php echo esc_url( $img_url ); ?>" alt="<?php the_title_attribute(); ?>" style="<?php echo $index === 0 ? 'display: block;' : 'display: none;'; ?>" class="product-gallery-img" />
                 <?php endforeach; ?>
             </div>
-            <!--右下角的加号-->
-            <div class="image-bigger">
-                <div class="add-icon">+</div>
-            </div>
-            <!--跟随鼠标移动的盒子-->
-            <div class="move-view"></div>
-        </div>
-        <div class="magnifier-assembly">
-            <!--按钮组-->
-            <div class="magnifier-btn">
-                <span class="magnifier-btn-left"><svg t="1646298466594" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5178" width="200" height="200"><path d="M352.60436487 538.8676877L614.1116972 824.41834163c14.26666975 15.57022334 38.38241101 16.58409834 53.88021469 2.38984824 15.57022334-14.26666975 16.58409834-38.38241101 2.38984823-53.88021469L432.41081189 513.08629466l237.7536893-260.56587697c14.1942501-15.57022334 13.10795545-39.68596458-2.46226787-53.88021469-15.57022334-14.1942501-39.68596458-13.10795545-53.88021469 2.46226788L352.74920415 487.08764267c-0.50693751 0.57935715-1.08629466 1.23113394-1.52081251 1.8104911-11.87682152 14.41150904-11.6595626 35.77530383 1.37597323 49.96955393z" p-id="5179"></path></svg></span>
-                <span class="magnifier-btn-right"><svg t="1646298477962" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5312" width="200" height="200"><path d="M661.16183428 486.94732961L415.99871022 219.24359155c-13.37500289-14.59708438-35.98351032-15.54759219-50.51270128-2.24048272-14.59708438 13.37500289-15.54759219 35.98351032-2.24048272 50.51270127l223.09776396 243.60157549-222.89408371 244.28050967c-13.30710947 14.59708438-12.28870823 37.20559179 2.30837613 50.51270125 14.59708438 13.30710947 37.20559179 12.28870823 50.51270128-2.30837613l244.75576356-268.11109855c0.47525392-0.54314733 1.01840124-1.15418807 1.42576173-1.6973354 11.13452018-13.51078973 10.93083994-33.53934734-1.2899749-46.84645682z" p-id="5313"></path></svg></span>
-            </div>
-            <!--缩略图-->
-            <div class="magnifier-line js-magnifier-line">
-                <ul class="clearfix animation03 thumbnail_box">
+            <?php if ( count( $product_images ) > 1 ) : ?>
+                <ul class="single-product-thumbs" id="thumbList">
                     <?php foreach ( $product_images as $index => $img_url ) : ?>
-                        <li class="static-img<?php echo $index === 0 ? ' active' : ''; ?>">
-                            <div class="small-img" data-url="<?php echo esc_attr( $img_url ); ?>">
-                                <img src="<?php echo esc_url( $img_url ); ?>" lazy="<?php echo esc_url( $img_url ); ?>" alt="<?php the_title_attribute(); ?>" title="<?php the_title_attribute(); ?>" la="la"/>
-                            </div>
+                        <li class="<?php echo $index === 0 ? 'active' : ''; ?>" data-index="<?php echo $index; ?>">
+                            <img src="<?php echo esc_url( $img_url ); ?>" alt="<?php the_title_attribute(); ?>" />
                         </li>
                     <?php endforeach; ?>
                 </ul>
+            <?php endif; ?>
+        </div>
+
+        <!-- Details Info -->
+        <div class="single-product-info-box">
+            <h1><?php the_title(); ?></h1>
+            <div class="single-product-category-tag">
+                所属分类：<span>均流备份系列</span>
+            </div>
+
+            <div class="single-product-action-btns">
+                <a class="btn-apply" href="#sampleForm">
+                    <svg viewBox="0 0 1024 1024" width="16" height="16" style="fill: #fff;"><path d="M353.745455 996.072727H139.636364c-69.818182 0-125.672727-55.854545-125.672728-125.672727V144.290909C13.963636 74.472727 69.818182 18.618182 139.636364 18.618182h679.563636c69.818182 0 125.672727 55.854545 125.672727 125.672727v223.418182c0 23.272727-18.618182 46.545455-41.890909 46.545454s-41.890909-18.618182-41.890909-46.545454V144.290909c0-18.618182-18.618182-37.236364-37.236364-37.236364H139.636364c-18.618182 0-37.236364 18.618182-37.236364 37.236364v726.109091c0 18.618182 18.618182 37.236364 37.236364 37.236364h214.109091c23.272727 0 41.890909 18.618182 41.890909 46.545454 0 18.618182-18.618182 41.890909-41.890909 41.890909z"></path></svg>
+                    样品申请
+                </a>
+                <?php if ( ! empty( $product_downloads ) ) : ?>
+                    <?php foreach ( $product_downloads as $file_item ) : ?>
+                        <a class="btn-spec" href="<?php echo esc_url( $file_item['url'] ); ?>" download target="_blank">
+                            <svg viewBox="0 0 1024 1024" width="16" height="16" style="fill: #fff;"><path d="M512 666.666667L256 410.666667h170.666667V170.666667h170.666666v240h170.666667L512 666.666667z M170.666667 768h682.666666v85.333333H170.666667V768z"></path></svg>
+                            下载规格书
+                        </a>
+                    <?php endforeach; ?>
+                <?php endif; ?>
+            </div>
+
+            <div class="single-product-summary-box">
+                <?php if ( has_excerpt() ) : ?>
+                    <?php echo wp_kses_post( get_the_excerpt() ); ?>
+                <?php else : ?>
+                    <p>高品质低压电路保护与工业电源解决方案，符合国际 IEC/UL 安规标准，具备过载、短路全方位保护功能。</p>
+                <?php endif; ?>
             </div>
         </div>
-        <!--经过放大的图片显示容器-->
-        <div class="magnifier-view"></div>
     </div>
-    <script>
-    (function() {
-        var initGallery = function() {
-            var wrapper = document.getElementById('magnifierWrapper');
-            if (!wrapper) return;
-            var thumbnails = wrapper.querySelectorAll('.thumbnail_box li');
-            var items = wrapper.querySelectorAll('.images-cover .image-item');
-            
-            thumbnails.forEach(function(thumb, idx) {
-                thumb.addEventListener('click', function() {
-                    thumbnails.forEach(function(t) { t.classList.remove('active'); });
-                    items.forEach(function(item) { 
-                        item.classList.remove('active');
-                        item.style.display = 'none';
-                    });
-                    thumb.classList.add('active');
-                    if (items[idx]) {
-                        items[idx].classList.add('active');
-                        items[idx].style.display = 'flex';
-                    }
-                });
-            });
-        };
-        if (document.readyState === 'loading') {
-            document.addEventListener('DOMContentLoaded', initGallery);
-        } else {
-            initGallery();
-        }
-    })();
-    </script>
-</div></div>
-    <div class="cbox-1-1 p_item"><div class="e_container-3 s_layout">
-    <div class="cbox-3-0 p_item"><div class="e_container-51 s_layout">
-    <div class="cbox-51-0 p_item"><h1 class="e_h1-45 s_subtitle">
-    <?php the_title(); ?>
-</h1><div class="e_container-41 s_layout">
-    <div class="cbox-41-0 p_item"><p class="e_text-42 s_title">
-    所属分类：
-</p></div>
-    <div class="cbox-41-1 p_item"><div class="e_loop_sub-43 s_list">
-        <div class="cbox-43 p_loopItem"><p class="e_text-44 s_title">
-        <a href="/led-display-power/" target="_self">
-        均流备份系列
-        </a>
-</p></div>
-</div></div>
-</div></div>
-    <div class="cbox-51-1 p_item" style="display: flex; gap: 10px; align-items: center;">
-        <a class="e_button-46 s_button1 btn btn-primary " href="#c_form_050-1718776303318" target="_self">
-            <span><svg t="1718779224235" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3021" width="200" height="200"><path d="M353.745455 996.072727H139.636364c-69.818182 0-125.672727-55.854545-125.672728-125.672727V144.290909C13.963636 74.472727 69.818182 18.618182 139.636364 18.618182h679.563636c69.818182 0 125.672727 55.854545 125.672727 125.672727v223.418182c0 23.272727-18.618182 46.545455-41.890909 46.545454s-41.890909-18.618182-41.890909-46.545454V144.290909c0-18.618182-18.618182-37.236364-37.236364-37.236364H139.636364c-18.618182 0-37.236364 18.618182-37.236364 37.236364v726.109091c0 18.618182 18.618182 37.236364 37.236364 37.236364h214.109091c23.272727 0 41.890909 18.618182 41.890909 46.545454 0 18.618182-18.618182 41.890909-41.890909 41.890909z" fill="#ffffff" p-id="3022"></path><path d="M679.563636 339.781818H200.145455c-27.927273 0-46.545455-18.618182-46.545455-46.545454s18.618182-46.545455 46.545455-46.545455h479.418181c27.927273 0 46.545455 18.618182 46.545455 46.545455s-23.272727 46.545455-46.545455 46.545454zM465.454545 553.890909H200.145455c-27.927273 0-46.545455-18.618182-46.545455-46.545454s18.618182-46.545455 46.545455-46.545455H465.454545c27.927273 0 46.545455 18.618182 46.545455 46.545455s-18.618182 46.545455-46.545455 46.545454z" fill="#ffffff" p-id="3023"></path><path d="M935.563636 572.509091c9.309091-9.309091 13.963636-27.927273 4.654546-37.236364-9.309091-9.309091-27.927273-13.963636-37.236364-4.654545L539.927273 884.363636l-13.963637 41.890909 46.545455-4.654545c4.654545 0 363.054545-349.090909 363.054545-349.090909z m41.890909-74.472727c27.927273 32.581818 23.272727 83.781818-9.30909 111.709091L605.090909 968.145455c-4.654545 4.654545-9.309091 4.654545-13.963636 4.654545l-97.745455 9.309091c-13.963636 0-27.927273-9.309091-27.927273-23.272727v-9.309091l27.927273-88.436364c0-4.654545 4.654545-9.309091 9.309091-13.963636l367.709091-358.4c27.927273-27.927273 79.127273-23.272727 107.054545 9.309091z" fill="#ffffff" p-id="3024"></path><path d="M488.727273 996.072727c-18.618182 0-37.236364-13.963636-37.236364-37.236363v-13.963637l27.927273-88.436363c0-9.309091 4.654545-13.963636 13.963636-18.618182l363.054546-358.4c37.236364-32.581818 97.745455-27.927273 130.327272 9.309091 13.963636 18.618182 23.272727 41.890909 23.272728 65.163636 0 23.272727-13.963636 46.545455-32.581819 60.509091L614.4 977.454545c-4.654545 4.654545-13.963636 9.309091-23.272727 9.309091l-102.4 9.309091c4.654545 0 4.654545 0 0 0z m428.218182-512c-13.963636 0-32.581818 4.654545-46.545455 13.963637l-363.054545 358.4c-4.654545 4.654545-4.654545 4.654545-4.654546 9.309091l-27.927273 88.436363v4.654546c0 4.654545 0 9.309091 4.654546 9.309091 4.654545 4.654545 4.654545 4.654545 9.309091 4.654545l97.745454-9.309091c4.654545 0 4.654545 0 9.309091-4.654545l367.709091-358.4c13.963636-13.963636 23.272727-27.927273 23.272727-46.545455s-4.654545-37.236364-18.618181-51.2c-13.963636-9.309091-32.581818-18.618182-51.2-18.618182zM512 940.218182l18.618182-60.509091 363.054545-353.745455c18.618182-13.963636 41.890909-13.963636 55.854546 4.654546 13.963636 13.963636 13.963636 41.890909-4.654546 51.2l-363.054545 353.745454-69.818182 4.654546z m37.236364-51.2l-9.309091 23.272727h27.927272l358.4-349.090909c4.654545-4.654545 4.654545-13.963636 0-18.618182-4.654545-4.654545-13.963636-9.309091-23.272727 0l-353.745454 344.436364z" fill="#ffffff" p-id="3025"></path></svg> 样品申请 </span> 
-        </a>
 
-        <?php if ( ! empty( $product_downloads ) ) : ?>
-            <?php foreach ( $product_downloads as $file_item ) : ?>
-                <a class="e_button-46 s_button1 btn btn-secondary" href="<?php echo esc_url( $file_item['url'] ); ?>" download target="_blank" style="background-color: #0094de; border-color: #0094de; color: #fff; padding: 12px 20px; border-radius: 4px; text-decoration: none; display: inline-flex; align-items: center; font-weight: 500;">
-                    <svg viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" width="18" height="18" style="fill: #fff; margin-right: 6px;">
-                        <path d="M512 666.666667L256 410.666667h170.666667V170.666667h170.666666v240h170.666667L512 666.666667z M170.666667 768h682.666666v85.333333H170.666667V768z"></path>
-                    </svg>
-                    下载规格书
-                </a>
-            <?php endforeach; ?>
-        <?php endif; ?>
-    </div>
-</div><hr class="e_line-26 s_line" /><div class="e_richText-39 s_summary clearfix" style="font-size: 14px; color: #666; line-height: 1.6; margin-top: 15px;">
-    <?php if ( has_excerpt() ) : ?>
-        <?php echo wp_kses_post( get_the_excerpt() ); ?>
-    <?php else : ?>
-        <p>高品质低压电路保护与工业电源解决方案，符合国际 IEC/UL 安规标准，具备过载、短路全方位保护功能。</p>
-    <?php endif; ?>
-</div></div>
-</div></div>
-    <div class="cbox-14-0 p_item"><div class="e_container-15 s_layout">
-    <div class="cbox-15-0 p_item"><div class="e_container-16 s_layout">
-    <div class="cbox-16-0 p_item"><p class="e_text-47 s_title">
-        产品详情
-</p></div>
-</div><hr class="e_line-19 s_line" /><div class="e_container-27 s_layout">
-    <div class="cbox-27-0 p_item"><div class="e_richText-20 s_title clearfix">
+    <!-- Product Details Section (100% Full Width) -->
+    <div class="single-product-details-section">
+        <h2 class="single-product-details-title">产品详情</h2>
+
         <?php 
         $post_content = get_the_content();
         if ( ! empty( trim( $post_content ) ) ) : 
@@ -278,11 +372,11 @@ if ( empty( $product_downloads ) ) {
             </div>
         <?php endif; ?>
 
-        <div class="product-spec-container" style="font-family: inherit; color: #333; margin-top: 20px;">
-            <h3 style="font-size: 18px; font-weight: 600; color: #222; margin-bottom: 15px; padding-left: 10px; border-left: 4px solid #e40011;">
+        <div class="product-spec-container" style="font-family: inherit; color: #333; margin-top: 10px;">
+            <h3 style="font-size: 17px; font-weight: 600; color: #1e293b; margin-bottom: 15px; padding-left: 10px; border-left: 4px solid #e40011;">
                 产品特点 (Product Features)
             </h3>
-            <ul style="list-style: disc; margin-left: 25px; font-size: 14px; line-height: 1.8; color: #555; margin-bottom: 25px;">
+            <ul style="list-style: disc; margin-left: 25px; font-size: 14px; line-height: 1.8; color: #475569; margin-bottom: 25px;">
                 <li>工业级高品质设计，符合国际安规与 EMC 电磁兼容标准。</li>
                 <li>全范围交流输入（90~264VAC / 180~264VAC），具备强适应能力。</li>
                 <li>内置完善的保护电路：短路保护、过载保护、过电压保护、过温度保护。</li>
@@ -290,14 +384,14 @@ if ( empty( $product_downloads ) ) {
                 <li>高效节能，低功耗、低温升，适用于各种苛刻工业环境。</li>
             </ul>
 
-            <h3 style="font-size: 18px; font-weight: 600; color: #222; margin-bottom: 15px; padding-left: 10px; border-left: 4px solid #e40011;">
+            <h3 style="font-size: 17px; font-weight: 600; color: #1e293b; margin-bottom: 15px; padding-left: 10px; border-left: 4px solid #e40011;">
                 技术参数 (Technical Specifications)
             </h3>
-            <table style="width: 100%; border-collapse: collapse; margin-bottom: 30px; font-size: 14px; text-align: left;">
+            <table style="width: 100%; border-collapse: collapse; margin-bottom: 20px; font-size: 14px; text-align: left; border: 1px solid #e2e8f0;">
                 <tbody>
                     <tr style="background: #f8fafc; border-bottom: 1px solid #e2e8f0;">
                         <th style="padding: 12px 15px; font-weight: 600; color: #334155; width: 25%;">产品型号 (Model)</th>
-                        <td style="padding: 12px 15px; color: #475569; font-weight: 600;"><?php the_title(); ?></td>
+                        <td style="padding: 12px 15px; color: #0f172a; font-weight: 600;"><?php the_title(); ?></td>
                     </tr>
                     <tr style="border-bottom: 1px solid #e2e8f0;">
                         <th style="padding: 12px 15px; font-weight: 600; color: #334155;">输入电压 (Input Voltage)</th>
@@ -322,93 +416,64 @@ if ( empty( $product_downloads ) ) {
                 </tbody>
             </table>
         </div>
-</div></div>
-</div></div>
-</div></div>
-</div>
- <input type="hidden" name="propJson" value='{}'/></div><div id="c_form_050-1718776303318">
-<div class="e_container-1 s_layout">
-    <div class="cbox-1-0 p_item"><div class="e_container-2 s_layout">
-    <div class="cbox-2-0 p_item"><p class="e_text-14 s_title">
-    样品申请
-</p></div>
-    <div class="cbox-2-1 p_item"><div class="e_form-15 s_form_layout1" needjs="true">
-    <form name="form" action="" method="post" isvalid="true" class="form_15">
-        <div class="p_formItem">
-            
-            <div class="e_input-16 s_input">
-    <div class="p_labelItem">
-        <label for="company_name">公司名称<span class="p_mustFill">*</span></label>
     </div>
-    <div class="p_inputItem">
-        
-            <input type="text" class="form-control s_input" id="company_name" name="company_name" placeholder="" isvalid="true" reg="" data-content="请输入公司名称" maxlength="255">
-        
-    </div>
-</div>
-        
-            <div class="e_input-17 s_input">
-    <div class="p_labelItem">
-        <label for="contact_person">联系人<span class="p_mustFill">*</span></label>
-    </div>
-    <div class="p_inputItem">
-        
-            <input type="text" class="form-control s_input" id="contact_person" name="contact_person" placeholder="" isvalid="true" reg="" data-content="请输入联系人" maxlength="255">
-        
-    </div>
-</div>
-        
-            <div class="e_input-18 s_input">
-    <div class="p_labelItem">
-        <label for="email">电子邮箱<span class="p_mustFill">*</span></label>
-    </div>
-    <div class="p_inputItem">
-        
-            <input type="text" class="form-control s_input" id="email" name="email" placeholder="" isvalid="true" reg="" data-content="请输入电子邮箱" maxlength="255">
-        
+
+    <!-- Sample Application Form (100% Clean Form Layout) -->
+    <div class="single-product-form-section" id="sampleForm">
+        <h2 class="single-product-form-title">样品申请</h2>
+        <form name="sample_application_form" action="" method="post" onsubmit="alert('提交成功！我们将尽快与您联系。'); return false;">
+            <div class="single-product-form-grid">
+                <div class="single-product-form-field">
+                    <label for="company_name">公司名称 <span>*</span></label>
+                    <input type="text" id="company_name" name="company_name" required placeholder="请输入公司名称" />
+                </div>
+                <div class="single-product-form-field">
+                    <label for="contact_person">联系人 <span>*</span></label>
+                    <input type="text" id="contact_person" name="contact_person" required placeholder="请输入联系人" />
+                </div>
+                <div class="single-product-form-field">
+                    <label for="email">电子邮箱 <span>*</span></label>
+                    <input type="email" id="email" name="email" required placeholder="请输入电子邮箱" />
+                </div>
+                <div class="single-product-form-field">
+                    <label for="tel">联系电话 <span>*</span></label>
+                    <input type="tel" id="tel" name="tel" required placeholder="请输入联系电话" />
+                </div>
+                <div class="single-product-form-field full-width">
+                    <label for="application_model">申请型号 <span>*</span></label>
+                    <input type="text" id="application_model" name="application_model" required value="<?php echo esc_attr( get_the_title() ); ?>" placeholder="请输入申请型号" />
+                </div>
+                <div class="single-product-form-field full-width">
+                    <label for="remarks">备注说明</label>
+                    <textarea id="remarks" name="remarks" rows="4" placeholder="请输入备注或具体需求"></textarea>
+                </div>
+                <div class="single-product-form-field full-width" style="margin-top: 10px;">
+                    <button type="submit" class="single-product-form-submit-btn">提交申请</button>
+                </div>
+            </div>
+        </form>
     </div>
 </div>
-        
-            <div class="e_input-19 s_input">
-    <div class="p_labelItem">
-        <label for="tel">联系电话<span class="p_mustFill">*</span></label>
-    </div>
-    <div class="p_inputItem">
-        
-            <input type="text" class="form-control s_input" id="tel" name="tel" placeholder="" isvalid="true" reg="" data-content="请输入联系电话" maxlength="255">
-        
-    </div>
-</div>
-        
-            <div class="e_input-20 s_input">
-    <div class="p_labelItem">
-        <label for="application_model">申请型号<span class="p_mustFill">*</span></label>
-    </div>
-    <div class="p_inputItem">
-        
-            <input type="text" class="form-control s_input" id="application_model" name="application_model" placeholder="" isvalid="true" reg="" data-content="请输入申请型号" maxlength="255">
-        
-    </div>
-</div>
-        
-            <div class="e_textarea-21 s_input">
-    <div class="p_labelItem">
-        <label for="remarks">备注说明</label>
-    </div>
-    <div class="p_inputItem">
-        <textarea class="form-control s_input" id="remarks" name="remarks" placeholder="" isvalid="true" reg="" data-content="" maxlength="500"></textarea>
-    </div>
-</div>
-        
-            <div class="e_formBtn-22 s_button">
-    <div class="p_btnItem">
-        <button type="submit" class="btn btn-primary s_btn">提交申请</button>
-    </div>
-</div>
-        
-        </div>
-    </form>
-</div></div>
-</div></div>
-</div></div>
+
+<script>
+(function() {
+    var thumbList = document.getElementById('thumbList');
+    var mainImgWrap = document.getElementById('mainImgWrap');
+    if (thumbList && mainImgWrap) {
+        var thumbs = thumbList.querySelectorAll('li');
+        var imgs = mainImgWrap.querySelectorAll('img');
+        thumbs.forEach(function(thumb) {
+            thumb.addEventListener('click', function() {
+                var idx = parseInt(this.getAttribute('data-index'), 10);
+                thumbs.forEach(function(t) { t.classList.remove('active'); });
+                imgs.forEach(function(img) { img.style.display = 'none'; });
+                this.classList.add('active');
+                if (imgs[idx]) {
+                    imgs[idx].style.display = 'block';
+                }
+            });
+        });
+    }
+})();
+</script>
 <!-- /wp:html -->
