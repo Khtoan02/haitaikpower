@@ -9,9 +9,9 @@
     <meta charset="<?php bloginfo( 'charset' ); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <?php wp_head(); ?>
-    <?php if ( ! is_front_page() ) : ?>
+    <?php if ( is_singular( 'product' ) || is_singular( 'post' ) || is_home() || is_page( array( 'products', 'product', 'faq', 'frequently-asked-questions' ) ) ) : ?>
     <style>
-    /* Universal Header Styles for non-homepage white background pages */
+    /* White Header Styles for light background pages */
     #site-header,
     .site-header,
     .e_container-21,

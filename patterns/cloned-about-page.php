@@ -16,10 +16,10 @@
     right: 50%;
     margin-left: -50vw;
     margin-right: -50vw;
-    height: 380px;
+    height: 480px;
     overflow: hidden;
     background-color: #0f172a;
-    margin-top: 100px;
+    margin-top: 0;
 }
 .about-hero-banner img {
     width: 100% !important;
@@ -33,14 +33,14 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to right, rgba(15, 23, 42, 0.7) 0%, rgba(15, 23, 42, 0.3) 100%);
+    background: linear-gradient(to right, rgba(15, 23, 42, 0.75) 0%, rgba(15, 23, 42, 0.35) 100%);
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     text-align: center;
     color: #ffffff;
-    padding: 0 20px;
+    padding: 80px 20px 0 20px;
 }
 .about-hero-title {
     font-size: 38px;
