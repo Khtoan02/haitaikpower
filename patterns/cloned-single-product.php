@@ -360,9 +360,6 @@ if ( ! empty( $terms ) && ! is_wp_error( $terms ) ) {
         <!-- Details Info -->
         <div class="single-product-info-box">
             <h1><?php the_title(); ?></h1>
-            <div class="single-product-category-tag">
-                所属分类：<span><?php echo ! empty( $cat_links ) ? implode( ', ', $cat_links ) : '全部分类'; ?></span>
-            </div>
 
             <div class="single-product-action-btns">
                 <a class="btn-apply" href="#sampleForm">
