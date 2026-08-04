@@ -4,7 +4,7 @@
  */
 get_header();
 ?>
-<!-- Header Fix for Single News Article Page -->
+<!-- Header Fix & Typography for Single News Article Page -->
 <style>
 #site-header,
 .site-header,
@@ -17,6 +17,20 @@ get_header();
 .p_navBox1 .p_navItem1 a span,
 .top_f h2 a,
 .e_navigationF-24 a span,
+.e_container-21 a {
+    color: #222429 !important;
+}
+.p_navBox1 .p_navItem1 a:hover span,
+.top_f h2 a:hover {
+    color: #e40011 !important;
+}
+.e_image-16 img:first-child {
+    display: none !important;
+}
+.e_image-16 img:last-child {
+    display: inline-block !important;
+}
+
 /* Article typography styles for h2, h3, content */
 .entry-content h2 {
     font-size: 20px !important;
