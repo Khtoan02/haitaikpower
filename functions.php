@@ -9,6 +9,13 @@
  * @since Twenty Twenty-Five 1.0
  */
 
+/**
+ * Set theme default language locale to Simplified Chinese (zh_CN).
+ */
+add_filter( 'locale', function( $locale ) {
+	return 'zh_CN';
+} );
+
 if ( ! function_exists( 'twentytwentyfive_post_format_setup' ) ) :
 	/**
 	 * Adds theme support for post formats.
