@@ -14,17 +14,17 @@
             <div class="swiper-slide p_slide">
                     <div class="p_img">
                         <a href="javascript:;" >
-                            <img src="https://omo-oss-image.thefastimg.com/portal-saas/pg2024041817493912440/cms/image/a74a667c-14fe-4c41-aa48-07c3c203cbb6.jpg" alt="About Us" title="About Us" la="la"/>
+                            <img src="https://omo-oss-image.thefastimg.com/portal-saas/pg2024041817493912440/cms/image/a74a667c-14fe-4c41-aa48-07c3c203cbb6.jpg" alt="关于我们" title="关于我们" la="la"/>
                         </a>
                     </div>
                 <div class="p_info ">
                     <div>
                         <h3 class="text-white p_btitle">
                             <a href="javascript:;" >
-                            About Us
+                            关于我们
                             </a>
                         </h3>
-                        <h6 class="text-white p_subtitle">About Us</h6>
+                        <h6 class="text-white p_subtitle">关于我们</h6>
                     </div>
                 </div>
             </div>
@@ -37,17 +37,17 @@
     <div class="p_list">
         <div class="cbox-3 p_loopitem"><p class="e_text-4 s_title">
         <a href="/about-us/" target="_self">
-    Company Profile
+    公司简介
         </a>
 </p></div>
         <div class="cbox-3 p_loopitem"><p class="e_text-4 s_title">
         <a href="" target="_self">
-    Honor
+    企业荣誉
         </a>
 </p></div>
         <div class="cbox-3 p_loopitem"><p class="e_text-4 s_title">
         <a href="" target="_self">
-    Partners
+    合作伙伴
         </a>
 </p></div>
     </div>
@@ -99,24 +99,24 @@
 <script src="/upload/js/6fc3aadc9e4d4ec083e295673ef32a7b.js"></script>
     <div class="cbox-3-0 p_item"><div class="e_container-23 s_layout">
     <div class="cbox-23-0 p_item"><div class="e_richText-22 s_title clearfix">
-    <p>Changzhou Chuanglian Power Supply Technology Corporation</p>
+    <p>常州创联电源科技股份有限公司</p>
 
 </div></div>
 </div><div class="e_richText-21 s_title clearfix">
-    <p>Chuanglian&nbsp;Power&nbsp;Supply,&nbsp;founded&nbsp;in&nbsp;March&nbsp;2000,&nbsp;is&nbsp;a&nbsp;specialized&nbsp;and&nbsp;sophisticated&nbsp;&quot;Little&nbsp;Giant&quot;&nbsp;enterprise&nbsp;and&nbsp;a&nbsp;national&nbsp;high-tech&nbsp;enterprise&nbsp;that&nbsp;integrates&nbsp;R&amp;D,&nbsp;manufacturing,&nbsp;sales,&nbsp;and&nbsp;service.</p>
+    <p>创联电源创立于2000年3月，是一家集研发、制造、销售及服务于一体的国家级专精特新“小巨人”企业和国家高新技术企业。</p>
 
 <p>&nbsp;</p>
 
-<p>Chuanglian Power Supply is committed to becoming a respected international brand power supplier, with more than 2000 standard models, providing a full range of power solutions for global customers. Products used in: LED display, industrial automation, power, communications, transportation, lighting, new energy and other industries. Products are exported to Europe and the United States, Africa, Latin America, the Middle East, Southeast Asia and other more than 50 countries and regions, and&nbsp;are&nbsp;favored&nbsp;by&nbsp;customers.&nbsp;The&nbsp;annual&nbsp;production&nbsp;and&nbsp;sales&nbsp;exceed&nbsp;20&nbsp;million&nbsp;units.</p>
+<p>创联电源致力于成为备受尊敬的国际化电源品牌供应商，拥有2000多种标准型号，为全球客户提供全方位的电源解决方案。产品广泛应用于LED显示屏、工业自动化、电力、通讯、交通、照明、新能源等多个行业，远销欧美、非洲、拉美、中东、东南亚等50多个国家和地区，深受广大客户青睐，年产销量超2000万台。</p>
 
 <p><br />
-Chuanglian Power Supply has successively established three power supply&nbsp; R &amp; D centers in Changzhou, Shenzhen, and Wuhan. It has a scientific research team composed of more than 150 high-end talents and a post-doctoral research workstation. It aims to aim at the cutting-edge technology of global switching power supply and comprehensively improve the key of Chuanglian Power Supply. Core technology and independent innovation capability.</p>
+创联电源先后在常州、深圳、武汉设立三大电源研发中心，拥有一支由150余位高端人才构成的科研团队及博士后科研工作站，紧跟全球开关电源前沿技术，全面提升创联电源的关键核心技术与自主创新能力。</p>
 
 <p><br />
-Chuanglian Power Supply has a 78000-square production base, a manufacturing capacity of 80000 power supplies per day, and implements a continuous improvement of a total quality management system, with 100% whole process and strict quality control in the whole process. It took the lead in establishing a standardized (966)EMC laboratory, with &quot;UL&quot; certification witness experiment and &quot;DEKRA&quot; global certification witness experiment qualification, thus ensuring the high quality of products.</p>
+创联电源拥有78000平方米的生产基地，日产80000台电源的制造能力，全面推行全员全过程的严格质量管理体系。率先建立标准化(966)EMC实验室，具备“UL”认证目击实验及“DEKRA”全球认证目击实验资质，从而确保了产品的高品质。</p>
 
 <p><br />
-Chuanglian Power Supply has established a global customer service and support network, developing more than 150 domestic core distributors and more than 60 foreign distributors, continuously creating more value for customers, adding luster to the city, and providing permanent power source for equipment.</p>
+创联电源建立了全球客户服务与支持网络，发展了150多家国内核心经销商和60多家国外经销商，持续为客户创造更大价值，为城市增光添彩，为设备提供源源不断的动力。</p>
 
 </div><div class="e_loop-30 s_list" needjs="true" ds-id="" elem-id="e_loop-30">
     <div class="">
@@ -125,30 +125,30 @@ Chuanglian Power Supply has established a global customer service and support ne
             <div class="p_list">
                 <div class="cbox-30 p_loopitem"><div class="e_container-31 s_layout">
     <div class="cbox-31-0 p_item"><div class="e_image-32 s_img">
-                    <img src="https://omo-oss-image.thefastimg.com/portal-saas/pg2024041817493912440/cms/image/21452745-3776-4266-9454-89983a1e89d3.jpg" alt="Changzhou Chuanglian Power Technology Co., Ltd." title="Changzhou Chuanglian Power Technology Co., Ltd." la="la" needthumb="false"/>
+                    <img src="https://omo-oss-image.thefastimg.com/portal-saas/pg2024041817493912440/cms/image/21452745-3776-4266-9454-89983a1e89d3.jpg" alt="常州创联电源科技股份有限公司" title="常州创联电源科技股份有限公司" la="la" needthumb="false"/>
 </div><p class="e_text-33 s_title">
-        Chuanglian Power Headquarters
+        创联电源总部
 </p></div>
 </div></div>
                 <div class="cbox-30 p_loopitem"><div class="e_container-31 s_layout">
     <div class="cbox-31-0 p_item"><div class="e_image-32 s_img">
-                    <img src="https://omo-oss-image.thefastimg.com/portal-saas/pg2024041817493912440/cms/image/f4aba260-5a28-4275-98c6-090f82f67f35.jpg" alt="Changzhou Chuanglian Power Technology Co., Ltd." title="Changzhou Chuanglian Power Technology Co., Ltd." la="la" needthumb="false"/>
+                    <img src="https://omo-oss-image.thefastimg.com/portal-saas/pg2024041817493912440/cms/image/f4aba260-5a28-4275-98c6-090f82f67f35.jpg" alt="常州创联电源科技股份有限公司" title="常州创联电源科技股份有限公司" la="la" needthumb="false"/>
 </div><p class="e_text-33 s_title">
-        Chuanglian High-end Intelligent Industry Center
+        创联高端智能产业中心
 </p></div>
 </div></div>
                 <div class="cbox-30 p_loopitem"><div class="e_container-31 s_layout">
     <div class="cbox-31-0 p_item"><div class="e_image-32 s_img">
-                    <img src="https://omo-oss-image.thefastimg.com/portal-saas/pg2024041817493912440/cms/image/3b5333ae-050a-413b-9bb3-8a17bdef43bf.jpg" alt="Changzhou Chuanglian Power Technology Co., Ltd." title="Changzhou Chuanglian Power Technology Co., Ltd." la="la" needthumb="false"/>
+                    <img src="https://omo-oss-image.thefastimg.com/portal-saas/pg2024041817493912440/cms/image/3b5333ae-050a-413b-9bb3-8a17bdef43bf.jpg" alt="常州创联电源科技股份有限公司" title="常州创联电源科技股份有限公司" la="la" needthumb="false"/>
 </div><p class="e_text-33 s_title">
-        Shenzhen R & D Center
+        深圳研发中心
 </p></div>
 </div></div>
                 <div class="cbox-30 p_loopitem"><div class="e_container-31 s_layout">
     <div class="cbox-31-0 p_item"><div class="e_image-32 s_img">
-                    <img src="https://omo-oss-image.thefastimg.com/portal-saas/pg2024041817493912440/cms/image/b5b63486-264a-4e38-9988-242fc165f0a0.jpg" alt="Changzhou Chuanglian Power Technology Co., Ltd." title="Changzhou Chuanglian Power Technology Co., Ltd." la="la" needthumb="false"/>
+                    <img src="https://omo-oss-image.thefastimg.com/portal-saas/pg2024041817493912440/cms/image/b5b63486-264a-4e38-9988-242fc165f0a0.jpg" alt="常州创联电源科技股份有限公司" title="常州创联电源科技股份有限公司" la="la" needthumb="false"/>
 </div><p class="e_text-33 s_title">
-        Wuhan R & D Center
+        武汉研发中心
 </p></div>
 </div></div>
             </div>
@@ -162,7 +162,7 @@ Chuanglian Power Supply has established a global customer service and support ne
     <input type="hidden" name="_config" value="">
     <input type="hidden" name="view" value="about">
     <input type="hidden" name="pageParamsJson" value="">
-    <input type="hidden" name="i18nJson" value="{&quot;pageWhole_30&quot;:&quot;in total&quot;,&quot;clearConditions_30&quot;:&quot;clear condition&quot;,&quot;pageItem_30&quot;:&quot;picecs&quot;,&quot;pageJump_30&quot;:&quot;proceed&quot;,&quot;loadMore_30&quot;:&quot;Click to load more&quot;,&quot;noData_30&quot;:&quot;No data&quot;,&quot;conditions_30&quot;:&quot;condition:&quot;,&quot;loadNow_30&quot;:&quot;Loading&quot;,&quot;confirm_30&quot;:&quot;OK&quot;,&quot;pageUnit_30&quot;:&quot;page&quot;,&quot;totalAcount_30&quot;:&quot;Total X&quot;,&quot;noMore_30&quot;:&quot;No more&quot;}">
+    <input type="hidden" name="i18nJson" value="{&quot;pageWhole_30&quot;:&quot;共&quot;,&quot;clearConditions_30&quot;:&quot;清除条件&quot;,&quot;pageItem_30&quot;:&quot;条&quot;,&quot;pageJump_30&quot;:&quot;跳转&quot;,&quot;loadMore_30&quot;:&quot;点击加载更多&quot;,&quot;noData_30&quot;:&quot;暂无数据&quot;,&quot;conditions_30&quot;:&quot;条件:&quot;,&quot;loadNow_30&quot;:&quot;加载中&quot;,&quot;confirm_30&quot;:&quot;确定&quot;,&quot;pageUnit_30&quot;:&quot;页&quot;,&quot;totalAcount_30&quot;:&quot;共 X 条&quot;,&quot;noMore_30&quot;:&quot;没有更多了&quot;}">
 
 </div></div>
 </div></div>
@@ -170,7 +170,7 @@ Chuanglian Power Supply has established a global customer service and support ne
  <input type="hidden" name="propJson" value='{&quot;dense_33&quot;:&quot;&quot;,&quot;page_30&quot;:{&quot;size&quot;:6,&quot;from&quot;:0,&quot;totalCount&quot;:100},&quot;imgList2_32&quot;:[],&quot;setting_32&quot;:{&quot;fit&quot;:&quot;contain&quot;,&quot;errorUrl&quot;:&quot;&quot;,&quot;needThumb&quot;:&quot;false&quot;,&quot;isLazy&quot;:&quot;false&quot;},&quot;space_32&quot;:0,&quot;prompt_33&quot;:&quot;&quot;,&quot;pageConfig_30&quot;:{&quot;showJump&quot;:true,&quot;marquee&quot;:{&quot;navigation&quot;:true,&quot;marqueeTime&quot;:4,&quot;scrollType&quot;:&quot;horizontal&quot;,&quot;opp&quot;:false},&quot;filterPosition&quot;:&quot;&quot;,&quot;moColumn&quot;:2,&quot;rolling&quot;:{&quot;navigation&quot;:true,&quot;pageStyle&quot;:1,&quot;scrollType&quot;:&quot;horizontal&quot;,&quot;pagenation&quot;:true,&quot;scrollTime&quot;:4,&quot;autoScroll&quot;:true,&quot;speed&quot;:600},&quot;pageType&quot;:&quot;hidden&quot;,&quot;singleTotal&quot;:0,&quot;showButtom&quot;:false,&quot;showTotal&quot;:false,&quot;pcColumn&quot;:4,&quot;loopItem&quot;:&quot;.p_loopitem&quot;,&quot;status&quot;:true,&quot;pcRow&quot;:2,&quot;datasourceid&quot;:&quot;prop&quot;,&quot;elementid&quot;:30},&quot;imgList1_32&quot;:[],&quot;href_33&quot;:{&quot;type&quot;:&quot;none&quot;,&quot;value&quot;:&quot;&quot;,&quot;target&quot;:&quot;&quot;},&quot;href_32&quot;:{&quot;type&quot;:&quot;&quot;,&quot;value&quot;:&quot;&quot;,&quot;target&quot;:&quot;&quot;}}'/></div><div id="c_effect_032_P_129-1718108742273">
 <div class="e_container-9 s_layout">
     <div class="cbox-9-0 p_item"><div class="e_richText-14 s_title clearfix">
-    <p>Honor</p>
+    <p>企业荣誉</p>
 
 </div></div>
 </div><link type="text/css" rel="stylesheet" href="/upload/css/23c692dbe91e45d1b512ac8b31d08e49.css?instance=new2024041817493921939&viewType=p&v=1776148533000&siteType=oper">
