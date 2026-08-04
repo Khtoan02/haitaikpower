@@ -69,17 +69,17 @@
     <div class="p_list">
         <div class="cbox-6 p_loopitem"><p class="e_text-7 s_title response-transition">
         <a href="/faq/" target="_self">
-    Product Issues
+    产品问题
         </a>
 </p></div>
         <div class="cbox-6 p_loopitem"><p class="e_text-7 s_title response-transition">
         <a href="/faq/" target="_self">
-    Technical issues
+    技术问题
         </a>
 </p></div>
         <div class="cbox-6 p_loopitem"><p class="e_text-7 s_title response-transition">
         <a href="/faq/" target="_self">
-    After-sales issues
+    售后问题
         </a>
 </p></div>
     </div>
@@ -89,7 +89,7 @@
         
     </div>
 
-    <input type="hidden" name="_config" value="{&quot;cname&quot;:&quot;所属分类-列表接口&quot;,&quot;type&quot;:&quot;list&quot;,&quot;params&quot;:{&quot;size&quot;:100,&quot;query&quot;:[{&quot;valueName&quot;:&quot;常见问题&quot;,&quot;dataType&quot;:&quot;number&quot;,&quot;operator&quot;:&quot;eq&quot;,&quot;filter&quot;:&quot;ignore-empty-check&quot;,&quot;esField&quot;:&quot;CID&quot;,&quot;groupName&quot;:&quot;数据展示条件,默认条件组&quot;,&quot;groupEnd&quot;:&quot;2,1&quot;,&quot;field&quot;:&quot;CID&quot;,&quot;sourceType&quot;:&quot;static&quot;,&quot;logic&quot;:&quot;and&quot;,&quot;groupBegin&quot;:&quot;1,2&quot;,&quot;value&quot;:&quot;1724995909930405888&quot;,&quot;fieldType&quot;:&quot;number&quot;}],&quot;header&quot;:{&quot;Data-Query-Es-Field&quot;:&quot;DETAIL_ES.es_symbol_categoryName&quot;,&quot;Data-Query-Random&quot;:0,&quot;Data-Query-Field&quot;:&quot;categoryName&quot;},&quot;from&quot;:0,&quot;sort&quot;:[],&quot;_detailId&quot;:&quot;1724995909930405888&quot;},&quot;valueUrl&quot;:&quot;/fwebapi/cms/lowcode/212701/1800496537479086080/list/value?cate=1&quot;,&quot;priority&quot;:0,&quot;_dataFilter&quot;:{&quot;filter&quot;:false,&quot;showCondition&quot;:false,&quot;conditionExclude&quot;:false,&quot;showSearch&quot;:false,&quot;currentConditionHide&quot;:false,&quot;selectFirstCondition&quot;:false,&quot;fields&quot;:[],&quot;viscidityEnableShowAll&quot;:false,&quot;cascaderEnable&quot;:false,&quot;showSearchCname&quot;:&quot;&quot;,&quot;viscidityEnable&quot;:false,&quot;viscidityEnableShowFirst&quot;:false},&quot;datasourceType&quot;:&quot;cate&quot;,&quot;appId&quot;:&quot;212701&quot;,&quot;sourceUuid&quot;:&quot;1441935267761094656&quot;,&quot;pageParams&quot;:[],&quot;metaUrl&quot;:&quot;/fwebapi/cms/lowcode/212701/1800496537479086080/list/meta?cate=1&quot;,&quot;disabled&quot;:false,&quot;api&quot;:&quot;/fwebapi/cms/lowcode/212701/1800496537479086080/list?cate=1&quot;,&quot;id&quot;:&quot;datasource12&quot;,&quot;apiId&quot;:&quot;1800496537479086080&quot;,&quot;reqKey&quot;:&quot;/fwebapi/cms/lowcode/212701/1800496537479086080/list?cate=1|{\&quot;size\&quot;:100,\&quot;query\&quot;:[{\&quot;valueName\&quot;:\&quot;常见问题\&quot;,\&quot;dataType\&quot;:\&quot;number\&quot;,\&quot;operator\&quot;:\&quot;eq\&quot;,\&quot;filter\&quot;:\&quot;ignore-empty-check\&quot;,\&quot;esField\&quot;:\&quot;CID\&quot;,\&quot;groupName\&quot;:\&quot;数据展示条件,默认条件组\&quot;,\&quot;groupEnd\&quot;:\&quot;2,1\&quot;,\&quot;field\&quot;:\&quot;CID\&quot;,\&quot;sourceType\&quot;:\&quot;static\&quot;,\&quot;logic\&quot;:\&quot;and\&quot;,\&quot;groupBegin\&quot;:\&quot;1,2\&quot;,\&quot;value\&quot;:\&quot;1724995909930405888\&quot;,\&quot;fieldType\&quot;:\&quot;number\&quot;}],\&quot;header\&quot;:{\&quot;Data-Query-Es-Field\&quot;:\&quot;DETAIL_ES.es_symbol_categoryName\&quot;,\&quot;Data-Query-Random\&quot;:0,\&quot;Data-Query-Field\&quot;:\&quot;categoryName\&quot;},\&quot;from\&quot;:0,\&quot;sort\&quot;:[],\&quot;_detailId\&quot;:\&quot;1724995909930405888\&quot;}|{\&quot;Data-Query-Es-Field\&quot;:\&quot;DETAIL_ES.es_symbol_categoryName\&quot;,\&quot;Data-Query-Random\&quot;:0,\&quot;Data-Query-Field\&quot;:\&quot;categoryName\&quot;}&quot;}">
+    <input type="hidden" name="_config" value="{&quot;cname&quot;:&quot;所属分类-列表接口&quot;,&quot;type&quot;:&quot;list&quot;,&quot;params&quot;:{&quot;size&quot;:100,&quot;query&quot;:[{&quot;valueName&quot;:&quot;常见问题&quot;,&quot;dataType&quot;:&quot;number&quot;,&quot;operator&quot;:&quot;eq&quot;,&quot;filter&quot;:&quot;ignore-empty-check&quot;,&quot;esField&quot;:&quot;CID&quot;,&quot;groupName&quot;:&quot;数据展示条件,默认条件组&quot;,&quot;groupEnd&quot;:&quot;2,1&quot;,&quot;field&quot;:&quot;CID&quot;,&quot;sourceType&quot;:&quot;static&quot;,&quot;logic&quot;:&quot;and&quot;,&quot;groupBegin&quot;:&quot;1,2&quot;,&quot;value&quot;:&quot;1724995909930405888&quot;,&quot;fieldType&quot;:&quot;number&quot;}],&quot;header&quot;:{&quot;Data-Query-Es-Field&quot;:&quot;DETAIL_ES.es_symbol_categoryName&quot;,&quot;Data-Query-Random&quot;:0,&quot;Data-Query-Field&quot;:&quot;categoryName&quot;},&quot;from&quot;:0,&quot;sort&quot;:[],&quot;_detailId&quot;:&quot;1724995909930405888&quot;},&quot;valueUrl&quot;:&quot;/fwebapi/cms/lowcode/212701/1800496537479086080/list/value?cate=1&quot;,&quot;priority&quot;:0,&quot;_dataFilter&quot;:{&quot;filter&quot;:false,&quot;showCondition&quot;:false,&quot;conditionExclude&quot;:false,&quot;showSearch&quot;:false,&quot;currentConditionHide&quot;:false,&quot;selectFirstCondition&quot;:false,&quot;fields&quot;:[],&quot;viscidityEnableShowAll&quot;:false,&quot;cascaderEnable&quot;:false,&quot;showSearchCname&quot;:&quot;&quot;,&quot;viscidityEnable&quot;:false,&quot;viscidityEnableShowFirst&quot;:false},&quot;datasourceType&quot;:&quot;cate&quot;,&quot;appId&quot;:&quot;212701&quot;,&quot;sourceUuid&quot;:&quot;1441935267761094656&quot;,&quot;pageParams&quot;:[],&quot;metaUrl&quot;:&quot;/fwebapi/cms/lowcode/212701/1800496537479086080/list/meta?cate=1&quot;,&quot;disabled&quot;:false,&quot;api&quot;:&quot;/fwebapi/cms/lowcode/212701/1800496537479086080/list?cate=1&quot;,&quot;id&quot;:&quot;datasource12&quot;,&quot;apiId&quot;:&quot;1800496537479086080&quot;,&quot;reqKey&quot;:&quot;/fwebapi/cms/lowcode/212701/1800496537479086080/list?cate=1|{\&quot;size\&quot;:100,\&quot;query\&quot;:[{\&quot;valueName\&quot;:\&quot;常见问题\&quot;,\&quot;dataType\&quot;:\&quot;number\&quot;,\&quot;operator\&quot;:\&quot;eq\&quot;,\&quot;filter\&quot;:\&quot;ignore-empty-check\&quot;,\&quot;esField\&quot;:\&quot;CID\&quot;,\&quot;groupName\&quot;:\&quot;数据展示条件,默认条件组\&quot;,\&quot;groupEnd\&quot;:\&quot;2,1\&quot;,\&quot;field\&quot;:\&quot;CID\&quot;,\&quot;sourceType\&quot;:\&quot;static\&quot;,\&quot;logic\&quot;:\&quot;and\&quot;,\&quot;groupBegin\&quot;:\&quot;1,2\&quot;,\&quot;value\&quot;:\&quot;1724995909930405888\&quot;,\&quot;fieldType\&quot;:\&quot;number\&quot;}],\&quot;header\&quot;:{\&quot;Data-Query-Es-Field\&quot;:\&quot;DETAIL_ES.es_symbol_categoryName\&quot;,\&quot;Data-Query-Random\&quot;:0,\&quot;Data-Query-Field\&quot;:\&quot;categoryName\&quot;},\&quot;from\&quot;:0,&quot;sort\&quot;:[],\&quot;_detailId\&quot;:\&quot;1724995909930405888\&quot;}|{\&quot;Data-Query-Es-Field\&quot;:\&quot;DETAIL_ES.es_symbol_categoryName\&quot;,\&quot;Data-Query-Random\&quot;:0,\&quot;Data-Query-Field\&quot;:\&quot;categoryName\&quot;}&quot;}">
     <input type="hidden" name="view" value="faq">
     <input type="hidden" name="pageParamsJson" value="{&quot;size&quot;:100,&quot;from&quot;:0,&quot;totalCount&quot;:3}">
     <input type="hidden" name="i18nJson" value="{}">
@@ -112,7 +112,7 @@
                 <span class="text-secondary p_title"></span>
             </a>
         </li>
-    <li class="p_breadcrumbItem"><span>FAQ</span></li></ul>
+    <li class="p_breadcrumbItem"><span>常见问题</span></li></ul>
 </div>
 </div>
 </div>
@@ -127,21 +127,21 @@
                 <div class="cbox-4 p_loopitem faqItem faqIn"><div class="e_container-6 s_layout response-transition">
     <div class="cbox-6-0 p_item"><div class="e_container-10 s_layout response-transition">
     <div class="cbox-10-0 p_item"><p class="e_text-8 s_title response-transition">
-    Use your company's products, found that the shell actually has a voltage, is this a normal situation? Will it cause harm to the human body?
+    使用贵公司产品时，发现外壳带电，这是正常现象吗？会对人体造成伤害吗？
 </p><div class="e_icon-12 s_title response-transition">
     <svg t="1698913738367" class="icon" viewBox="0 0 1807 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="9087" width="200" height="200"><path d="M1337.61938782 224.37816019a59.08671535 59.08671535 0 0 1 84.71252347 0c23.36153577 23.86470754 23.36153577 62.53703508 0 86.40174202l-479.19901414 488.79521446a59.08671535 59.08671535 0 0 1-84.74846448 0L379.18541853 310.77990221a61.96198189 61.96198189 0 0 1 0-86.40174202 59.08671535 59.08671535 0 0 1 84.71252346 1e-8L900.75866521 669.97250366 1337.61938782 224.37816019z" p-id="9088"></path></svg>
 </div></div>
 </div><div class="e_container-9 s_layout response-transition">
     <div class="cbox-9-0 p_item"><p class="e_text-7 s_title response-transition">
-        Due to EMI requirements, the input of the general POWER SUPPLY will be connected to the FG (shell) through some noise filtering capacitors, resulting in the phenomenon that the shell is charged. However, there are also clear specifications for this phenomenon in the IEC60950-1. For example, the leakage current of information equipment must be lower than 3.5mA, which can be solved as long as it is properly grounded.
+        出于EMI（电磁干扰）防护要求，通用电源的输入端会通过滤波电容与FG（外壳）相连，从而导致外壳带有感应电压。不过，IEC60950-1标准对此有明确规定，例如信息设备泄漏电流必须低于3.5mA，只要进行妥善接地即可解决。
 </p><div class="e_container-19 s_layout response-transition">
-    <div class="cbox-19-0 p_item"><p class="e_timeFormat-20 s_title response-transition">Nov 07,2023</p><div class="e_container-21 s_layout response-transition">
+    <div class="cbox-19-0 p_item"><p class="e_timeFormat-20 s_title response-transition">2023年11月07日</p><div class="e_container-21 s_layout response-transition">
     <div class="cbox-21-0 p_item"><p class="e_text-22 s_title response-transition">
-        Category:
+        所属分类:
 </p><div class="e_loop_sub-24 s_list response-transition">
         <div class="cbox-24 p_loopItem"><p class="e_text-23 s_title response-transition">
         <a href="/faq/" target="_self">
-        Product Issues
+        产品问题
         </a>
 </p></div>
 </div></div>
@@ -152,21 +152,21 @@
                 <div class="cbox-4 p_loopitem faqItem"><div class="e_container-6 s_layout response-transition">
     <div class="cbox-6-0 p_item"><div class="e_container-10 s_layout response-transition">
     <div class="cbox-10-0 p_item"><p class="e_text-8 s_title response-transition">
-    Our system uses the output ground (GND) and the earth (FG) as the common point. Is it feasible to apply your company's power supply products?
+    我们的系统将输出地（GND）与大地（FG）共用，使用贵公司的电源产品可行吗？
 </p><div class="e_icon-12 s_title response-transition">
     <svg t="1698913738367" class="icon" viewBox="0 0 1807 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="9087" width="200" height="200"><path d="M1337.61938782 224.37816019a59.08671535 59.08671535 0 0 1 84.71252347 0c23.36153577 23.86470754 23.36153577 62.53703508 0 86.40174202l-479.19901414 488.79521446a59.08671535 59.08671535 0 0 1-84.74846448 0L379.18541853 310.77990221a61.96198189 61.96198189 0 0 1 0-86.40174202 59.08671535 59.08671535 0 0 1 84.71252346 1e-8L900.75866521 669.97250366 1337.61938782 224.37816019z" p-id="9088"></path></svg>
 </div></div>
 </div><div class="e_container-9 s_layout">
     <div class="cbox-9-0 p_item"><p class="e_text-7 s_title">
-        Yes, because the company's products are isolated design, your company's system (Ground) and the earth (Frame Ground) are basically matched together in the safety regulations is no problem, but pay attention to the impact of EMI.
+        可行。由于我司产品均为隔离式设计，贵司系统的地（Ground）与大地（Frame Ground）共用在安规要求上是没有问题的，但需特别注意对EMI的影响。
 </p><div class="e_container-19 s_layout">
-    <div class="cbox-19-0 p_item"><p class="e_timeFormat-20 s_title">Nov 07,2023</p><div class="e_container-21 s_layout">
+    <div class="cbox-19-0 p_item"><p class="e_timeFormat-20 s_title">2023年11月07日</p><div class="e_container-21 s_layout">
     <div class="cbox-21-0 p_item"><p class="e_text-22 s_title">
-        Category:
+        所属分类:
 </p><div class="e_loop_sub-24 s_list">
         <div class="cbox-24 p_loopItem"><p class="e_text-23 s_title">
         <a href="/faq/" target="_self">
-        Product Issues
+        产品问题
         </a>
 </p></div>
 </div></div>
@@ -177,21 +177,21 @@
                 <div class="cbox-4 p_loopitem faqItem"><div class="e_container-6 s_layout">
     <div class="cbox-6-0 p_item"><div class="e_container-10 s_layout">
     <div class="cbox-10-0 p_item"><p class="e_text-8 s_title">
-    What is the reason for measuring two sets of output power supplies, 5V is correct, but 12V is beyond the specification?
+    测量双路输出电源时，5V输出正常，但12V输出超出规格要求，这是什么原因？
 </p><div class="e_icon-12 s_title">
     <svg t="1698913738367" class="icon" viewBox="0 0 1807 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="9087" width="200" height="200"><path d="M1337.61938782 224.37816019a59.08671535 59.08671535 0 0 1 84.71252347 0c23.36153577 23.86470754 23.36153577 62.53703508 0 86.40174202l-479.19901414 488.79521446a59.08671535 59.08671535 0 0 1-84.74846448 0L379.18541853 310.77990221a61.96198189 61.96198189 0 0 1 0-86.40174202 59.08671535 59.08671535 0 0 1 84.71252346 1e-8L900.75866521 669.97250366 1337.61938782 224.37816019z" p-id="9088"></path></svg>
 </div></div>
 </div><div class="e_container-9 s_layout">
     <div class="cbox-9-0 p_item"><p class="e_text-7 s_title">
-        Many groups (more than 2 groups) of output models in Chuanglian products have the requirements of Min.Load. Please refer to the specification before use. When 5V/4A,12V/0A, the 12V output voltage is on the high side, about 12.8V, which exceeds 6%(12.72V) in the specification. At this time, if 0.3A Min. Load is added to the 12V according to the specification, the 12V output voltage can be reduced to about 12.3V.
+        创联多路输出（2路以上）电源型号均有最小负载（Min.Load）要求，使用前请参考规格书。在5V/4A、12V/0A空载时，12V输出电压偏高（约12.8V，超出6%即12.72V规格）。此时若按规格书要求给12V加上0.3A的最小负载，12V输出电压即可降至约12.3V的正常范围。
 </p><div class="e_container-19 s_layout">
-    <div class="cbox-19-0 p_item"><p class="e_timeFormat-20 s_title">Nov 07,2023</p><div class="e_container-21 s_layout">
+    <div class="cbox-19-0 p_item"><p class="e_timeFormat-20 s_title">2023年11月07日</p><div class="e_container-21 s_layout">
     <div class="cbox-21-0 p_item"><p class="e_text-22 s_title">
-        Category:
+        所属分类:
 </p><div class="e_loop_sub-24 s_list">
         <div class="cbox-24 p_loopItem"><p class="e_text-23 s_title">
         <a href="/faq/" target="_self">
-        Product Issues
+        产品问题
         </a>
 </p></div>
 </div></div>
@@ -202,21 +202,21 @@
                 <div class="cbox-4 p_loopitem faqItem"><div class="e_container-6 s_layout">
     <div class="cbox-6-0 p_item"><div class="e_container-10 s_layout">
     <div class="cbox-10-0 p_item"><p class="e_text-8 s_title">
-    Why the load is a motor, bulb or capacitive load will cause the power supply to fail to start up smoothly?
+    为什么负载为电机、灯泡或容性负载时会导致电源无法顺畅启动？
 </p><div class="e_icon-12 s_title">
     <svg t="1698913738367" class="icon" viewBox="0 0 1807 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="9087" width="200" height="200"><path d="M1337.61938782 224.37816019a59.08671535 59.08671535 0 0 1 84.71252347 0c23.36153577 23.86470754 23.36153577 62.53703508 0 86.40174202l-479.19901414 488.79521446a59.08671535 59.08671535 0 0 1-84.74846448 0L379.18541853 310.77990221a61.96198189 61.96198189 0 0 1 0-86.40174202 59.08671535 59.08671535 0 0 1 84.71252346 1e-8L900.75866521 669.97250366 1337.61938782 224.37816019z" p-id="9088"></path></svg>
 </div></div>
 </div><div class="e_container-9 s_layout">
     <div class="cbox-9-0 p_item"><p class="e_text-7 s_title">
-        When the load is a motor, a light bulb or a capacitive load, it is caused by excessive current at the moment of starting up, and the recommended overload protection mode of the power supply is a product designed in a fixed current mode.
+        当负载为电机、灯泡或容性负载时，启动瞬间会产生过大电流。对于此类负载，建议选用恒流模式过载保护设计的电源产品。
 </p><div class="e_container-19 s_layout">
-    <div class="cbox-19-0 p_item"><p class="e_timeFormat-20 s_title">Nov 07,2023</p><div class="e_container-21 s_layout">
+    <div class="cbox-19-0 p_item"><p class="e_timeFormat-20 s_title">2023年11月07日</p><div class="e_container-21 s_layout">
     <div class="cbox-21-0 p_item"><p class="e_text-22 s_title">
-        Category:
+        所属分类:
 </p><div class="e_loop_sub-24 s_list">
         <div class="cbox-24 p_loopItem"><p class="e_text-23 s_title">
         <a href="/faq/" target="_self">
-        After-sales issues
+        售后问题
         </a>
 </p></div>
 </div></div>
@@ -227,21 +227,21 @@
                 <div class="cbox-4 p_loopitem faqItem"><div class="e_container-6 s_layout">
     <div class="cbox-6-0 p_item"><div class="e_container-10 s_layout">
     <div class="cbox-10-0 p_item"><p class="e_text-8 s_title">
-    Why does the power supply shut down during use and how to operate after shutdown?
+    电源在运行过程中为什么会自动关机？关机后应该如何处理？
 </p><div class="e_icon-12 s_title">
     <svg t="1698913738367" class="icon" viewBox="0 0 1807 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="9087" width="200" height="200"><path d="M1337.61938782 224.37816019a59.08671535 59.08671535 0 0 1 84.71252347 0c23.36153577 23.86470754 23.36153577 62.53703508 0 86.40174202l-479.19901414 488.79521446a59.08671535 59.08671535 0 0 1-84.74846448 0L379.18541853 310.77990221a61.96198189 61.96198189 0 0 1 0-86.40174202 59.08671535 59.08671535 0 0 1 84.71252346 1e-8L900.75866521 669.97250366 1337.61938782 224.37816019z" p-id="9088"></path></svg>
 </div></div>
 </div><div class="e_container-9 s_layout">
     <div class="cbox-9-0 p_item"><p class="e_text-7 s_title">
-        Generally, there are about two reasons for the shutdown of the power supply in use. First, overload protection may be caused by instantaneous overload of load. It is suggested to increase the output power of the power supply or modify the overload design. The second is that the temperature rise is too high, resulting in over-temperature protection. All of the above situations will cause the power supply to crash due to entering the protection state, and the power supply can return to normal after the condition is relieved.
+        电源在运行中关机通常有两个原因：一是负载瞬间过载触发过载保护，建议加大电源输出功率或优化过载设计；二是温升过高触发过温保护。上述情况均会导致电源进入保护状态而关机，待异常状况排除或冷却后，电源即可恢复正常运行。
 </p><div class="e_container-19 s_layout">
-    <div class="cbox-19-0 p_item"><p class="e_timeFormat-20 s_title">Nov 07,2023</p><div class="e_container-21 s_layout">
+    <div class="cbox-19-0 p_item"><p class="e_timeFormat-20 s_title">2023年11月07日</p><div class="e_container-21 s_layout">
     <div class="cbox-21-0 p_item"><p class="e_text-22 s_title">
-        Category:
+        所属分类:
 </p><div class="e_loop_sub-24 s_list">
         <div class="cbox-24 p_loopItem"><p class="e_text-23 s_title">
         <a href="/faq/" target="_self">
-        Technical issues
+        技术问题
         </a>
 </p></div>
 </div></div>
@@ -253,13 +253,13 @@
             <div class="p_page">
                 
         <div class="page_con">
-        <span class="page_total_items">Total 5</span>
+        <span class="page_total_items">共 5 条</span>
             <a href="javascript:;" class="page_a page_prev disabled">&lt;</a>
             <a class="page_a page_num current" href="javascript:;">1</a>
             <a href="javascript:;" class="page_a page_next disabled">&gt;</a>
-            <span class="page_jump">proceed <input type="text" class="page_input"> 
-                page</span>
-            <a class="page_confirmJump" href="javascript:;">OK</a>
+            <span class="page_jump">跳转 <input type="text" class="page_input"> 
+                页</span>
+            <a class="page_confirmJump" href="javascript:;">确定</a>
         </div>
         
             </div>

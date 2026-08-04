@@ -180,72 +180,72 @@ Chuanglian Power Supply has established a global customer service and support ne
         <div class="p_list swiper-wrapper zz-box">
             <div class="cbox-4 swiper-slide fancyboxHz" data-fancybox="gallery_noCon" data-caption="" data-src=""><div class="e_container-12 s_layout">
     <div class="cbox-12-0 p_item"><div class="e_image-5 s_img fancyImg fancyImg-honor">
-                    <img src="https://omo-oss-image.thefastimg.com/portal-saas/pg2024041817493912440/cms/image/294fcf49-1429-412f-9ef1-66505833bd4a.png" alt="High-tech enterprise" title="High-tech enterprise" la="la"/>
+                    <img src="https://omo-oss-image.thefastimg.com/portal-saas/pg2024041817493912440/cms/image/294fcf49-1429-412f-9ef1-66505833bd4a.png" alt="高新技术企业" title="高新技术企业" la="la"/>
 </div><p class="e_text-13 s_title">
-        High-tech enterprise
+        高新技术企业
 </p></div>
 </div></div>
             <div class="cbox-4 swiper-slide fancyboxHz" data-fancybox="gallery_noCon" data-caption="" data-src=""><div class="e_container-12 s_layout">
     <div class="cbox-12-0 p_item"><div class="e_image-5 s_img fancyImg fancyImg-honor">
-                    <img src="https://omo-oss-image.thefastimg.com/portal-saas/pg2024041817493912440/cms/image/09e28a83-49a4-4461-909a-df0ed08cb226.png" alt="Dekra Certified Laboratory" title="Dekra Certified Laboratory" la="la"/>
+                    <img src="https://omo-oss-image.thefastimg.com/portal-saas/pg2024041817493912440/cms/image/09e28a83-49a4-4461-909a-df0ed08cb226.png" alt="DEKRA认证实验室" title="DEKRA认证实验室" la="la"/>
 </div><p class="e_text-13 s_title">
-        Dekra Certified Laboratory
+        DEKRA认证实验室
 </p></div>
 </div></div>
             <div class="cbox-4 swiper-slide fancyboxHz" data-fancybox="gallery_noCon" data-caption="" data-src=""><div class="e_container-12 s_layout">
     <div class="cbox-12-0 p_item"><div class="e_image-5 s_img fancyImg fancyImg-honor">
-                    <img src="https://omo-oss-image.thefastimg.com/portal-saas/pg2024041817493912440/cms/image/fc62e89e-4b3d-465b-9063-0b822ce89f65.png" alt="Certificate" title="Certificate" la="la"/>
+                    <img src="https://omo-oss-image.thefastimg.com/portal-saas/pg2024041817493912440/cms/image/fc62e89e-4b3d-465b-9063-0b822ce89f65.png" alt="荣誉证书" title="荣誉证书" la="la"/>
 </div><p class="e_text-13 s_title">
-        Certificate
+        荣誉证书
 </p></div>
 </div></div>
             <div class="cbox-4 swiper-slide fancyboxHz" data-fancybox="gallery_noCon" data-caption="" data-src=""><div class="e_container-12 s_layout">
     <div class="cbox-12-0 p_item"><div class="e_image-5 s_img fancyImg fancyImg-honor">
-                    <img src="https://omo-oss-image.thefastimg.com/portal-saas/pg2024041817493912440/cms/image/ce3fb9c5-2059-443e-a3d8-1a133fbb0727.png" alt="UL Certified Witness Test Laboratory" title="UL Certified Witness Test Laboratory" la="la"/>
+                    <img src="https://omo-oss-image.thefastimg.com/portal-saas/pg2024041817493912440/cms/image/ce3fb9c5-2059-443e-a3d8-1a133fbb0727.png" alt="UL目击测试实验室" title="UL目击测试实验室" la="la"/>
 </div><p class="e_text-13 s_title">
-        UL Certified Witness Test Laboratory
+        UL目击测试实验室
 </p></div>
 </div></div>
             <div class="cbox-4 swiper-slide fancyboxHz" data-fancybox="gallery_noCon" data-caption="" data-src=""><div class="e_container-12 s_layout">
     <div class="cbox-12-0 p_item"><div class="e_image-5 s_img fancyImg fancyImg-honor">
-                    <img src="https://omo-oss-image.thefastimg.com/portal-saas/pg2024041817493912440/cms/image/2d16ef92-2092-47f9-bfe4-2a235117d4fb.png" alt="High-end Intelligent Switching Power Supply Engineering Technology Research Center" title="High-end Intelligent Switching Power Supply Engineering Technology Research Center" la="la"/>
+                    <img src="https://omo-oss-image.thefastimg.com/portal-saas/pg2024041817493912440/cms/image/2d16ef92-2092-47f9-bfe4-2a235117d4fb.png" alt="高端智能开关电源工程技术研究中心" title="高端智能开关电源工程技术研究中心" la="la"/>
 </div><p class="e_text-13 s_title">
-        High-end Intelligent Switching Power Supply Engineering Technology Research Center
+        高端智能开关电源工程技术研究中心
 </p></div>
 </div></div>
             <div class="cbox-4 swiper-slide fancyboxHz" data-fancybox="gallery_noCon" data-caption="" data-src=""><div class="e_container-12 s_layout">
     <div class="cbox-12-0 p_item"><div class="e_image-5 s_img fancyImg fancyImg-honor">
-                    <img src="https://omo-oss-image.thefastimg.com/portal-saas/pg2024041817493912440/cms/image/6fdf36f6-b7fb-436f-a02c-1052497f73b0.png" alt="State-level specialized and special new &quot;little giant&quot; enterprises" title="State-level specialized and special new &quot;little giant&quot; enterprises" la="la"/>
+                    <img src="https://omo-oss-image.thefastimg.com/portal-saas/pg2024041817493912440/cms/image/6fdf36f6-b7fb-436f-a02c-1052497f73b0.png" alt="国家级专精特新“小巨人”企业" title="国家级专精特新“小巨人”企业" la="la"/>
 </div><p class="e_text-13 s_title">
-        State-level specialized and special new "little giant" enterprises
+        国家级专精特新“小巨人”企业
 </p></div>
 </div></div>
             <div class="cbox-4 swiper-slide fancyboxHz" data-fancybox="gallery_noCon" data-caption="" data-src=""><div class="e_container-12 s_layout">
     <div class="cbox-12-0 p_item"><div class="e_image-5 s_img fancyImg fancyImg-honor">
-                    <img src="https://omo-oss-image.thefastimg.com/portal-saas/pg2024041817493912440/cms/image/62618b13-7a6a-4b75-9a81-c1411c577bae.png" alt="Star enterprise" title="Star enterprise" la="la"/>
+                    <img src="https://omo-oss-image.thefastimg.com/portal-saas/pg2024041817493912440/cms/image/62618b13-7a6a-4b75-9a81-c1411c577bae.png" alt="明星企业" title="明星企业" la="la"/>
 </div><p class="e_text-13 s_title">
-        Star enterprise
+        明星企业
 </p></div>
 </div></div>
             <div class="cbox-4 swiper-slide fancyboxHz" data-fancybox="gallery_noCon" data-caption="" data-src=""><div class="e_container-12 s_layout">
     <div class="cbox-12-0 p_item"><div class="e_image-5 s_img fancyImg fancyImg-honor">
-                    <img src="https://omo-oss-image.thefastimg.com/portal-saas/pg2024041817493912440/cms/image/81e0d89c-8f87-49af-85ad-a2966edcaa02.jpg" alt="Hazardous Substances Process Management System Certification" title="Hazardous Substances Process Management System Certification" la="la"/>
+                    <img src="https://omo-oss-image.thefastimg.com/portal-saas/pg2024041817493912440/cms/image/81e0d89c-8f87-49af-85ad-a2966edcaa02.jpg" alt="有害物质过程管理体系认证" title="有害物质过程管理体系认证" la="la"/>
 </div><p class="e_text-13 s_title">
-        Hazardous Substances Process Management System Certification
+        有害物质过程管理体系认证
 </p></div>
 </div></div>
             <div class="cbox-4 swiper-slide fancyboxHz" data-fancybox="gallery_noCon" data-caption="" data-src=""><div class="e_container-12 s_layout">
     <div class="cbox-12-0 p_item"><div class="e_image-5 s_img fancyImg fancyImg-honor">
-                    <img src="https://omo-oss-image.thefastimg.com/portal-saas/pg2024041817493912440/cms/image/fefa3deb-20ad-4f57-927a-aa45221f738a.jpg" alt="Quality Management System Certification" title="Quality Management System Certification" la="la"/>
+                    <img src="https://omo-oss-image.thefastimg.com/portal-saas/pg2024041817493912440/cms/image/fefa3deb-20ad-4f57-927a-aa45221f738a.jpg" alt="质量管理体系认证" title="质量管理体系认证" la="la"/>
 </div><p class="e_text-13 s_title">
-        Quality Management System Certification
+        质量管理体系认证
 </p></div>
 </div></div>
             <div class="cbox-4 swiper-slide fancyboxHz" data-fancybox="gallery_noCon" data-caption="" data-src=""><div class="e_container-12 s_layout">
     <div class="cbox-12-0 p_item"><div class="e_image-5 s_img fancyImg fancyImg-honor">
-                    <img src="https://omo-oss-image.thefastimg.com/portal-saas/pg2024041817493912440/cms/image/61f61a68-d690-4d0a-a302-3d5e9286a239.jpg" alt="Environmental Management System Certification" title="Environmental Management System Certification" la="la"/>
+                    <img src="https://omo-oss-image.thefastimg.com/portal-saas/pg2024041817493912440/cms/image/61f61a68-d690-4d0a-a302-3d5e9286a239.jpg" alt="环境管理体系认证" title="环境管理体系认证" la="la"/>
 </div><p class="e_text-13 s_title">
-        Environmental Management System Certification
+        环境管理体系认证
 </p></div>
 </div></div>
         </div>
@@ -264,7 +264,7 @@ Chuanglian Power Supply has established a global customer service and support ne
     <input type="hidden" name="_config" value="{&quot;cname&quot;:&quot;企业图册-列表接口&quot;,&quot;type&quot;:&quot;list&quot;,&quot;params&quot;:{&quot;size&quot;:40,&quot;query&quot;:[{&quot;valueName&quot;:&quot;荣誉资质&quot;,&quot;dataType&quot;:&quot;array[category]&quot;,&quot;operator&quot;:&quot;in&quot;,&quot;filter&quot;:&quot;ignore-empty-check&quot;,&quot;esField&quot;:&quot;DETAIL_ES.es_multi_category_d24KG3Gh&quot;,&quot;groupName&quot;:&quot;数据展示条件,默认条件组&quot;,&quot;groupEnd&quot;:&quot;2,1&quot;,&quot;field&quot;:&quot;category_d24KG3Gh&quot;,&quot;sourceType&quot;:&quot;static&quot;,&quot;logic&quot;:&quot;and&quot;,&quot;groupBegin&quot;:&quot;1,2&quot;,&quot;value&quot;:&quot;1979&quot;,&quot;fieldType&quot;:&quot;array&quot;}],&quot;header&quot;:{&quot;Data-Query-Es-Field&quot;:&quot;DETAIL_ES.es_multi_image_c7a60REA,DETAIL_ES.es_symbol_text_lu4u777W&quot;,&quot;Data-Query-Random&quot;:0,&quot;Data-Query-Field&quot;:&quot;image_c7a60REA,text_lu4u777W&quot;},&quot;from&quot;:0,&quot;sort&quot;:[]},&quot;valueUrl&quot;:&quot;/fwebapi/cms/lowcode/60004/18507/list/value?cate&#x3D;0&quot;,&quot;priority&quot;:0,&quot;_dataFilter&quot;:{&quot;filter&quot;:false,&quot;showCondition&quot;:false,&quot;conditionExclude&quot;:false,&quot;showSearch&quot;:false,&quot;currentConditionHide&quot;:false,&quot;selectFirstCondition&quot;:false,&quot;fields&quot;:[],&quot;viscidityEnableShowAll&quot;:false,&quot;cascaderEnable&quot;:false,&quot;showSearchCname&quot;:&quot;&quot;,&quot;viscidityEnable&quot;:false,&quot;viscidityEnableShowFirst&quot;:false},&quot;datasourceType&quot;:&quot;nomarl&quot;,&quot;appId&quot;:&quot;60004&quot;,&quot;sourceUuid&quot;:&quot;1441932961187495936&quot;,&quot;pageParams&quot;:[],&quot;metaUrl&quot;:&quot;/fwebapi/cms/lowcode/60004/18507/list/meta?cate&#x3D;0&quot;,&quot;disabled&quot;:false,&quot;api&quot;:&quot;/fwebapi/cms/lowcode/60004/18507/list?cate&#x3D;0&quot;,&quot;id&quot;:&quot;datasource3&quot;,&quot;apiId&quot;:&quot;18507&quot;,&quot;reqKey&quot;:&quot;/fwebapi/cms/lowcode/60004/18507/list?cate&#x3D;0|{\&quot;size\&quot;:40,\&quot;query\&quot;:[{\&quot;valueName\&quot;:\&quot;荣誉资质\&quot;,\&quot;dataType\&quot;:\&quot;array[category]\&quot;,\&quot;operator\&quot;:\&quot;in\&quot;,\&quot;filter\&quot;:\&quot;ignore-empty-check\&quot;,\&quot;esField\&quot;:\&quot;DETAIL_ES.es_multi_category_d24KG3Gh\&quot;,\&quot;groupName\&quot;:\&quot;数据展示条件,默认条件组\&quot;,\&quot;groupEnd\&quot;:\&quot;2,1\&quot;,\&quot;field\&quot;:\&quot;category_d24KG3Gh\&quot;,\&quot;sourceType\&quot;:\&quot;static\&quot;,\&quot;logic\&quot;:\&quot;and\&quot;,\&quot;groupBegin\&quot;:\&quot;1,2\&quot;,\&quot;value\&quot;:\&quot;1979\&quot;,\&quot;fieldType\&quot;:\&quot;array\&quot;}],\&quot;header\&quot;:{\&quot;Data-Query-Es-Field\&quot;:\&quot;DETAIL_ES.es_multi_image_c7a60REA,DETAIL_ES.es_symbol_text_lu4u777W\&quot;,\&quot;Data-Query-Random\&quot;:0,\&quot;Data-Query-Field\&quot;:\&quot;image_c7a60REA,text_lu4u777W\&quot;},\&quot;from\&quot;:0,\&quot;sort\&quot;:[]}|{\&quot;Data-Query-Es-Field\&quot;:\&quot;DETAIL_ES.es_multi_image_c7a60REA,DETAIL_ES.es_symbol_text_lu4u777W\&quot;,\&quot;Data-Query-Random\&quot;:0,\&quot;Data-Query-Field\&quot;:\&quot;image_c7a60REA,text_lu4u777W\&quot;}&quot;}">
     <input type="hidden" name="view" value="about">
     <input type="hidden" name="pageParamsJson" value="{&quot;size&quot;:40,&quot;from&quot;:0,&quot;totalCount&quot;:10}">
-    <input type="hidden" name="i18nJson" value="{&quot;noMore_4&quot;:&quot;No more&quot;,&quot;pageUnit_4&quot;:&quot;page&quot;,&quot;loadNow_4&quot;:&quot;Loading&quot;,&quot;pageItem_4&quot;:&quot;picecs&quot;,&quot;pageJump_4&quot;:&quot;proceed&quot;,&quot;pageWhole_4&quot;:&quot;in total&quot;,&quot;noData_4&quot;:&quot;No data&quot;,&quot;loadMore_4&quot;:&quot;Click to load more&quot;}">
+    <input type="hidden" name="i18nJson" value="{&quot;noMore_4&quot;:&quot;没有更多了&quot;,&quot;pageUnit_4&quot;:&quot;页&quot;,&quot;loadNow_4&quot;:&quot;加载中&quot;,&quot;pageItem_4&quot;:&quot;条&quot;,&quot;pageJump_4&quot;:&quot;跳转&quot;,&quot;pageWhole_4&quot;:&quot;共&quot;,&quot;noData_4&quot;:&quot;暂无数据&quot;,&quot;loadMore_4&quot;:&quot;点击加载更多&quot;}">
 </div>
 <script src="/upload/js/c69a65b94b9d48fe90291c18e82934b0.js?instance=new2024041817493921939&viewType=p&v=1776148533000&siteType=oper"></script>
 
@@ -272,11 +272,11 @@ Chuanglian Power Supply has established a global customer service and support ne
 <div class="e_container-1 s_layout">
     <div class="cbox-1-0 p_item"><div class="e_container-6 s_layout">
     <div class="cbox-6-0 p_item"><div class="e_richText-9 s_title clearfix">
-    <p>Partners</p>
+    <p>合作伙伴</p>
 
 </div><div class="e_container-10 s_layout">
     <div class="cbox-10-0 p_item"><p class="e_text-11 s_title">
-        * LED Display power supply Partner
+        * LED显示屏电源合作伙伴
 </p><div class="e_loop-2 s_list" needjs="true" ds-id="" elem-id="e_loop-2">
     <div class="">
 

@@ -181,19 +181,19 @@ if ( empty( $product_downloads ) ) {
     <?php the_title(); ?>
 </h1><div class="e_container-41 s_layout">
     <div class="cbox-41-0 p_item"><p class="e_text-42 s_title">
-    Classification:
+    所属分类：
 </p></div>
     <div class="cbox-41-1 p_item"><div class="e_loop_sub-43 s_list">
         <div class="cbox-43 p_loopItem"><p class="e_text-44 s_title">
         <a href="/led-display-power/" target="_self">
-        Current Sharing Backup Series
+        均流备份系列
         </a>
 </p></div>
 </div></div>
 </div></div>
     <div class="cbox-51-1 p_item" style="display: flex; gap: 10px; align-items: center;">
         <a class="e_button-46 s_button1 btn btn-primary " href="#c_form_050-1718776303318" target="_self">
-            <span><svg t="1718779224235" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3021" width="200" height="200"><path d="M353.745455 996.072727H139.636364c-69.818182 0-125.672727-55.854545-125.672728-125.672727V144.290909C13.963636 74.472727 69.818182 18.618182 139.636364 18.618182h679.563636c69.818182 0 125.672727 55.854545 125.672727 125.672727v223.418182c0 23.272727-18.618182 46.545455-41.890909 46.545454s-41.890909-18.618182-41.890909-46.545454V144.290909c0-18.618182-18.618182-37.236364-37.236364-37.236364H139.636364c-18.618182 0-37.236364 18.618182-37.236364 37.236364v726.109091c0 18.618182 18.618182 37.236364 37.236364 37.236364h214.109091c23.272727 0 41.890909 18.618182 41.890909 46.545454 0 18.618182-18.618182 41.890909-41.890909 41.890909z" fill="#ffffff" p-id="3022"></path><path d="M679.563636 339.781818H200.145455c-27.927273 0-46.545455-18.618182-46.545455-46.545454s18.618182-46.545455 46.545455-46.545455h479.418181c27.927273 0 46.545455 18.618182 46.545455 46.545455s-23.272727 46.545455-46.545455 46.545454zM465.454545 553.890909H200.145455c-27.927273 0-46.545455-18.618182-46.545455-46.545454s18.618182-46.545455 46.545455-46.545455H465.454545c27.927273 0 46.545455 18.618182 46.545455 46.545455s-18.618182 46.545455-46.545455 46.545454z" fill="#ffffff" p-id="3023"></path><path d="M935.563636 572.509091c9.309091-9.309091 13.963636-27.927273 4.654546-37.236364-9.309091-9.309091-27.927273-13.963636-37.236364-4.654545L539.927273 884.363636l-13.963637 41.890909 46.545455-4.654545c4.654545 0 363.054545-349.090909 363.054545-349.090909z m41.890909-74.472727c27.927273 32.581818 23.272727 83.781818-9.30909 111.709091L605.090909 968.145455c-4.654545 4.654545-9.309091 4.654545-13.963636 4.654545l-97.745455 9.309091c-13.963636 0-27.927273-9.309091-27.927273-23.272727v-9.309091l27.927273-88.436364c0-4.654545 4.654545-9.309091 9.309091-13.963636l367.709091-358.4c27.927273-27.927273 79.127273-23.272727 107.054545 9.309091z" fill="#ffffff" p-id="3024"></path><path d="M488.727273 996.072727c-18.618182 0-37.236364-13.963636-37.236364-37.236363v-13.963637l27.927273-88.436363c0-9.309091 4.654545-13.963636 13.963636-18.618182l363.054546-358.4c37.236364-32.581818 97.745455-27.927273 130.327272 9.309091 13.963636 18.618182 23.272727 41.890909 23.272728 65.163636 0 23.272727-13.963636 46.545455-32.581819 60.509091L614.4 977.454545c-4.654545 4.654545-13.963636 9.309091-23.272727 9.309091l-102.4 9.309091c4.654545 0 4.654545 0 0 0z m428.218182-512c-13.963636 0-32.581818 4.654545-46.545455 13.963637l-363.054545 358.4c-4.654545 4.654545-4.654545 4.654545-4.654546 9.309091l-27.927273 88.436363v4.654546c0 4.654545 0 9.309091 4.654546 9.309091 4.654545 4.654545 4.654545 4.654545 9.309091 4.654545l97.745454-9.309091c4.654545 0 4.654545 0 9.309091-4.654545l367.709091-358.4c13.963636-13.963636 23.272727-27.927273 23.272727-46.545455s-4.654545-37.236364-18.618181-51.2c-13.963636-9.309091-32.581818-18.618182-51.2-18.618182zM512 940.218182l18.618182-60.509091 363.054545-353.745455c18.618182-13.963636 41.890909-13.963636 55.854546 4.654546 13.963636 13.963636 13.963636 41.890909-4.654546 51.2l-363.054545 353.745454-69.818182 4.654546z m37.236364-51.2l-9.309091 23.272727h27.927272l358.4-349.090909c4.654545-4.654545 4.654545-13.963636 0-18.618182-4.654545-4.654545-13.963636-9.309091-23.272727 0l-353.745454 344.436364z" fill="#ffffff" p-id="3025"></path></svg> Sample Application </span> 
+            <span><svg t="1718779224235" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3021" width="200" height="200"><path d="M353.745455 996.072727H139.636364c-69.818182 0-125.672727-55.854545-125.672728-125.672727V144.290909C13.963636 74.472727 69.818182 18.618182 139.636364 18.618182h679.563636c69.818182 0 125.672727 55.854545 125.672727 125.672727v223.418182c0 23.272727-18.618182 46.545455-41.890909 46.545454s-41.890909-18.618182-41.890909-46.545454V144.290909c0-18.618182-18.618182-37.236364-37.236364-37.236364H139.636364c-18.618182 0-37.236364 18.618182-37.236364 37.236364v726.109091c0 18.618182 18.618182 37.236364 37.236364 37.236364h214.109091c23.272727 0 41.890909 18.618182 41.890909 46.545454 0 18.618182-18.618182 41.890909-41.890909 41.890909z" fill="#ffffff" p-id="3022"></path><path d="M679.563636 339.781818H200.145455c-27.927273 0-46.545455-18.618182-46.545455-46.545454s18.618182-46.545455 46.545455-46.545455h479.418181c27.927273 0 46.545455 18.618182 46.545455 46.545455s-23.272727 46.545455-46.545455 46.545454zM465.454545 553.890909H200.145455c-27.927273 0-46.545455-18.618182-46.545455-46.545454s18.618182-46.545455 46.545455-46.545455H465.454545c27.927273 0 46.545455 18.618182 46.545455 46.545455s-18.618182 46.545455-46.545455 46.545454z" fill="#ffffff" p-id="3023"></path><path d="M935.563636 572.509091c9.309091-9.309091 13.963636-27.927273 4.654546-37.236364-9.309091-9.309091-27.927273-13.963636-37.236364-4.654545L539.927273 884.363636l-13.963637 41.890909 46.545455-4.654545c4.654545 0 363.054545-349.090909 363.054545-349.090909z m41.890909-74.472727c27.927273 32.581818 23.272727 83.781818-9.30909 111.709091L605.090909 968.145455c-4.654545 4.654545-9.309091 4.654545-13.963636 4.654545l-97.745455 9.309091c-13.963636 0-27.927273-9.309091-27.927273-23.272727v-9.309091l27.927273-88.436364c0-4.654545 4.654545-9.309091 9.309091-13.963636l367.709091-358.4c27.927273-27.927273 79.127273-23.272727 107.054545 9.309091z" fill="#ffffff" p-id="3024"></path><path d="M488.727273 996.072727c-18.618182 0-37.236364-13.963636-37.236364-37.236363v-13.963637l27.927273-88.436363c0-9.309091 4.654545-13.963636 13.963636-18.618182l363.054546-358.4c37.236364-32.581818 97.745455-27.927273 130.327272 9.309091 13.963636 18.618182 23.272727 41.890909 23.272728 65.163636 0 23.272727-13.963636 46.545455-32.581819 60.509091L614.4 977.454545c-4.654545 4.654545-13.963636 9.309091-23.272727 9.309091l-102.4 9.309091c4.654545 0 4.654545 0 0 0z m428.218182-512c-13.963636 0-32.581818 4.654545-46.545455 13.963637l-363.054545 358.4c-4.654545 4.654545-4.654545 4.654545-4.654546 9.309091l-27.927273 88.436363v4.654546c0 4.654545 0 9.309091 4.654546 9.309091 4.654545 4.654545 4.654545 4.654545 9.309091 4.654545l97.745454-9.309091c4.654545 0 4.654545 0 9.309091-4.654545l367.709091-358.4c13.963636-13.963636 23.272727-27.927273 23.272727-46.545455s-4.654545-37.236364-18.618181-51.2c-13.963636-9.309091-32.581818-18.618182-51.2-18.618182zM512 940.218182l18.618182-60.509091 363.054545-353.745455c18.618182-13.963636 41.890909-13.963636 55.854546 4.654546 13.963636 13.963636 13.963636 41.890909-4.654546 51.2l-363.054545 353.745454-69.818182 4.654546z m37.236364-51.2l-9.309091 23.272727h27.927272l358.4-349.090909c4.654545-4.654545 4.654545-13.963636 0-18.618182-4.654545-4.654545-13.963636-9.309091-23.272727 0l-353.745454 344.436364z" fill="#ffffff" p-id="3025"></path></svg> 样品申请 </span> 
         </a>
 
         <?php if ( ! empty( $product_downloads ) ) : ?>
@@ -202,7 +202,7 @@ if ( empty( $product_downloads ) ) {
                     <svg viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" width="18" height="18" style="fill: #fff; margin-right: 6px;">
                         <path d="M512 666.666667L256 410.666667h170.666667V170.666667h170.666666v240h170.666667L512 666.666667z M170.666667 768h682.666666v85.333333H170.666667V768z"></path>
                     </svg>
-                    Download Spec
+                    下载规格书
                 </a>
             <?php endforeach; ?>
         <?php endif; ?>
@@ -214,7 +214,7 @@ if ( empty( $product_downloads ) ) {
     <div class="cbox-14-0 p_item"><div class="e_container-15 s_layout">
     <div class="cbox-15-0 p_item"><div class="e_container-16 s_layout">
     <div class="cbox-16-0 p_item"><p class="e_text-47 s_title">
-        Product Details
+        产品详情
 </p></div>
 </div><hr class="e_line-19 s_line" /><div class="e_container-27 s_layout">
     <div class="cbox-27-0 p_item"><div class="e_richText-20 s_title clearfix">
@@ -227,7 +227,7 @@ if ( empty( $product_downloads ) ) {
 <div class="e_container-1 s_layout">
     <div class="cbox-1-0 p_item"><div class="e_container-2 s_layout">
     <div class="cbox-2-0 p_item"><p class="e_text-14 s_title">
-    Sample Application
+    样品申请
 </p></div>
     <div class="cbox-2-1 p_item"><div class="e_form-15 s_form_layout1" needjs="true">
     <form name="form" action="" method="post" isvalid="true" class="form_15">
@@ -235,62 +235,62 @@ if ( empty( $product_downloads ) ) {
             
             <div class="e_input-16 s_input">
     <div class="p_labelItem">
-        <label for="company_name">Company Name<span class="p_mustFill">*</span></label>
+        <label for="company_name">公司名称<span class="p_mustFill">*</span></label>
     </div>
     <div class="p_inputItem">
         
-            <input type="text" class="form-control s_input" id="company_name" name="company_name" placeholder="" isvalid="true" reg="" data-content="Please enter the Company Name" maxlength="255">
+            <input type="text" class="form-control s_input" id="company_name" name="company_name" placeholder="" isvalid="true" reg="" data-content="请输入公司名称" maxlength="255">
         
     </div>
 </div>
         
             <div class="e_input-17 s_input">
     <div class="p_labelItem">
-        <label for="contact_person">Contact Person<span class="p_mustFill">*</span></label>
+        <label for="contact_person">联系人<span class="p_mustFill">*</span></label>
     </div>
     <div class="p_inputItem">
         
-            <input type="text" class="form-control s_input" id="contact_person" name="contact_person" placeholder="" isvalid="true" reg="" data-content="Please enter the Contact Person" maxlength="255">
+            <input type="text" class="form-control s_input" id="contact_person" name="contact_person" placeholder="" isvalid="true" reg="" data-content="请输入联系人" maxlength="255">
         
     </div>
 </div>
         
             <div class="e_input-18 s_input">
     <div class="p_labelItem">
-        <label for="email">E-mail<span class="p_mustFill">*</span></label>
+        <label for="email">电子邮箱<span class="p_mustFill">*</span></label>
     </div>
     <div class="p_inputItem">
         
-            <input type="text" class="form-control s_input" id="email" name="email" placeholder="" isvalid="true" reg="" data-content="Please enter the E-mail" maxlength="255">
+            <input type="text" class="form-control s_input" id="email" name="email" placeholder="" isvalid="true" reg="" data-content="请输入电子邮箱" maxlength="255">
         
     </div>
 </div>
         
             <div class="e_input-19 s_input">
     <div class="p_labelItem">
-        <label for="tel">Tel<span class="p_mustFill">*</span></label>
+        <label for="tel">联系电话<span class="p_mustFill">*</span></label>
     </div>
     <div class="p_inputItem">
         
-            <input type="text" class="form-control s_input" id="tel" name="tel" placeholder="" isvalid="true" reg="" data-content="Please enter the Tel" maxlength="255">
+            <input type="text" class="form-control s_input" id="tel" name="tel" placeholder="" isvalid="true" reg="" data-content="请输入联系电话" maxlength="255">
         
     </div>
 </div>
         
             <div class="e_input-20 s_input">
     <div class="p_labelItem">
-        <label for="application_model">Application Model<span class="p_mustFill">*</span></label>
+        <label for="application_model">申请型号<span class="p_mustFill">*</span></label>
     </div>
     <div class="p_inputItem">
         
-            <input type="text" class="form-control s_input" id="application_model" name="application_model" placeholder="" isvalid="true" reg="" data-content="Please enter the Application Model" maxlength="255">
+            <input type="text" class="form-control s_input" id="application_model" name="application_model" placeholder="" isvalid="true" reg="" data-content="请输入申请型号" maxlength="255">
         
     </div>
 </div>
         
             <div class="e_textarea-21 s_input">
     <div class="p_labelItem">
-        <label for="remarks">Remarks</label>
+        <label for="remarks">备注说明</label>
     </div>
     <div class="p_inputItem">
         <textarea class="form-control s_input" id="remarks" name="remarks" placeholder="" isvalid="true" reg="" data-content="" maxlength="500"></textarea>
@@ -299,7 +299,7 @@ if ( empty( $product_downloads ) ) {
         
             <div class="e_formBtn-22 s_button">
     <div class="p_btnItem">
-        <button type="submit" class="btn btn-primary s_btn">Submit</button>
+        <button type="submit" class="btn btn-primary s_btn">提交申请</button>
     </div>
 </div>
         

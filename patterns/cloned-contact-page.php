@@ -14,17 +14,17 @@
             <div class="swiper-slide p_slide">
                     <div class="p_img">
                         <a href="javascript:;" >
-                            <img src="https://omo-oss-image.thefastimg.com/portal-saas/pg2024041817493912440/cms/image/e595d156-beac-40d0-8552-7712b5958a9e.jpg" alt="Contact Us" title="Contact Us" la="la"/>
+                            <img src="https://omo-oss-image.thefastimg.com/portal-saas/pg2024041817493912440/cms/image/e595d156-beac-40d0-8552-7712b5958a9e.jpg" alt="联系我们" title="联系我们" la="la"/>
                         </a>
                     </div>
                 <div class="p_info ">
                     <div>
                         <h3 class="text-white p_btitle">
                             <a href="javascript:;" >
-                            Contact Us
+                            联系我们
                             </a>
                         </h3>
-                        <h6 class="text-white p_subtitle">Contact Us</h6>
+                        <h6 class="text-white p_subtitle">联系我们</h6>
                     </div>
                 </div>
             </div>
@@ -39,22 +39,22 @@
     <div class="p_list">
         <div class="cbox-3 p_loopitem"><p class="e_text-4 s_title">
         <a href="/contact-us/" target="_self">
-    Business Cooperation
+    商务合作
         </a>
 </p></div>
         <div class="cbox-3 p_loopitem"><p class="e_text-4 s_title">
         <a href="/contact-us/" target="_self">
-    Franchise
+    招商加盟
         </a>
 </p></div>
         <div class="cbox-3 p_loopitem"><p class="e_text-4 s_title">
         <a href="/contact-us/" target="_self">
-    Talent Recruitment
+    人才招聘
         </a>
 </p></div>
         <div class="cbox-3 p_loopitem"><p class="e_text-4 s_title">
         <a href="/contact-us/#c_form_003_P_179-1709341435401" target="_self">
-    Online Message
+    在线留言
         </a>
 </p></div>
     </div>
@@ -64,7 +64,7 @@
         
     </div>
 
-    <input type="hidden" name="_config" value="{&quot;ignoreEmptyCheck&quot;:true,&quot;cname&quot;:&quot;介绍内容-列表接口&quot;,&quot;type&quot;:&quot;list&quot;,&quot;params&quot;:{&quot;size&quot;:6,&quot;query&quot;:[{&quot;valueName&quot;:&quot;联系我们&quot;,&quot;dataType&quot;:&quot;array[category]&quot;,&quot;operator&quot;:&quot;in&quot;,&quot;filter&quot;:&quot;ignore-empty-check&quot;,&quot;esField&quot;:&quot;DETAIL_ES.es_multi_category_01Sy2jv4&quot;,&quot;groupName&quot;:&quot;数据展示条件,默认条件组&quot;,&quot;groupEnd&quot;:&quot;2,1&quot;,&quot;field&quot;:&quot;category_01Sy2jv4&quot;,&quot;sourceType&quot;:&quot;static&quot;,&quot;logic&quot;:&quot;and&quot;,&quot;groupBegin&quot;:&quot;1,2&quot;,&quot;value&quot;:&quot;1800487312474853376&quot;,&quot;fieldType&quot;:&quot;array&quot;}],&quot;header&quot;:{&quot;Data-Query-Es-Field&quot;:&quot;DETAIL_ES.es_symbol_text_r4O05cao&quot;,&quot;Data-Query-Random&quot;:0,&quot;Data-Query-Field&quot;:&quot;text_r4O05cao&quot;},&quot;from&quot;:0,&quot;sort&quot;:[]},&quot;valueUrl&quot;:&quot;/fwebapi/cms/lowcode/60007/18515/list/value?cate&#x3D;0&quot;,&quot;priority&quot;:0,&quot;_dataFilter&quot;:{&quot;filter&quot;:false,&quot;showCondition&quot;:false,&quot;conditionExclude&quot;:false,&quot;showSearch&quot;:false,&quot;currentConditionHide&quot;:false,&quot;selectFirstCondition&quot;:false,&quot;fields&quot;:[],&quot;viscidityEnableShowAll&quot;:false,&quot;cascaderEnable&quot;:false,&quot;showSearchCname&quot;:&quot;&quot;,&quot;viscidityEnable&quot;:false,&quot;viscidityEnableShowFirst&quot;:false},&quot;appId&quot;:&quot;60007&quot;,&quot;sourceUuid&quot;:&quot;1441959640303796224&quot;,&quot;pageParams&quot;:[],&quot;metaUrl&quot;:&quot;/fwebapi/cms/lowcode/60007/18515/list/meta?cate&#x3D;0&quot;,&quot;disabled&quot;:false,&quot;api&quot;:&quot;/fwebapi/cms/lowcode/60007/18515/list?cate&#x3D;0&quot;,&quot;id&quot;:&quot;datasource9&quot;,&quot;apiId&quot;:&quot;18515&quot;,&quot;reqKey&quot;:&quot;/fwebapi/cms/lowcode/60007/18515/list?cate&#x3D;0|{\&quot;size\&quot;:6,\&quot;query\&quot;:[{\&quot;valueName\&quot;:\&quot;联系我们\&quot;,\&quot;dataType\&quot;:\&quot;array[category]\&quot;,\&quot;operator\&quot;:\&quot;in\&quot;,\&quot;filter\&quot;:\&quot;ignore-empty-check\&quot;,\&quot;esField\&quot;:\&quot;DETAIL_ES.es_multi_category_01Sy2jv4\&quot;,\&quot;groupName\&quot;:\&quot;数据展示条件,默认条件组\&quot;,\&quot;groupEnd\&quot;:\&quot;2,1\&quot;,\&quot;field\&quot;:\&quot;category_01Sy2jv4\&quot;,\&quot;sourceType\&quot;:\&quot;static\&quot;,\&quot;logic\&quot;:\&quot;and\&quot;,\&quot;groupBegin\&quot;:\&quot;1,2\&quot;,\&quot;value\&quot;:\&quot;1800487312474853376\&quot;,\&quot;fieldType\&quot;:\&quot;array\&quot;}],\&quot;header\&quot;:{\&quot;Data-Query-Es-Field\&quot;:\&quot;DETAIL_ES.es_symbol_text_r4O05cao\&quot;,\&quot;Data-Query-Random\&quot;:0,\&quot;Data-Query-Field\&quot;:\&quot;text_r4O05cao\&quot;},\&quot;from\&quot;:0,\&quot;sort\&quot;:[]}|{\&quot;Data-Query-Es-Field\&quot;:\&quot;DETAIL_ES.es_symbol_text_r4O05cao\&quot;,\&quot;Data-Query-Random\&quot;:0,\&quot;Data-Query-Field\&quot;:\&quot;text_r4O05cao\&quot;}&quot;}">
+    <input type="hidden" name="_config" value="{&quot;ignoreEmptyCheck&quot;:true,&quot;cname&quot;:&quot;介绍内容-列表接口&quot;,&quot;type&quot;:&quot;list&quot;,&quot;params&quot;:{&quot;size&quot;:6,&quot;query&quot;:[{&quot;valueName&quot;:&quot;联系我们&quot;,&quot;dataType&quot;:&quot;array[category]&quot;,&quot;operator&quot;:&quot;in&quot;,&quot;filter&quot;:&quot;ignore-empty-check&quot;,&quot;esField&quot;:&quot;DETAIL_ES.es_multi_category_01Sy2jv4&quot;,&quot;groupName&quot;:&quot;数据展示条件,默认条件组&quot;,&quot;groupEnd&quot;:&quot;2,1&quot;,&quot;field&quot;:&quot;category_01Sy2jv4&quot;,&quot;sourceType&quot;:&quot;static&quot;,&quot;logic&quot;:&quot;and&quot;,&quot;groupBegin&quot;:&quot;1,2&quot;,&quot;value&quot;:&quot;1800487312474853376&quot;,&quot;fieldType&quot;:&quot;array&quot;}],&quot;header&quot;:{&quot;Data-Query-Es-Field&quot;:&quot;DETAIL_ES.es_symbol_text_r4O05cao&quot;,&quot;Data-Query-Random&quot;:0,&quot;Data-Query-Field&quot;:&quot;text_r4O05cao&quot;},&quot;from&quot;:0,&quot;sort&quot;:[]},&quot;valueUrl&quot;:&quot;/fwebapi/cms/lowcode/60007/18515/list/value?cate&#x3D;0&quot;,&quot;priority&quot;:0,&quot;_dataFilter&quot;:{&quot;filter&quot;:false,&quot;showCondition&quot;:false,&quot;conditionExclude&quot;:false,&quot;showSearch&quot;:false,&quot;currentConditionHide&quot;:false,&quot;selectFirstCondition&quot;:false,&quot;fields&quot;:[],&quot;viscidityEnableShowAll&quot;:false,&quot;cascaderEnable&quot;:false,&quot;showSearchCname&quot;:&quot;&quot;,&quot;viscidityEnable&quot;:false,&quot;viscidityEnableShowFirst&quot;:false},&quot;appId&quot;:&quot;60007&quot;,&quot;sourceUuid&quot;:&quot;1441959640303796224&quot;,&quot;pageParams&quot;:[],&quot;metaUrl&quot;:&quot;/fwebapi/cms/lowcode/60007/18515/list/meta?cate&#x3D;0&quot;,&quot;disabled&quot;:false,&quot;api&quot;:&quot;/fwebapi/cms/lowcode/60007/18515/list?cate&#x3D;0&quot;,&quot;id&quot;:&quot;datasource9&quot;,&quot;apiId&quot;:&quot;18515&quot;,&quot;reqKey&quot;:&quot;/fwebapi/cms/lowcode/60007/18515/list?cate&#x3D;0|{\&quot;size\&quot;:6,\&quot;query\&quot;:[{\&quot;valueName\&quot;:\&quot;联系我们\&quot;,\&quot;dataType\&quot;:\&quot;array[category]\&quot;,\&quot;operator\&quot;:\&quot;in\&quot;,\&quot;filter\&quot;:\&quot;ignore-empty-check\&quot;,\&quot;esField\&quot;:\&quot;DETAIL_ES.es_multi_category_01Sy2jv4\&quot;,\&quot;groupName\&quot;:\&quot;数据展示条件,默认条件组\&quot;,&quot;groupEnd\&quot;:\&quot;2,1\&quot;,\&quot;field\&quot;:\&quot;category_01Sy2jv4\&quot;,\&quot;sourceType\&quot;:\&quot;static\&quot;,\&quot;logic\&quot;:\&quot;and\&quot;,\&quot;groupBegin\&quot;:\&quot;1,2\&quot;,\&quot;value\&quot;:\&quot;1800487312474853376\&quot;,\&quot;fieldType\&quot;:\&quot;array\&quot;}],\&quot;header\&quot;:{\&quot;Data-Query-Es-Field\&quot;:\&quot;DETAIL_ES.es_symbol_text_r4O05cao\&quot;,\&quot;Data-Query-Random\&quot;:0,\&quot;Data-Query-Field\&quot;:\&quot;text_r4O05cao\&quot;},\&quot;from\&quot;:0,&quot;sort\&quot;:[]}|{\&quot;Data-Query-Es-Field\&quot;:\&quot;DETAIL_ES.es_symbol_text_r4O05cao\&quot;,\&quot;Data-Query-Random\&quot;:0,\&quot;Data-Query-Field\&quot;:\&quot;text_r4O05cao\&quot;}&quot;}">
     <input type="hidden" name="view" value="contactus">
     <input type="hidden" name="pageParamsJson" value="{&quot;size&quot;:6,&quot;from&quot;:0,&quot;totalCount&quot;:4}">
     <input type="hidden" name="i18nJson" value="{}">
@@ -91,6 +91,7 @@
                 <span class="text-secondary p_title"></span>
             </a>
         </li>
+        <li class="p_breadcrumbItem"><span>联系我们</span></li>
     </ul>
 </div>
 </div>
@@ -99,20 +100,20 @@
 <div class="e_container-1 s_layout">
     <div class="cbox-1-0 p_item"><div class="e_container-24 s_layout">
     <div class="cbox-24-0 p_item"><p class="e_text-26 s_title">
-        Contact Information
+        联系方式
 </p></div>
 </div><hr class="e_line-19 s_line" /><p class="e_text-2 s_title">
-        Changzhou Chuanglian Power Supply Technology Corporation
+        常州创联电源科技股份有限公司
 </p><div class="e_richText-21 s_title clearfix">
-<svg t="1718105143315" class="icon" viewBox="0 0 1025 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="4029" width="200" height="200"><path d="M1.984 145.488s-44.976 228.992 293.6 567.568c2.464 2.448 4.832 4.672 7.264 7.088 2.432 2.432 4.656 4.816 7.104 7.28 338.576 338.576 567.568 293.6 567.568 293.6 14.016-1.872 43.472-10.272 53.44-20.272 0 0 52.096-42.816 84.016-95.568 31.936-52.736-28.416-132.304-63.136-167.008-70.048-70.048-134.464-83.712-162.832-64.24-12.752 8.752-63.424 63.36-63.424 63.36-9.984 10-29.744 18.304-43.872 18.48 0 0-88.544 0.896-253.248-161.248C266.32 429.84 267.2 341.296 267.2 341.296c0.192-14.112 8.48-33.888 18.48-43.872 0 0 62.816-62.768 63.36-63.424 23.824-29.824-15.632-103.968-64.24-162.832-31.248-37.84-56.56-59.984-103.904-69.008C117.712-9.872 4.24 74.288 1.984 145.488z" p-id="4030"></path></svg>  <p><a href="tel:400-111-2099" rel="nofollow">Advisory hotline: 400-111-2099</a></p>
+<svg t="1718105143315" class="icon" viewBox="0 0 1025 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="4029" width="200" height="200"><path d="M1.984 145.488s-44.976 228.992 293.6 567.568c2.464 2.448 4.832 4.672 7.264 7.088 2.432 2.432 4.656 4.816 7.104 7.28 338.576 338.576 567.568 293.6 567.568 293.6 14.016-1.872 43.472-10.272 53.44-20.272 0 0 52.096-42.816 84.016-95.568 31.936-52.736-28.416-132.304-63.136-167.008-70.048-70.048-134.464-83.712-162.832-64.24-12.752 8.752-63.424 63.36-63.424 63.36-9.984 10-29.744 18.304-43.872 18.48 0 0-88.544 0.896-253.248-161.248C266.32 429.84 267.2 341.296 267.2 341.296c0.192-14.112 8.48-33.888 18.48-43.872 0 0 62.816-62.768 63.36-63.424 23.824-29.824-15.632-103.968-64.24-162.832-31.248-37.84-56.56-59.984-103.904-69.008C117.712-9.872 4.24 74.288 1.984 145.488z" p-id="4030"></path></svg>  <p><a href="tel:400-111-2099" rel="nofollow">服务热线：400-111-2099</a></p>
 
 </div><div class="e_richText-22 s_title clearfix">
 
-<svg t="1718105143315" class="icon" viewBox="0 0 1025 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="4029" width="200" height="200"><path d="M1.984 145.488s-44.976 228.992 293.6 567.568c2.464 2.448 4.832 4.672 7.264 7.088 2.432 2.432 4.656 4.816 7.104 7.28 338.576 338.576 567.568 293.6 567.568 293.6 14.016-1.872 43.472-10.272 53.44-20.272 0 0 52.096-42.816 84.016-95.568 31.936-52.736-28.416-132.304-63.136-167.008-70.048-70.048-134.464-83.712-162.832-64.24-12.752 8.752-63.424 63.36-63.424 63.36-9.984 10-29.744 18.304-43.872 18.48 0 0-88.544 0.896-253.248-161.248C266.32 429.84 267.2 341.296 267.2 341.296c0.192-14.112 8.48-33.888 18.48-43.872 0 0 62.816-62.768 63.36-63.424 23.824-29.824-15.632-103.968-64.24-162.832-31.248-37.84-56.56-59.984-103.904-69.008C117.712-9.872 4.24 74.288 1.984 145.488z" p-id="4030"></path></svg> <p><a href="tel:0519-85215050" rel="nofollow">Operator: 0519-85215050</a></p>
+<svg t="1718105143315" class="icon" viewBox="0 0 1025 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="4029" width="200" height="200"><path d="M1.984 145.488s-44.976 228.992 293.6 567.568c2.464 2.448 4.832 4.672 7.264 7.088 2.432 2.432 4.656 4.816 7.104 7.28 338.576 338.576 567.568 293.6 567.568 293.6 14.016-1.872 43.472-10.272 53.44-20.272 0 0 52.096-42.816 84.016-95.568 31.936-52.736-28.416-132.304-63.136-167.008-70.048-70.048-134.464-83.712-162.832-64.24-12.752 8.752-63.424 63.36-63.424 63.36-9.984 10-29.744 18.304-43.872 18.48 0 0-88.544 0.896-253.248-161.248C266.32 429.84 267.2 341.296 267.2 341.296c0.192-14.112 8.48-33.888 18.48-43.872 0 0 62.816-62.768 63.36-63.424 23.824-29.824-15.632-103.968-64.24-162.832-31.248-37.84-56.56-59.984-103.904-69.008C117.712-9.872 4.24 74.288 1.984 145.488z" p-id="4030"></path></svg> <p><a href="tel:0519-85215050" rel="nofollow">总机电话：0519-85215050</a></p>
 
   
 </div><div class="e_richText-23 s_title clearfix">
-<svg t="1718105165259" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5055" width="200" height="200"><path d="M514.878 89.234c-177.908 0-322.133 142.358-322.133 317.969s322.133 522.38 322.133 522.38 322.133-346.77 322.133-522.38-144.225-317.969-322.133-317.969zM514.878 565.431c-85.087 0-154.064-68.977-154.064-154.064s68.978-154.064 154.064-154.064 154.064 68.977 154.064 154.064c0 85.087-68.978 154.064-154.064 154.064z" fill="#fff" p-id="5056"></path></svg>  <p>No.88, Zonglv Road, Zhonglou District, Changzhou City, Jiangsu Province</p>
+<svg t="1718105165259" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5055" width="200" height="200"><path d="M514.878 89.234c-177.908 0-322.133 142.358-322.133 317.969s322.133 522.38 322.133 522.38 322.133-346.77 322.133-522.38-144.225-317.969-322.133-317.969zM514.878 565.431c-85.087 0-154.064-68.977-154.064-154.064s68.978-154.064 154.064-154.064 154.064 68.977 154.064 154.064c0 85.087-68.978 154.064-154.064 154.064z" fill="#fff" p-id="5056"></path></svg>  <p>江苏省常州市钟楼区棕榈路88号</p>
 
 </div></div>
 </div>
@@ -127,18 +128,18 @@
     <div class="cbox-104-0 p_item"><p class="e_text-105 s_title">
         
 </p><p class="e_text-106 s_title">
-        Foreign Trade
+        外贸业务
 </p><hr class="e_line-107 s_line" /><div class="e_container-123 s_layout">
     <div class="cbox-123-0 p_item"><div class="e_container-124 s_layout">
     <div class="cbox-124-0 p_item"><p class="e_text-126 s_title">
-        Manager:
+        经理：
 </p></div>
     <div class="cbox-124-1 p_item"><p class="e_text-125 s_title">
-        Mr. Jiang
+        蒋经理
 </p></div>
 </div><div class="e_container-127 s_layout">
     <div class="cbox-127-0 p_item"><p class="e_text-135 s_title">
-        Mobile:
+        手机：
 </p></div>
     <div class="cbox-127-1 p_item"><div class="e_richText-134 s_title clearfix">
     <p><a href="tel:13862577252" rel="nofollow">13862577252</a></p>
@@ -146,7 +147,7 @@
 </div></div>
 </div><div class="e_container-128 s_layout">
     <div class="cbox-128-0 p_item"><p class="e_text-130 s_title">
-        E-mail:
+        邮箱：
 </p></div>
     <div class="cbox-128-1 p_item"><div class="e_richText-129 s_title clearfix">
     <p style="text-align: justify;"><a href="mailto:haitaik@cl-power.com" rel="nofollow">haitaik@cl-power.com</a></p>
@@ -154,10 +155,10 @@
 </div></div>
 </div><div class="e_container-131 s_layout">
     <div class="cbox-131-0 p_item"><p class="e_text-133 s_title">
-        Area:
+        区域：
 </p></div>
     <div class="cbox-131-1 p_item"><p class="e_text-132 s_title">
-        All foreign trade countries
+        全球外贸业务区域
 </p></div>
 </div></div>
 </div></div>
@@ -173,7 +174,7 @@
     <input type="hidden" name="_config" value="">
     <input type="hidden" name="view" value="contactus">
     <input type="hidden" name="pageParamsJson" value="">
-    <input type="hidden" name="i18nJson" value="{&quot;pageWhole_85&quot;:&quot;in total&quot;,&quot;clearConditions_85&quot;:&quot;clear condition&quot;,&quot;pageItem_85&quot;:&quot;picecs&quot;,&quot;pageJump_85&quot;:&quot;proceed&quot;,&quot;loadMore_85&quot;:&quot;Click to load more&quot;,&quot;noData_85&quot;:&quot;No data&quot;,&quot;conditions_85&quot;:&quot;condition:&quot;,&quot;loadNow_85&quot;:&quot;Loading&quot;,&quot;confirm_85&quot;:&quot;OK&quot;,&quot;pageUnit_85&quot;:&quot;page&quot;,&quot;totalAcount_85&quot;:&quot;Total X&quot;,&quot;noMore_85&quot;:&quot;No more&quot;}">
+    <input type="hidden" name="i18nJson" value="{&quot;pageWhole_85&quot;:&quot;共&quot;,&quot;clearConditions_85&quot;:&quot;清除条件&quot;,&quot;pageItem_85&quot;:&quot;条&quot;,&quot;pageJump_85&quot;:&quot;跳转&quot;,&quot;loadMore_85&quot;:&quot;点击加载更多&quot;,&quot;noData_85&quot;:&quot;暂无数据&quot;,&quot;conditions_85&quot;:&quot;条件:&quot;,&quot;loadNow_85&quot;:&quot;加载中&quot;,&quot;confirm_85&quot;:&quot;确定&quot;,&quot;pageUnit_85&quot;:&quot;页&quot;,&quot;totalAcount_85&quot;:&quot;共 X 条&quot;,&quot;noMore_85&quot;:&quot;没有更多了&quot;}">
 
 </div></div>
 </div>
@@ -181,9 +182,9 @@
 <div class="e_container-37 s_layout aos-init wow fadeInRight">
     <div class="cbox-37-0 p_item"><div class="e_container-44 s_layout">
     <div class="cbox-44-0 p_item"><p class="e_text-46 s_title">
-        Online Message
+        在线留言
 </p><p class="e_text-47 s_title">
-        If you have any suggestions, please leave a message or send an email to us, and we will reply to you within 1 working day after receiving the message email.
+        如果您有任何建议或需求，请在此留言或发送邮件给我们，我们将在收到留言邮件后1个工作日内给您回复。
 </p></div>
 </div><hr class="e_line-42 s_line" /></div>
 </div><div class="e_container-11 s_layout aos-init wow fadeInUp">
@@ -193,7 +194,7 @@
     <div class="">
         <div class="input-group">
             <input type="text" class="form-control s_form-control s_input p_input" name="e_input-26" 
-                placeholder="Please enter a name" 
+                placeholder="请输入姓名" 
                  
                 
             >
@@ -205,7 +206,7 @@
     <div class="">
         <div class="input-group">
             <input type="text" class="form-control s_form-control s_input p_input" name="e_input-25" 
-                placeholder="Please enter your phone number" 
+                placeholder="请输入电话号码" 
                  
                 
             >
@@ -218,7 +219,7 @@
     <div class="">
         <div class="input-group">
             <input type="text" class="form-control s_form-control s_input p_input" name="e_input-29" 
-                placeholder="Please enter E-mail (*)" 
+                placeholder="请输入电子邮箱 (*)" 
                  
                 
             >
@@ -230,7 +231,7 @@
     <div class="">
         <div class="input-group">
             <input type="text" class="form-control s_form-control s_input p_input" name="e_input-28" 
-                placeholder="Please enter an address" 
+                placeholder="请输入联系地址" 
                  
                 
             >
@@ -241,14 +242,14 @@
 </div><div class="e_textarea-30 s_form1 form-group " needjs="true" required>
     <div class="">
         <textarea class="form-control s_form-control s_input p_input" rows="3" name="e_textarea-30" 
-            placeholder="Please enter message content (*)" 
+            placeholder="请输入留言内容 (*)" 
              
         ></textarea>
         <div class="invalid-feedback"></div>
     </div>
 </div>
 <a class="e_formBtn-48 s_button1 btn btn-primary" href="javascript:;" needjs="true">
-    <span>Submit </span> 
+    <span>提交留言 </span> 
 </a></div>
     <input name="jumpPage" type="hidden" value="/sucess.html">
 </form></div>

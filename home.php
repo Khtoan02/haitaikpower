@@ -6,8 +6,8 @@ get_header();
 ?>
 <main id="site-main" class="site-main" style="max-width: 1200px; margin: 40px auto; padding: 0 20px; min-height: 500px;">
     <div style="margin-bottom: 30px; border-bottom: 2px solid #e40011; padding-bottom: 10px;">
-        <h1 style="font-size: 28px; color: #333; margin: 0;">News & Updates</h1>
-        <p style="color: #777; font-size: 14px; margin-top: 5px;">Latest news, announcements, and technical articles from Haitaik</p>
+        <h1 style="font-size: 28px; color: #333; margin: 0;">新闻资讯</h1>
+        <p style="color: #777; font-size: 14px; margin-top: 5px;">创联电源最新新闻、企业动态与技术文章</p>
     </div>
 
     <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 24px;">
@@ -32,7 +32,7 @@ get_header();
                             <?php the_excerpt(); ?>
                         </div>
                         <a href="<?php the_permalink(); ?>" style="color: #e40011; font-weight: 500; font-size: 14px; text-decoration: none; display: inline-flex; align-items: center;">
-                            Read More &rarr;
+                            阅读更多 &rarr;
                         </a>
                     </div>
                 </article>
@@ -40,7 +40,7 @@ get_header();
             endwhile;
         else :
             ?>
-            <p style="grid-column: 1 / -1; text-align: center; color: #888; padding: 40px 0;">No news articles available at the moment.</p>
+            <p style="grid-column: 1 / -1; text-align: center; color: #888; padding: 40px 0;">暂无新闻资讯。</p>
         <?php endif; ?>
     </div>
 </main>

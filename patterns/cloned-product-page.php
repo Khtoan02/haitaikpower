@@ -28,7 +28,7 @@
                 <span class="text-secondary p_title"></span>
             </a>
         </li>
-    <li class="p_breadcrumbItem"><span>Industrial Power Supply</span></li></ul>
+    <li class="p_breadcrumbItem"><span>产品中心</span></li></ul>
 </div>
 </div>
 </div>
