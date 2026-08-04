@@ -17,14 +17,41 @@ get_header();
 .p_navBox1 .p_navItem1 a span,
 .top_f h2 a,
 .e_navigationF-24 a span,
-.e_container-21 a {
-    color: #222429 !important;
+/* Article typography styles for h2, h3, content */
+.entry-content h2 {
+    font-size: 20px !important;
+    font-weight: 700 !important;
+    color: #1e293b !important;
+    margin: 30px 0 15px 0 !important;
+    padding-left: 10px !important;
+    border-left: 4px solid #e40011 !important;
 }
-.e_image-16 img:first-child {
-    display: none !important;
+.entry-content h3 {
+    font-size: 17px !important;
+    font-weight: 600 !important;
+    color: #334155 !important;
+    margin: 20px 0 10px 0 !important;
 }
-.e_image-16 img:last-child {
-    display: inline-block !important;
+.entry-content p {
+    font-size: 15px !important;
+    line-height: 1.8 !important;
+    color: #475569 !important;
+    margin-bottom: 16px !important;
+}
+.entry-content ul {
+    margin: 15px 0 20px 25px !important;
+    color: #475569 !important;
+}
+.entry-content li {
+    font-size: 15px !important;
+    line-height: 1.8 !important;
+    margin-bottom: 8px !important;
+}
+.entry-content img {
+    max-width: 100% !important;
+    height: auto !important;
+    border-radius: 8px !important;
+    margin: 20px 0 !important;
 }
 </style>
 
