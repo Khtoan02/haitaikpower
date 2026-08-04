@@ -7,93 +7,292 @@
  */
 ?>
 <!-- wp:html -->
-<div id="c_banner_015_P_156-1669615454198" class="response-animated">
-<div class="e_bannerA-2 s_list response-transition" needjs="true">
-    <div class="swiper-container swiper-container-fade swiper-container-initialized swiper-container-horizontal">
-        <div class="swiper-wrapper p_swiperContainer" id="swiper-wrapper-3024780728a7927b" aria-live="off" style="transition: all;">            <div class="swiper-slide p_slide swiper-slide-duplicate swiper-slide-prev swiper-slide-duplicate-next" data-swiper-slide-index="1" style="width: 1684px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition: all;" role="group" aria-label="1 / 4">
-                    <div class="p_img">
-                        <a href="javascript:;">
-                            
-            <img src="https://omo-oss-image.thefastimg.com/portal-saas/pg2024041817493912440/cms/image/04a3fa2b-f59c-4234-a9ca-87d1b57c22f1.jpg_1920xaf.jpg" alt="创联电源" title="创联电源" la="la">
-        
-                        </a>
-                    </div>
-                <div class="ind_ban_tex ">
-                    <div class="ind_ban_con">
-                        <div class="ind_ban_tex_en">Chuanglian</div>
-                        <div class="ind_ban_tex_title">
-                           <h3 class="t_big">
-                            创联电源
-                           </h3>
-                        </div>
-                        <div class="b_line"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-slide p_slide swiper-slide-active" data-swiper-slide-index="0" style="width: 1684px; opacity: 1; transform: translate3d(-1684px, 0px, 0px); transition: all;" role="group" aria-label="2 / 4">
-                    <div class="p_img">
-                        <a href="javascript:;">
-                            <img src="https://omo-oss-image.thefastimg.com/portal-saas/pg2024041817493912440/cms/image/237797ff-4eff-48bd-90b0-8d0f1cf404e8.jpg" alt="创联电源" title="创联电源" la="la">
-                        </a>
-                    </div>
-                <div class="ind_ban_tex ">
-                    <div class="ind_ban_con">
-                        <div class="ind_ban_tex_en">Chuanglian</div>
-                        <div class="ind_ban_tex_title">
-                           <h3 class="t_big">
-                            创联电源
-                           </h3>
-                        </div>
-                        <div class="b_line"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-slide p_slide swiper-slide-next swiper-slide-duplicate-prev" data-swiper-slide-index="1" style="width: 1684px; opacity: 0; transform: translate3d(-3368px, 0px, 0px); transition: all;" role="group" aria-label="3 / 4">
-                    <div class="p_img">
-                        <a href="javascript:;">
-                            
-            <img src="https://omo-oss-image.thefastimg.com/portal-saas/pg2024041817493912440/cms/image/04a3fa2b-f59c-4234-a9ca-87d1b57c22f1.jpg_1920xaf.jpg" alt="创联电源" title="创联电源" la="la">
-        
-                        </a>
-                    </div>
-                <div class="ind_ban_tex ">
-                    <div class="ind_ban_con">
-                        <div class="ind_ban_tex_en">Chuanglian</div>
-                        <div class="ind_ban_tex_title">
-                           <h3 class="t_big">
-                            创联电源
-                           </h3>
-                        </div>
-                        <div class="b_line"></div>
-                    </div>
-                </div>
-            </div>
-        <div class="swiper-slide p_slide swiper-slide-duplicate swiper-slide-duplicate-active" data-swiper-slide-index="0" style="width: 1684px; opacity: 0; transform: translate3d(-5052px, 0px, 0px); transition: all;" role="group" aria-label="4 / 4">
-                    <div class="p_img">
-                        <a href="javascript:;">
-                            <img src="https://omo-oss-image.thefastimg.com/portal-saas/pg2024041817493912440/cms/image/237797ff-4eff-48bd-90b0-8d0f1cf404e8.jpg" alt="创联电源" title="创联电源" la="la">
-                        </a>
-                    </div>
-                <div class="ind_ban_tex ">
-                    <div class="ind_ban_con">
-                        <div class="ind_ban_tex_en">Chuanglian</div>
-                        <div class="ind_ban_tex_title">
-                           <h3 class="t_big">
-                            创联电源
-                           </h3>
-                        </div>
-                        <div class="b_line"></div>
-                    </div>
-                </div>
-            </div></div>
-        <div class="swiper-pagination p_pagenation swiper-pagination-clickable swiper-pagination-bullets"><span class="swiper-pagination-bullet p_swiperBullet p_swiperBullet_active swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 1"></span><span class="swiper-pagination-bullet p_swiperBullet" tabindex="0" role="button" aria-label="Go to slide 2"></span></div>
-    <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
-  
+<!-- Full Bleed Auto-sliding Hero Section -->
+<style>
+.haitaik-hero-slider-section {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    overflow: hidden;
+    background: #0f172a;
+}
+.haitaik-slider-container {
+    position: relative;
+    width: 100%;
+    height: 650px;
+    overflow: hidden;
+}
+@media (max-width: 768px) {
+    .haitaik-slider-container {
+        height: 450px;
+    }
+}
+.haitaik-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1.2s ease-in-out, visibility 1.2s ease-in-out;
+    z-index: 1;
+}
+.haitaik-slide.active {
+    opacity: 1;
+    visibility: visible;
+    z-index: 2;
+}
+.haitaik-slide-bg {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.haitaik-slide-bg img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    transform: scale(1);
+    transition: transform 6s ease;
+}
+.haitaik-slide.active .haitaik-slide-bg img {
+    transform: scale(1.08);
+}
+.haitaik-slide-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(15, 23, 42, 0.75) 0%, rgba(15, 23, 42, 0.35) 60%, rgba(15, 23, 42, 0.1) 100%);
+}
+.haitaik-slide-content {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    max-width: 650px;
+    color: #ffffff;
+    z-index: 3;
+    padding: 0 20px;
+}
+.haitaik-slide-subtitle {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: #ffffff;
+    display: inline-block;
+    margin-bottom: 14px;
+    background: rgba(228, 0, 17, 0.85);
+    padding: 5px 14px;
+    border-radius: 4px;
+    text-transform: uppercase;
+}
+.haitaik-slide-title {
+    font-size: 42px;
+    font-weight: 800;
+    line-height: 1.25;
+    margin: 0 0 16px 0;
+    color: #ffffff;
+    text-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+@media (max-width: 768px) {
+    .haitaik-slide-title {
+        font-size: 26px;
+    }
+}
+.haitaik-slide-desc {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+.haitaik-slide-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #e40011;
+    color: #ffffff;
+    padding: 13px 30px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 14px rgba(228, 0, 17, 0.35);
+}
+.haitaik-slide-btn:hover {
+    background-color: #c8000f;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(228, 0, 17, 0.5);
+    color: #ffffff;
+}
+.haitaik-slider-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 48px;
+    height: 48px;
+    background: rgba(15, 23, 42, 0.5);
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    font-size: 18px;
+    cursor: pointer;
+    z-index: 4;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.haitaik-slider-arrow:hover {
+    background: #e40011;
+    border-color: #e40011;
+}
+.haitaik-slider-arrow.prev { left: 25px; }
+.haitaik-slider-arrow.next { right: 25px; }
 
-  
-  
+.haitaik-slider-dots {
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+    z-index: 4;
+}
+.haitaik-slider-dots .dot {
+    width: 32px;
+    height: 4px;
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 2px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.haitaik-slider-dots .dot.active {
+    background: #e40011;
+    width: 48px;
+}
+</style>
+
+<div class="haitaik-hero-slider-section">
+    <div class="haitaik-slider-container">
+        <!-- Slide 1 -->
+        <div class="haitaik-slide active" data-index="0">
+            <div class="haitaik-slide-bg">
+                <img src="https://omo-oss-image.thefastimg.com/portal-saas/pg2024041817493912440/cms/image/237797ff-4eff-48bd-90b0-8d0f1cf404e8.jpg" alt="创联电源" />
+            </div>
+            <div class="haitaik-slide-overlay"></div>
+            <div class="haitaik-slide-content">
+                <span class="haitaik-slide-subtitle">CHUANGLIAN POWER SUPPLY</span>
+                <h2 class="haitaik-slide-title">创联电源 · 全球高品质电源解决方案</h2>
+                <p class="haitaik-slide-desc">专注LED显示屏电源、工业自动化控制电源研发与制造20余年</p>
+                <div class="haitaik-slide-btn-wrap">
+                    <a href="/about-us/" class="haitaik-slide-btn">了解更多 &rarr;</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="haitaik-slide" data-index="1">
+            <div class="haitaik-slide-bg">
+                <img src="https://omo-oss-image.thefastimg.com/portal-saas/pg2024041817493912440/cms/image/04a3fa2b-f59c-4234-a9ca-87d1b57c22f1.jpg_1920xaf.jpg" alt="高效低功耗电源" />
+            </div>
+            <div class="haitaik-slide-overlay"></div>
+            <div class="haitaik-slide-content">
+                <span class="haitaik-slide-subtitle">ENERGY SAVING & HIGH EFFICIENT</span>
+                <h2 class="haitaik-slide-title">共阴高效低功耗LED显示屏电源</h2>
+                <p class="haitaik-slide-desc">创新共阴节能技术，降低温升，高效稳定，引领绿色电源新标杆</p>
+                <div class="haitaik-slide-btn-wrap">
+                    <a href="/led-display-power/" class="haitaik-slide-btn">产品中心 &rarr;</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="haitaik-slide" data-index="2">
+            <div class="haitaik-slide-bg">
+                <img src="https://omo-oss-image.thefastimg.com/portal-saas/pg2024041817493912440/cms/image/a74a667c-14fe-4c41-aa48-07c3c203cbb6.jpg" alt="品质保障" />
+            </div>
+            <div class="haitaik-slide-overlay"></div>
+            <div class="haitaik-slide-content">
+                <span class="haitaik-slide-subtitle">QUALITY GUARANTEE & SERVICE</span>
+                <h2 class="haitaik-slide-title">原厂正品 · 36个月原厂质保</h2>
+                <p class="haitaik-slide-desc">符合国际安规与EMC标准，100%满负载老炼测试，畅销全球50多个国家</p>
+                <div class="haitaik-slide-btn-wrap">
+                    <a href="/contact-us/" class="haitaik-slide-btn">联系我们 &rarr;</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Arrows -->
+        <button class="haitaik-slider-arrow prev" aria-label="Previous Slide">&#10094;</button>
+        <button class="haitaik-slider-arrow next" aria-label="Next Slide">&#10095;</button>
+
+        <!-- Pagination Dots -->
+        <div class="haitaik-slider-dots">
+            <span class="dot active" data-index="0"></span>
+            <span class="dot" data-index="1"></span>
+            <span class="dot" data-index="2"></span>
+        </div>
+    </div>
 </div>
- <input type="hidden" name="propJson" value="{&quot;settings_2&quot;:{&quot;videoLoop&quot;:false,&quot;videoControlor&quot;:false,&quot;navigation&quot;:false,&quot;pagination&quot;:true,&quot;effect&quot;:&quot;fade&quot;,&quot;showText&quot;:true,&quot;videoAutoplay&quot;:false,&quot;videoMouted&quot;:true,&quot;deplay&quot;:5,&quot;autoplay&quot;:true,&quot;direction&quot;:&quot;horizontal&quot;}}"></div><div id="c_static_001-1718094833424" class="response-animated">
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    var slides = document.querySelectorAll('.haitaik-slide');
+    var dots = document.querySelectorAll('.haitaik-slider-dots .dot');
+    var prevBtn = document.querySelector('.haitaik-slider-arrow.prev');
+    var nextBtn = document.querySelector('.haitaik-slider-arrow.next');
+    if (!slides.length) return;
+
+    var currentIndex = 0;
+    var timer = null;
+
+    function goToSlide(index) {
+        slides.forEach(function(s) { s.classList.remove('active'); });
+        dots.forEach(function(d) { d.classList.remove('active'); });
+        currentIndex = (index + slides.length) % slides.length;
+        slides[currentIndex].classList.add('active');
+        if (dots[currentIndex]) {
+            dots[currentIndex].classList.add('active');
+        }
+    }
+
+    function nextSlide() {
+        goToSlide(currentIndex + 1);
+    }
+
+    function prevSlide() {
+        goToSlide(currentIndex - 1);
+    }
+
+    function startAutoPlay() {
+        stopAutoPlay();
+        timer = setInterval(nextSlide, 4500);
+    }
+
+    function stopAutoPlay() {
+        if (timer) clearInterval(timer);
+    }
+
+    if (nextBtn) nextBtn.addEventListener('click', function() { nextSlide(); startAutoPlay(); });
+    if (prevBtn) prevBtn.addEventListener('click', function() { prevSlide(); startAutoPlay(); });
+
+    dots.forEach(function(dot) {
+        dot.addEventListener('click', function() {
+            var idx = parseInt(this.getAttribute('data-index'), 10);
+            goToSlide(idx);
+            startAutoPlay();
+        });
+    });
+
+    startAutoPlay();
+});
+</script><div id="c_static_001-1718094833424" class="response-animated">
 <div class="e_container-1 s_layout response-transition">
     <div class="cbox-1-0 p_item"><div class="e_loop-2 s_list response-transition" needjs="true" ds-id="" elem-id="e_loop-2">
     <div class="">
